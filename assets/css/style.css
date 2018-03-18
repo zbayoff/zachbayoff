@@ -1,0 +1,474 @@
+/*---------Global Styles---------*/
+
+.container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+}
+
+.column-10 {
+    width: 83.33%;
+}
+
+.column-6 {
+    width: 50%;
+}
+
+.column-4 {
+    width: 25%;
+}
+
+
+.logo__text {
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+
+
+body,
+html {
+    height: 100%;
+}
+
+
+p {
+    font-size: 1.5rem;
+
+}
+
+/*---------Site Logo---------*/
+
+.logo__text {
+    font-size: 2rem;
+}
+
+/*---------Navigation---------*/
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+/*---------Header-Side---------*/
+
+.header-side .logo {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    margin: 0;
+}
+
+.header-side .nav {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    height: 400px;
+    line-height:
+}
+
+.header-side .nav__nav-item {}
+
+/*---------Header-Top---------*/
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    position: relative;
+    height: 150px;
+}
+
+.header-top .logo {
+    position: absolute;
+    /*    border: 2px solid black;*/
+    margin-left: 1rem;
+    left: 0;
+}
+
+.header-top nav {
+    /*    border: 2px solid black;*/
+    width: 50%;
+}
+
+.header-top .nav {
+    display: flex;
+    justify-content: space-around;
+    /*    border: 2px solid black;*/
+}
+
+.header-top .nav__nav-item {
+    /*    border: 2px solid black;*/
+}
+
+.header-top .nav__nav-link {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+
+/*---------About Page---------*/
+
+.container-welcome {
+    position: relative;
+    height: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.container-welcome__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.container-about-me {
+    border: 2px solid black;
+    height: 100%;
+}
+
+.container-about-me .row {
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-about-me__heading {
+    text-align: center;
+    margin: 0;
+}
+
+.block-mich {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.mich_logo {
+    width: 40px;
+    height: 28.766px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.container-skills {
+    border: 2px solid black;
+    height: 100%;
+}
+
+.container-skills .row {
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-skills__heading {
+    text-align: center;
+    margin: 0;
+}
+
+
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-list__item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.skills-list__img {
+    margin-top: 1rem;
+    width: 50px;
+}
+
+
+.container-end-about {
+    border: 2px solid black;
+}
+
+.container-end-about .row {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/*---------Portfolio Page---------*/
+
+.container-projects {
+    border: 2px solid black;
+    height: 100%;
+}
+
+.container-projects .row {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-project-desc {
+    border: 2px solid black;
+    height: 100%;
+}
+
+.container-project-desc .row {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-project-desc__project-item {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.container-project-desc__project-img {
+    display: block;
+    width: 500px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+.container-project-desc__project-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 150px;
+    height: 60px;
+    padding: 0;
+    margin: auto;
+    text-decoration: none;
+}
+
+.container-project-desc__project-link {
+    display: flex;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+/*---------Project Description Page---------*/
+
+.container-project-header {
+    border: 2px solid black;
+    height: 100%;
+}
+
+.container-project-header .row {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-project-header h1 {
+    font-size: 1.5rem;
+}
+
+.container-project-background {
+    border: 2px solid black;
+    height: 100%;
+}
+
+.container-project-background .row {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-project-link {
+    border: 2px solid black;
+    height: 100%;
+}
+
+.container-project-link .row {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-project-screenshot {
+    border: 2px solid black;
+    height: 100%;
+}
+
+.container-project-screenshot .row {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-project-screenshot .container-project-screenshot__project-item {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container-project-screenshot .container-project-screenshot__project-img {
+    width: 100%;
+}
+
+/*---------Contact Page---------*/
+
+.container-contact-form {
+    border: 2px solid black;
+    height: 100%;
+}
+
+.container-contact-form .row {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-contact-form h1 {
+    font-size: 1.5rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.form-text-area {
+    display: block;
+    width: 100%;
+    height: 200px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.form-label {
+    display: block;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+/*---------Footer---------*/
+
+.container-footer {
+    border: 2px solid black;
+}
+
+.container-footer .row {
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+.github-logo {
+    width: 50px;
+    margin-right: 2rem;
+}
+
+
+.footer-copyright {}
+
+.linkedin-logo {
+    margin-left: 2rem;
+    width: 80px;
+    padding: 0;
+}
+
+
+/*---About Page Media Queries--*/
