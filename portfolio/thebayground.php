@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
 </head>
 
 <body>
 
     <section class="container">
-        <header class="header header-top">
+        <header class="header header-top header-top-md">
             <div class="logo">
                 <p class="logo__text">ZachBayoff</p>
             </div>
@@ -33,7 +34,7 @@
 
         <header class="container container-project-header">
             <div class="row">
-                <div class="column-6">
+                <div class="column-md-6">
                     <h1>Project Name: The Bayground</h1>
                     <p>Client: Anybody</p>
                     <p>Tags: Web Applications/Javascript</p>
@@ -43,7 +44,7 @@
 
         <section class="container container-project-background">
             <div class="row">
-                <div class="column-6">
+                <div class="column-md-6">
                     <h3>Project Background</h3>
                     <p>The Bayground is a playground of small, simple to complex applications. They range from finding a set of prime numbers to dealing and finding the winner of a two-hand poker game.</p>
                     <p>This project was created to enhance my skills at using javascript. Namely, creating and using functions in different ways, writing loops, manipulating the DOM, adhering to the ES6 specification.</p>
@@ -53,17 +54,17 @@
 
         <section class="container container-project-link">
             <div class="row">
-                <div class="column-6">
+                <div class="column-md-6">
                     <h3>Link to application</h3>
                     <p></p>
-                    <button><a href="../portfolio/bayground/thebayground.php">Launch Applicationsss</a></button>
+                    <button><a href="../portfolio/bayground/thebayground.php">Launch Application</a></button>
                 </div>
             </div>
         </section>
 
         <section class="container container-project-screenshot">
             <div class="row">
-                <div class="column-10">
+                <div class="column-lg-10">
                     <h3>Prime Number Module</h3>
                     <div class="container-project-screenshot__project-item">
                         <img src="" class="container-project-screenshot__project-img">
@@ -76,7 +77,7 @@
 
     <footer class="container container-footer">
         <div class="row">
-            <div class="column-6">
+            <div class="column-md-6">
                 <div class="footer-inner">
                     <div>
                         <a href="https://github.com/zbayoff"><img class="github-logo" src="../assets/images/github-logo.png"></a></div>

@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
 </head>
 
 <body>
-    <section class="container">
-        <header class="header header-top">
+    <section class="container container-header">
+        <header class="header header-top header-top-md">
             <div class="logo">
                 <p class="logo__text">ZachBayoff</p>
             </div>
@@ -31,7 +32,7 @@
     <main>
         <section class="container container-projects">
             <div class="row">
-                <div class="column-6">
+                <div class="column-md-6">
                     <h2 class="">Projects</h2>
                     <p>To improve my craft, I continue to build and practice new programming concepts by applying them to real-world projects.</p>
                     <p>Whether for a client, personal use, or good 'ol fun, each proect gives me more insight and experience into the field of web development.</p>
@@ -42,7 +43,7 @@
 
         <section class="container container-project-desc">
             <div class="row">
-                <div class="column-6">
+                <div class="column-md-6">
                     <div class="container-project-desc__project-item">
                         <img class="container-project-desc__project-img" src="assets/images/project-desc-roomies.png">
                         <button class="container-project-desc__project-btn"><a class="container-project-desc__project-link" href="portfolio/roomies.php">See Project</a></button>
@@ -57,7 +58,7 @@
     </main>
     <footer class="container container-footer">
         <div class="row">
-            <div class="column-6">
+            <div class="column-md-6">
                 <div class="footer-inner">
                     <div>
                         <a href="https://github.com/zbayoff"><img class="github-logo" src="assets/images/github-logo.png"></a></div>

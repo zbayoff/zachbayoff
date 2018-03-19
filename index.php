@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
 </head>
 
 <body>
 
     <section class="container container-welcome">
 
-        <header class="header header-side">
+        <header class="header welcome-header-side-md welcome-header-top-md">
             <div class="logo">
                 <p class="logo__text">ZachBayoff</p>
             </div>
@@ -33,7 +35,7 @@
             <h1>Hi, I'm Zach.</h1>
             <h2>I'd like to help you build your website.</h2>
             <p>A little about me...</p>
-            <p><a href="#">(down arrow)</a></p>
+            <p><a class="fa fa-angle-down" href="#about-me-title"></a></p>
         </div>
 
     </section>
@@ -42,23 +44,23 @@
 
         <section class="container container-about-me">
             <div class="row">
-                <div class="column-4">
-                    <h2 class="container-about-me__heading">Me</h2>
+                <div class="column-md-6">
+                    <h2 id="about-me-title" class="container-about-me__heading">Me</h2>
                     <p>I'm an aspiring web developer based in Brooklyn, NY.</p>
+                    <p>I like creating interesting and useful websites and web applications for people.</p>
                     <p>I have a degree in marine engineering from the University of Michigan, Ann Arbor (also my hometown).</p>
                     <div class="block-mich">
                         <p>Go</p>
                         <img class="mich_logo" src="assets/images/Michigan_Wolverines_Block_M.png">
                         <p>Blue</p>
                     </div>
-                    <p>I like creating interesting and useful websites and web applications for people.</p>
                 </div>
             </div>
         </section>
 
         <section class="container container-skills">
             <div class="row">
-                <div class="column-4">
+                <div class="column-md-6">
                     <h2 class="container-skills__heading">Skills</h2>
                     <p>In the world of web development, technologies and tools are constantly changing and updating to keep up with users' ever demanding desire for efficient, no hassle online experiences.</p>
                     <p>I make it a priority to dedicate myself to learning and mastering these tools.</p>
@@ -89,7 +91,7 @@
 
         <section class="container container-end-about">
             <div class="row">
-                <div class="column-4">
+                <div class="column-md-6">
                     <h3>See some of my <a href="portfolio.php">projects</a> or feel free to <a href="contact.php">contact me.</a></h3>
                 </div>
             </div>
@@ -99,7 +101,7 @@
 
     <footer class="container container-footer">
         <div class="row">
-            <div class="column-6">
+            <div class="column-md-6">
                 <div class="footer-inner">
                     <div>
                         <a href="https://github.com/zbayoff"><img class="github-logo" src="assets/images/github-logo.png"></a></div>

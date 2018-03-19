@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
 </head>
 
 <body>
 
     <section class="container">
-        <header class="header header-top">
+        <header class="header header-top header-top-md">
             <div class="logo">
                 <p class="logo__text">ZachBayoff</p>
             </div>
@@ -33,7 +34,7 @@
 
         <section class="container container-contact-form">
             <div class="row">
-                <div class="column-4">
+                <div class="column-md-6">
                     <h1>Contact</h1>
                     <p>Send me a message with details about your project.</p>
                     <p>I'll get back to you ASAP.</p>
@@ -62,7 +63,7 @@
 
     <footer class="container container-footer">
         <div class="row">
-            <div class="column-6">
+            <div class="column-md-6">
                 <div class="footer-inner">
                     <div>
                         <a href="https://github.com/zbayoff"><img class="github-logo" src="assets/images/github-logo.png"></a></div>

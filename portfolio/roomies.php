@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
 </head>
 
 <body>
 
     <section class="container">
-        <header class="header header-top">
+        <header class="header header-top header-top-md">
             <div class="logo">
                 <p class="logo__text">ZachBayoff</p>
             </div>
@@ -33,7 +34,7 @@
 
         <header class="container container-project-header">
             <div class="row">
-                <div class="column-6">
+                <div class="column-md-6">
                     <h1>Project Name: Roomies: Roommate Management</h1>
                     <p>Client: Anybody</p>
                     <p>Tags: CRUD Application/PHP/AJAX/MySQL</p>
@@ -43,7 +44,7 @@
 
         <section class="container container-project-background">
             <div class="row">
-                <div class="column-6">
+                <div class="column-md-6">
                     <h3>Project Background</h3>
                     <p>At one point in our lives, most of us have lived with someone else. Maybe a friend, family member, or complete strangers. Living shared spaces can get complicated and sometimes our roommates can get on our nerves. Chores are forgotten, guests overstay their welcome, and household purchases are left unimbursed.</p>
                     <p>Roomies is an interactive application that lets people create a group for their household, manage chores, schedule visitors, and create a household items list so that purchases can be tracked and roommates can be reimbursed easily. Roomates may join multiple groups, if say, they are in the process of moving and would like to join their new household, but are still living in their current household. Roomates can add their phone numbers to be automatically notified about chore dates, visitor's arrivals, and a household item's bill.</p>
@@ -55,7 +56,7 @@
 
         <section class="container container-project-link">
             <div class="row">
-                <div class="column-6">
+                <div class="column-md-6">
                     <h3>Link to application</h3>
                     <p>This application will ask you to sign/log in.</p>
                     <button><a href="roomies/index.php">Launch Application</a></button>
@@ -65,7 +66,7 @@
 
         <section class="container container-project-screenshot">
             <div class="row">
-                <div class="column-10">
+                <div class="column-lg-10">
                     <h3>Sign Up</h3>
                     <div class="container-project-screenshot__project-item">
                         <img src="roomies/assets/img/screenshots/signup-page.png" class="container-project-screenshot__project-img">
@@ -106,7 +107,7 @@
 
     <footer class="container container-footer">
         <div class="row">
-            <div class="column-6">
+            <div class="column-md-6">
                 <div class="footer-inner">
                     <div>
                         <a href="https://github.com/zbayoff"><img class="github-logo" src="../assets/images/github-logo.png"></a></div>

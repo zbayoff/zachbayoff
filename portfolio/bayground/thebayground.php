@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
 </head>
 
 <body>
 
     <section class="container">
-        <header class="header header-top">
+        <header class="header header-top header-top-md">
             <div class="logo">
                 <p class="logo__text">ZachBayoff</p>
             </div>
@@ -34,18 +35,51 @@
 
         <header class="container container-bayground-header">
             <div class="row">
-                <div class="column-6">
+                <div class="column-md-6">
                     <h1>The Bayground</h1>
+                    <p>Click on a project to try it out.</p>
+                    <span>Simple</span><input type="range" min="1" max="10"><span>Complex</span>
                 </div>
             </div>
         </header>
 
         <div class="container container-bayground-projects">
             <div class="row">
-                <div class="column-6">
+                <div class="column-md-6">
                     <div class="container-modules">
-                        <div class="module-item">
-
+                        <div id="modal-btn__project-prime" class="module-item">
+                            <h3 class="module-title">Find Prime Numbers from Range</h3>
+                        </div>
+                        <div id="modal-container__project-prime" class="modal">
+                            <div class="column-lg-6">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h2>Find Prime Numbers Between Two Numbers</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label class="form-label" for="prime__input-first-num">Enter First Number</label>
+                                            <input class="form-input" id="prime__input-first-num" type="number">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="prime__input-second-num">Enter Second Number</label>
+                                            <input class="form-input" id="prime__input-second-num" type="number">
+                                        </div>
+                                        <div>
+                                            <button type="button" id="prime__calc-button">Calculate</button>
+                                        </div>
+                                        <div>
+                                            <p>Result:</p>
+                                            <div class="prime__result-area" id="prime__result-area">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a>What I learned from this project</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="module-item">
 
@@ -65,7 +99,7 @@
 
     <footer class="container container-footer">
         <div class="row">
-            <div class="column-6">
+            <div class="column-md-6">
                 <div class="footer-inner">
                     <div>
                         <a href="https://github.com/zbayoff"><img class="github-logo" src="../../assets/images/github-logo.png"></a></div>
@@ -75,6 +109,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/primeNumbers.js"></script>
+
 
 </body>
 
