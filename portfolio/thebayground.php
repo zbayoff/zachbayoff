@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zach Bayoff | The Bayground</title>
+    <title>Zach Bayoff | Project Description: The Bayground</title>
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
@@ -56,7 +56,7 @@
                 <div class="column-6">
                     <h3>Link to application</h3>
                     <p></p>
-                    <button><a href="roomies/index.php">Launch Application</a></button>
+                    <button><a href="../portfolio/bayground/thebayground.php">Launch Applicationsss</a></button>
                 </div>
             </div>
         </section>
