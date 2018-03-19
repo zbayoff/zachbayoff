@@ -428,8 +428,40 @@ p {
     margin-bottom: 1rem;
 }
 
+/*---------The Bayground---------*/
 
+.container-bayground-header {
+    text-align: center;
+    border: 2px solid black;
+    height: 100%;
+}
 
+.container-bayground-header .row {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-bayground-projects {
+    border: 2px solid black;
+    height: 100%;
+}
+
+.container-bayground-projects .row {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-modules {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 
 

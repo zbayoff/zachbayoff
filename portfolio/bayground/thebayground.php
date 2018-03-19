@@ -9,6 +9,7 @@
     <title>Zach Bayoff | The Bayground</title>
     <link rel="stylesheet" href="../../assets/css/normalize.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
 </head>
 
@@ -21,9 +22,9 @@
             </div>
             <nav>
                 <ul class="nav">
-                    <li class="nav__nav-item"><a class="nav__nav-link" href="../index.php">About</a></li>
-                    <li class="nav__nav-item"><a class="nav__nav-link" href="../portfolio.php">Portfolio</a></li>
-                    <li class="nav__nav-item"><a class="nav__nav-link" href="../contact.php">Contact</a></li>
+                    <li class="nav__nav-item"><a class="nav__nav-link" href="../../index.php">About</a></li>
+                    <li class="nav__nav-item"><a class="nav__nav-link" href="../../portfolio.php">Portfolio</a></li>
+                    <li class="nav__nav-item"><a class="nav__nav-link" href="../../contact.php">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -31,7 +32,7 @@
 
     <main>
 
-        <header class="container">
+        <header class="container container-bayground-header">
             <div class="row">
                 <div class="column-6">
                     <h1>The Bayground</h1>
@@ -39,7 +40,27 @@
             </div>
         </header>
 
-        
+        <div class="container container-bayground-projects">
+            <div class="row">
+                <div class="column-6">
+                    <div class="container-modules">
+                        <div class="module-item">
+
+                        </div>
+                        <div class="module-item">
+
+                        </div>
+                        <div class="module-item">
+
+                        </div>
+                        <div class="module-item">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer class="container container-footer">
