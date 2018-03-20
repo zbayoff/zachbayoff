@@ -76,7 +76,11 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <a>What I learned from this project</a>
+                                        <a class="what-i-learned__link">What I learned from this project</a>
+                                        <ul class="what-i-learned__body">
+                                            <li>HTML input elements with a type 'number' pass their values as strings and must still be converted into type number using <em>parseInt</em></li>
+                                            <li>addEventListener can be passed a second argument as an anonymous function or a function call, but not a function call that passes a value.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

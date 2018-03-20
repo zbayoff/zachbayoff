@@ -6,6 +6,18 @@ var btn = document.getElementById("modal-btn__project-prime");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+var whatILearnedBody = document.getElementsByClassName("what-i-learned__body")[0];
+var whatILearnedLink = document.getElementsByClassName("what-i-learned__link")[0];
+
+whatILearnedLink.onclick = function () {
+    if (whatILearnedBody.style.display == "flex"){
+        whatILearnedBody.style.display = "none";
+    } else {
+        whatILearnedBody.style.display = "flex";
+    }
+    
+}
+
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "flex";
