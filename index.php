@@ -18,9 +18,9 @@
 
     <section class="container container-welcome">
 
-        <header class="header welcome-header-side-md welcome-header-top-md">
+        <header class="welcome-header welcome-header-side-md welcome-header-top-md">
             <div class="logo">
-                <p class="logo__text">ZachBayoff</p>
+                <p class="logo__text"><a href="index.php">ZachBayoff</a></p>
             </div>
             <nav>
                 <ul class="nav">
@@ -34,10 +34,11 @@
         <div class="container-welcome__inner">
             <h1>Hi, I'm Zach.</h1>
             <h2>I'd like to help you build your website.</h2>
-            <p>A little about me...</p>
+        </div>
+        <div class="container-welcome__bottom-text">
+            <h3>A little about me...</h3>
             <p><a class="fa fa-angle-down" href="#about-me-title"></a></p>
         </div>
-
     </section>
 
     <main>

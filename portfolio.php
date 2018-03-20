@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zach Bayoff | Portfolio</title>
+    <title>Zach Bayoff | About</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
 </head>
 
@@ -17,7 +18,7 @@
     <section class="container container-header">
         <header class="header header-top header-top-md">
             <div class="logo">
-                <p class="logo__text">ZachBayoff</p>
+                <p class="logo__text"><a href="index.php">ZachBayoff</a></p>
             </div>
             <nav>
                 <ul class="nav">
@@ -33,7 +34,7 @@
         <section class="container container-projects">
             <div class="row">
                 <div class="column-md-6">
-                    <h2 class="">Projects</h2>
+                    <h2 class="container-projects__heading">Projects</h2>
                     <p>To improve my craft, I continue to build and practice new programming concepts by applying them to real-world projects.</p>
                     <p>Whether for a client, personal use, or good 'ol fun, each proect gives me more insight and experience into the field of web development.</p>
                     <p>Here is a list of my recent projects with links to a more detailed description.</p>

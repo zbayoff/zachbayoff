@@ -18,7 +18,7 @@
     <section class="container">
         <header class="header header-top header-top-md">
             <div class="logo">
-                <p class="logo__text">ZachBayoff</p>
+                <p class="logo__text"><a href="../index.php">ZachBayoff</a></p>
             </div>
             <nav>
                 <ul class="nav">
@@ -32,31 +32,17 @@
 
     <main>
 
-        <header class="container container-project-header">
+        <section class="container container-project-background">
             <div class="row">
                 <div class="column-md-6">
                     <h1>Project Name: The Bayground</h1>
                     <p>Client: Anybody</p>
                     <p>Tags: Web Applications/Javascript</p>
-                </div>
-            </div>
-        </header>
-
-        <section class="container container-project-background">
-            <div class="row">
-                <div class="column-md-6">
-                    <h3>Project Background</h3>
+                    <h2>Project Background</h2>
                     <p>The Bayground is a playground of small, simple to complex applications. They range from finding a set of prime numbers to dealing and finding the winner of a two-hand poker game.</p>
                     <p>This project was created to enhance my skills at using javascript. Namely, creating and using functions in different ways, writing loops, manipulating the DOM, adhering to the ES6 specification.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="container container-project-link">
-            <div class="row">
-                <div class="column-md-6">
-                    <h3>Link to application</h3>
-                    <p></p>
+                    <p>Drop me a <a href="../contact.php">message</a> to know what you think!</p>
+                    <h2>Link to application</h2>
                     <button><a href="../portfolio/bayground/thebayground.php">Launch Application</a></button>
                 </div>
             </div>

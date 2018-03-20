@@ -18,7 +18,7 @@
     <section class="container">
         <header class="header header-top header-top-md">
             <div class="logo">
-                <p class="logo__text">ZachBayoff</p>
+                <p class="logo__text"><a href="../index.php">ZachBayoff</a></p>
             </div>
             <nav>
                 <ul class="nav">
@@ -32,34 +32,22 @@
 
     <main>
 
-        <header class="container container-project-header">
+        <section class="container container-project-background">
             <div class="row">
                 <div class="column-md-6">
                     <h1>Project Name: Roomies: Roommate Management</h1>
                     <p>Client: Anybody</p>
                     <p>Tags: CRUD Application/PHP/AJAX/MySQL</p>
-                </div>
-            </div>
-        </header>
-
-        <section class="container container-project-background">
-            <div class="row">
-                <div class="column-md-6">
-                    <h3>Project Background</h3>
-                    <p>At one point in our lives, most of us have lived with someone else. Maybe a friend, family member, or complete strangers. Living shared spaces can get complicated and sometimes our roommates can get on our nerves. Chores are forgotten, guests overstay their welcome, and household purchases are left unimbursed.</p>
-                    <p>Roomies is an interactive application that lets people create a group for their household, manage chores, schedule visitors, and create a household items list so that purchases can be tracked and roommates can be reimbursed easily. Roomates may join multiple groups, if say, they are in the process of moving and would like to join their new household, but are still living in their current household. Roomates can add their phone numbers to be automatically notified about chore dates, visitor's arrivals, and a household item's bill.</p>
+                    <h2>Project Background</h2>
+                    <p>At one point in our lives, most of us have lived with someone else. Maybe a friend, family member, or complete stranger. Living shared spaces can get complicated and sometimes our roommates can get on our nerves. Chores are forgotten, guests overstay their welcome, and household purchases are left unreimbursed.</p>
+                    <p>Roomies is an interactive application that lets people create a group for their household, manage chores, schedule visitors, and create a household items list so that purchases can be tracked and roommates can be reimbursed easily. Roommates may join multiple groups, if say, they are in the process of moving and would like to join their new household, but are still living in their current household. Roomates can add their phone numbers to be automatically notified about chore dates, visitor's arrivals, and household item's bills.</p>
                     <p>Below are screenshots of sample pages for a household called 'home'.</p>
                     <p>Feel free to launch the application and create a new group or join a group that your roommate has already created.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="container container-project-link">
-            <div class="row">
-                <div class="column-md-6">
-                    <h3>Link to application</h3>
+                    <p>Drop me a <a href="../contact.php">message</a> to know what you think!</p>
+                    <h2>Link to application</h2>
                     <p>This application will ask you to sign/log in.</p>
                     <button><a href="roomies/index.php">Launch Application</a></button>
+
                 </div>
             </div>
         </section>

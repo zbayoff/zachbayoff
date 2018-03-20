@@ -7,7 +7,7 @@
     width: 200px;
     height: 200px;
     border: 2px solid black;
-    margin-bottom: 2rem;
+/*    margin-bottom: 2rem;*/
 }
 
 .module-item:hover {
@@ -58,6 +58,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    
     overflow: auto;
     background-color: #fefefe;
     margin-left: auto;

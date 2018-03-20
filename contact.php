@@ -18,7 +18,7 @@
     <section class="container">
         <header class="header header-top header-top-md">
             <div class="logo">
-                <p class="logo__text">ZachBayoff</p>
+                <p class="logo__text"><a href="index.php">ZachBayoff</a></p>
             </div>
             <nav>
                 <ul class="nav">
@@ -51,8 +51,8 @@
                             <label class="form-label">Message</label>
                             <textarea class="form-text-area"></textarea>
                         </div>
-                        <div>
-                            <button type="submit">Send</button>
+                        <div class="form-group">
+                            <button id="contact-send-btn" type="submit">Send</button>
                         </div>
                     </form>
                 </div>
