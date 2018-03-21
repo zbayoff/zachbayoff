@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zach Bayoff | About</title>
+    <title>Zach Bayoff | Web Developer | Portfolio</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    
     <section class="container container-header">
         <header class="header header-top header-top-md">
             <div class="logo">
@@ -46,29 +47,19 @@
             <div class="row">
                 <div class="column-md-6">
                     <div class="container-project-desc__project-item">
-                        <img class="container-project-desc__project-img" src="assets/images/project-desc-roomies.png">
-                        <button class="container-project-desc__project-btn"><a class="container-project-desc__project-link" href="portfolio/roomies.php">See Project</a></button>
+                        <a class="container-project-desc__project-link" href="portfolio/roomies.php"><img class="container-project-desc__project-img" src="portfolio/roomies/assets/img/screenshots/dashboard-page.png"><h4 class="container-project-desc__project-title">Roomies: Web Application</h4></a>
                     </div>
                     <div class="container-project-desc__project-item">
                         <img class="container-project-desc__project-img" src="">
-                        <button class="container-project-desc__project-btn"><a class="container-project-desc__project-link" href="portfolio/thebayground.php">See Project</a></button>
+                        <p class="container-project-desc__project-btn"><a class="container-project-desc__project-link" href="portfolio/thebayground.php">See Project</a></p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="container container-footer">
-        <div class="row">
-            <div class="column-md-6">
-                <div class="footer-inner">
-                    <div>
-                        <a href="https://github.com/zbayoff"><img class="github-logo" src="assets/images/github-logo.png"></a></div>
-                    <p class="footer-copyright">2018 &copy; zachbayoff.com</p>
-                    <div><a href="https://www.linkedin.com/in/zachary-bayoff-6281a1a2"><img class="linkedin-logo" src="assets/images/linkedin-logo.png"></a></div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    
+    <?php include 'assets/partials/footer.php' ?>
+    
 </body>
 
 </html>

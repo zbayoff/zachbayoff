@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zach Bayoff | Contact</title>
+    <title>Zach Bayoff | Web Developer | Contact</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
@@ -35,7 +35,7 @@
         <section class="container container-contact-form">
             <div class="row">
                 <div class="column-md-6">
-                    <h1>Contact</h1>
+                    <h2 class="container-contact-form__heading">Contact</h2>
                     <p>Send me a message with details about your project.</p>
                     <p>I'll get back to you ASAP.</p>
                     <form class="contact-form">
@@ -61,18 +61,7 @@
 
     </main>
 
-    <footer class="container container-footer">
-        <div class="row">
-            <div class="column-md-6">
-                <div class="footer-inner">
-                    <div>
-                        <a href="https://github.com/zbayoff"><img class="github-logo" src="assets/images/github-logo.png"></a></div>
-                    <p class="footer-copyright">2018 &copy; zachbayoff.com</p>
-                    <div><a href="https://www.linkedin.com/in/zachary-bayoff-6281a1a2"><img class="linkedin-logo" src="assets/images/linkedin-logo.png"></a></div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include 'assets/partials/footer.php' ?>
 
 </body>
 

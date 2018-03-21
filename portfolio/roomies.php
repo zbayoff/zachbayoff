@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zach Bayoff | Project Description: Roomies</title>
+    <title>Zach Bayoff | Web Developer | Project Description: Roomies</title>
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
@@ -55,35 +55,35 @@
         <section class="container container-project-screenshot">
             <div class="row">
                 <div class="column-lg-10">
-                    <h3>Sign Up</h3>
+                    <h3 class="container-project-screenshot__page-title">Sign Up</h3>
                     <div class="container-project-screenshot__project-item">
                         <img src="roomies/assets/img/screenshots/signup-page.png" class="container-project-screenshot__project-img">
                     </div>
-                    <h3>Login</h3>
+                    <h3 class="container-project-screenshot__page-title">Login</h3>
                     <div class="container-project-screenshot__project-item">
                         <img src="roomies/assets/img/screenshots/login-page.png" class="container-project-screenshot__project-img">
                     </div>
-                    <h3>Groups</h3>
+                    <h3 class="container-project-screenshot__page-title">Groups</h3>
                     <div class="container-project-screenshot__project-item">
                         <img src="roomies/assets/img/screenshots/groups-page.png" class="container-project-screenshot__project-img">
                     </div>
-                    <h3>Dashboard</h3>
+                    <h3 class="container-project-screenshot__page-title">Dashboard</h3>
                     <div class="container-project-screenshot__project-item">
                         <img src="roomies/assets/img/screenshots/dashboard-page.png" class="container-project-screenshot__project-img">
                     </div>
-                    <h3>Chores</h3>
+                    <h3 class="container-project-screenshot__page-title">Chores</h3>
                     <div class="container-project-screenshot__project-item">
                         <img src="roomies/assets/img/screenshots/chores-page.png" class="container-project-screenshot__project-img">
                     </div>
-                    <h3>Items</h3>
+                    <h3 class="container-project-screenshot__page-title">Items</h3>
                     <div class="container-project-screenshot__project-item">
                         <img src="roomies/assets/img/screenshots/items-page.png" class="container-project-screenshot__project-img">
                     </div>
-                    <h3>Visitors</h3>
+                    <h3 class="container-project-screenshot__page-title">Visitors</h3>
                     <div class="container-project-screenshot__project-item">
                         <img src="roomies/assets/img/screenshots/visitors-page.png" class="container-project-screenshot__project-img">
                     </div>
-                    <h3>Preferences</h3>
+                    <h3 class="container-project-screenshot__page-title">Preferences</h3>
                     <div class="container-project-screenshot__project-item">
                         <img src="roomies/assets/img/screenshots/preferences-page.png" class="container-project-screenshot__project-img">
                     </div>
@@ -93,18 +93,7 @@
 
     </main>
 
-    <footer class="container container-footer">
-        <div class="row">
-            <div class="column-md-6">
-                <div class="footer-inner">
-                    <div>
-                        <a href="https://github.com/zbayoff"><img class="github-logo" src="../assets/images/github-logo.png"></a></div>
-                    <p class="footer-copyright">2018 &copy; zachbayoff.com</p>
-                    <div><a href="https://www.linkedin.com/in/zachary-bayoff-6281a1a2"><img class="linkedin-logo" src="../assets/images/linkedin-logo.png"></a></div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include '../assets/partials/footer.php' ?>
 
 </body>
 

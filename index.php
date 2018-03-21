@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zach Bayoff | About</title>
+    <title>Zach Bayoff | Web Developer | About</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
@@ -17,7 +17,7 @@
 <body>
 
     <section class="container container-welcome">
-
+        
         <header class="welcome-header welcome-header-side-md welcome-header-top-md">
             <div class="logo">
                 <p class="logo__text"><a href="index.php">ZachBayoff</a></p>
@@ -92,26 +92,15 @@
 
         <section class="container container-end-about">
             <div class="row">
-                <div class="column-md-6">
-                    <h3>See some of my <a href="portfolio.php">projects</a> or feel free to <a href="contact.php">contact me.</a></h3>
+                <div class="">
+                    <p>See some of my <a href="portfolio.php">projects</a> or feel free to <a href="contact.php">contact me.</a></p>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="container container-footer">
-        <div class="row">
-            <div class="column-md-6">
-                <div class="footer-inner">
-                    <div>
-                        <a href="https://github.com/zbayoff"><img class="github-logo" src="assets/images/github-logo.png"></a></div>
-                    <p class="footer-copyright">2018 &copy; zachbayoff.com</p>
-                    <div><a href="https://www.linkedin.com/in/zachary-bayoff-6281a1a2"><img class="linkedin-logo" src="assets/images/linkedin-logo.png"></a></div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include 'assets/partials/footer.php' ?>
 
 </body>
 
