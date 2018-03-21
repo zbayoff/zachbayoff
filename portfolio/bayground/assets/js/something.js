@@ -12,7 +12,7 @@ function reverseNumber(num) {
     return Number(reverseNum.join(""));
 }
 
-console.log(reverseNumber(75647));
+//console.log(reverseNumber(75647));
 
 
 
@@ -21,8 +21,6 @@ function isPalindrone(word) {
     let reversedWord = "";
     reversedWord = word.split(" ").join("");
     reversedWord = reversedWord.split("").reverse().join("").toLowerCase().replace(/[^a-zA-Z0-9]+/g, "");
-    console.log(compactedWord);
-    console.log(reversedWord);
     if (compactedWord === reversedWord) {
         return true;
     } else {
@@ -30,45 +28,85 @@ function isPalindrone(word) {
     }
 }
 
-console.log(isPalindrone("0_0 (: /-\ :) 0–0"));
+//console.log(isPalindrone("dogg"));
 
 
-function stringToCombo (string) {
-  
-  let comboString = [];
-  let comboStringToAscii = [];
-  let stringCounterTotal = 0;
+let vehicles = [{
+    "type": "truck",
+    "color": "red",
+    "doors": 4,
+    "cost": 12000
+}, {
+    "type": "truck",
+    "color": "blue",
+    "doors": 2,
+    "cost": 6000
+}, {
+    "type": "car",
+    "color": "purple",
+    "doors": 3,
+    "cost": 18000
+}, {
+    "type": "car",
+    "color": "yellow",
+    "doors": 1,
+    "cost": 3000
+}, {
+    "type": "truck",
+    "color": "red",
+    "doors": 4,
+    "cost": 36000
+}];
 
-  
-  for (let i = 0; i <= string.length - 1; i++) {
-    let stringCounter = 0;
-    let currentChar = string[i];
-    let testChar = currentChar;
-    
-    
-    for (let j = 0; j <= string.length - 1; j++) {
-      // console.log("String counter: " + stringCounter);
-      if (stringCounter >= 1 && stringCounter != i) {
-        testChar += string[j];
-      }
-      let testCharCode = 0;
-      for (let k = 0; k < testChar.length; k++) {
-        testCharCode += testChar.charCodeAt(k);
-      }
-      comboStringToAscii[stringCounterTotal] = testCharCode;
-      console.log(comboStringToAscii);
-      console.log("split");
-      console.log(testChar);
-      
-      if (comboString.indexOf(testChar) == -1) {
-        // console.log("not in array");
-        comboString.push(testChar);
-      }
-      stringCounter++;
-      stringCounterTotal++;
-    }
-    
-  }
-  return comboString;
-}
-console.log(stringToCombo("doog"))
+let trucks = vehicles.filter(x => x.type !== "truck");
+
+//console.log(trucks);
+
+
+const inventors = [
+{ first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
+{ first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
+{ first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
+{ first: 'Marie', last: 'Curie', year: 1867, passed: 1934 },
+{ first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
+{ first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 },
+{ first: 'Max', last: 'Planck', year: 1858, passed: 1947 },
+];
+
+const inventorsBefore1500 = inventors.filter(x => x.year < 1600 && x.year > 1499);
+
+console.log(inventorsBefore1500);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
