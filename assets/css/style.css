@@ -673,7 +673,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container-project-desc__project-title:hover {
 /*    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .5), rgba(0, 0, 0, .25));*/
-    animation: circle .5s;
+    animation: circle 1s ease-in-out;
     animation-fill-mode:forwards;
 }
 
@@ -682,7 +682,6 @@ h1, h2, h3, h4, h5, h6 {
         opacity: 1;
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .75), rgba(0, 0, 0, .5));
     }
-   
     100% {
         opacity: 0;
         background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
