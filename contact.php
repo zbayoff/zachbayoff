@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
 </head>
 
-<body>
+<body id="contact">
 
     <section class="container">
         <header class="header header-top header-top-md">
@@ -36,20 +36,24 @@
             <div class="row">
                 <div class="column-md-6">
                     <h2 class="container-contact-form__heading">Contact</h2>
-                    <p>Send me a message with details about your project.</p>
+                    <p>Send me a message with details about your project, </p>
+                    <p>or email me at <a href="#">zrbayoffdev@gmail.com</a></p>
                     <p>I'll get back to you ASAP.</p>
-                    <form class="contact-form">
+                    <form method="post" class="contact-form" id="contact-form" action="">
                         <div class="form-group">
-                            <label class="form-label">Name</label>
-                            <input class="form-input" type="text">
+                            <label class="form-label" for="name">Name<sup>*</sup></label>
+                            <input class="form-input" id="name" type="text" name="name" required >
                         </div>
                         <div class="form-group">
-                            <label class="form-label">Email</label>
-                            <input class="form-input" type="email">
+                            <label class="form-label" for="email">Email<sup>*</sup></label>
+                            <input class="form-input" id="email" type="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label class="form-label">Message</label>
-                            <textarea class="form-text-area"></textarea>
+                            <label class="form-label" for="message">Message<sup>*</sup></label>
+                            <textarea class="form-text-area" id="message" name="message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <p class="contact-required-msg"><sup>*</sup>Required.</p>
                         </div>
                         <div class="form-group">
                             <button id="contact-send-btn" type="submit">Send</button>
@@ -62,6 +66,9 @@
     </main>
 
     <?php include 'assets/partials/footer.php' ?>
+    
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/contact.js"></script>
 
 </body>
 

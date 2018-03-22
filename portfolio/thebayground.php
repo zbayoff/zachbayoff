@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
 </head>
 
-<body>
+<body id="portfolio-bayground">
 
     <section class="container">
         <header class="header header-top header-top-md">
@@ -39,11 +39,11 @@
                     <p>Client: Anybody</p>
                     <p>Tags: Web Applications/Javascript</p>
                     <h2>Project Background</h2>
-                    <p>The Bayground is a playground of small, simple to complex applications. They range from finding a set of prime numbers to dealing and finding the winner of a two-hand poker game.</p>
-                    <p>This project was created to enhance my skills at using javascript. Namely, creating and using functions in different ways, writing loops, manipulating the DOM, adhering to the ES6 specification.</p>
+                    <p>The Bayground is a collection of small, simple to complex applications. They range from finding a set of prime numbers to finding the winner of a two-hand poker game.</p>
+                    <p>This project was created to enhance javascript and programming skills. Namely, creating and using functions in different ways, writing loops, manipulating the DOM, adhering to ECMAScript 6 specifications, and much more.</p>
                     <p>Drop me a <a href="../contact.php">message</a> to know what you think!</p>
                     <h2>Link to application</h2>
-                    <button><a href="../portfolio/bayground/thebayground.php">Launch Application</a></button>
+                    <button class="container-project-background__project-btn"><a class ="container-project-background__project-link" href="bayground/thebayground.php">Launch Application</a></button>
                 </div>
             </div>
         </section>
@@ -53,7 +53,7 @@
                 <div class="column-lg-10">
                     <h3>Prime Number Module</h3>
                     <div class="container-project-screenshot__project-item">
-                        <img src="" class="container-project-screenshot__project-img">
+                        <img src="bayground/assets/img/screenshots/thebayground-prime-number-module.png" class="container-project-screenshot__project-img">
                     </div>
                 </div>
             </div>
@@ -62,6 +62,8 @@
     </main>
 
     <?php include '../assets/partials/footer.php' ?>
+    
+    <script src="../assets/js/scripts.js"></script>
 
 </body>
 

@@ -14,10 +14,10 @@
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
 </head>
 
-<body>
+<body id="about">
 
     <section class="container container-welcome">
-        
+
         <header class="welcome-header welcome-header-side-md welcome-header-top-md">
             <div class="logo">
                 <p class="logo__text"><a href="index.php">ZachBayoff</a></p>
@@ -68,22 +68,62 @@
                     <p>My web dev skills include:</p>
                     <div class="container-skills-list">
                         <ul class="skills-list">
-                            <li class="skills-list__item">HTML5<img class="skills-list__img" src="assets/images/html-logo.png"></li>
-                            <li class="skills-list__item">CSS3<img class="skills-list__img" src="assets/images/css3-logo.png"></li>
-                            <li class="skills-list__item">Javascript<img class="skills-list__img" src="assets/images/js-logo.png"></li>
-                            <li class="skills-list__item">PHP<img class="skills-list__img" src="assets/images/php-logo.png"></li>
-                            <li class="skills-list__item">MySQL<img class="skills-list__img" src="assets/images/mysql-logo.png"></li>
-                            <li class="skills-list__item">WordPress<img class="skills-list__img" src="assets/images/wordpress-logo.png"></li>
-                            <li class="skills-list__item">jQuery<img class="skills-list__img" src="assets/images/jquery-logo.png"></li>
-                            <li class="skills-list__item">Bootstrap4<img class="skills-list__img" src="assets/images/bootstrap-logo.png"></li>
+                            <div class="skills-list__group">
+                                <p class="skills-list__desc">Web Markup &amp; Styling</p>
+                                <div class="skills-list__group-item">
+                                    <li class="skills-list__item">HTML5<img class="skills-list__img" src="assets/images/html-logo.png"></li>
+                                    <li class="skills-list__item">CSS3<img class="skills-list__img" src="assets/images/css3-logo.png"></li>
+                                </div>
+                            </div>
+                            <div class="skills-list__group">
+                                <p class="skills-list__desc">Client-Side Scripting</p>
+                                <div class="skills-list__group-item">
+                                    <li class="skills-list__item">Javascript<img class="skills-list__img" src="assets/images/js-logo.png"></li>
+                                </div>
+                            </div>
+                            <div class="skills-list__group">
+                                <p class="skills-list__desc">Server-Side Scripting</p>
+                                <div class="skills-list__group-item">
+                                    <li class="skills-list__item">PHP<img class="skills-list__img" src="assets/images/php-logo.png"></li>
+                                </div>
+                            </div>
+                            <div class="skills-list__group">
+                                <p class="skills-list__desc">Databases</p>
+                                <div class="skills-list__group-item">
+                                    <li class="skills-list__item">MySQL<img class="skills-list__img" src="assets/images/mysql-logo.png"></li>
+                                </div>
+                            </div>
+                            <div class="skills-list__group">
+                                <p class="skills-list__desc">Content Management Systems</p>
+                                <div class="skills-list__group-item">
+                                    <li class="skills-list__item">WordPress<img class="skills-list__img" src="assets/images/wordpress-logo.png"></li>
+                                </div>
+                            </div>
+                            <div class="skills-list__group">
+                                <p class="skills-list__desc">Libraries &amp; Frameworks</p>
+                                <div class="skills-list__group-item">
+                                    <li class="skills-list__item">jQuery<img class="skills-list__img" src="assets/images/jquery-logo.png"></li>
+                                    <li class="skills-list__item">Bootstrap4<img class="skills-list__img" src="assets/images/bootstrap-logo.png"></li>
+                                </div>
+                            </div>
                         </ul>
                     </div>
                     <p>My non-web dev skills include:</p>
                     <div class="container-skills-list">
                         <ul class="skills-list">
-                            <li>AutoCAD</li>
-                            <li>Rhino5</li>
-                            <li>Solidworks</li>
+                            <div class="skills-list__group">
+                                <p class="skills-list__desc">2D Drafting</p>
+                                <div class="skills-list__group-item">
+                                    <li class="skills-list__item">AutoCAD<img class="skills-list__img" src="assets/images/autocad-logo.png"></li>
+                                </div>
+                            </div>
+                            <div class="skills-list__group">
+                                <p class="skills-list__desc">3D Modeling</p>
+                                <div class="skills-list__group-item">
+                                    <li class="skills-list__item">Rhino5<img class="skills-list__img" src="assets/images/rhino3d-logo.png"></li>
+                                    <li class="skills-list__item">Solidworks<img class="skills-list__img" src="assets/images/solidworks-logo.png"></li>
+                                </div>
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -93,7 +133,7 @@
         <section class="container container-end-about">
             <div class="row">
                 <div class="">
-                    <p>See some of my <a href="portfolio.php">projects</a> or feel free to <a href="contact.php">contact me.</a></p>
+                    <p>See some of my <a href="portfolio.php">projects</a> or feel free to <a href="contact.php">contact me</a>.</p>
                 </div>
             </div>
         </section>
@@ -101,6 +141,8 @@
     </main>
 
     <?php include 'assets/partials/footer.php' ?>
+
+    <script src="assets/js/scripts.js"></script>
 
 </body>
 

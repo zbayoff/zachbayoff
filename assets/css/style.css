@@ -31,7 +31,16 @@ textarea {
     /*    font-family: 'Alef', sans-serif;*/
 }
 
-h1, h2, h3, h4, h5, h6 {
+a {
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
     letter-spacing: .5px;
 }
@@ -155,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 ::-webkit-scrollbar {
-    width: 12px;
+    /*    width: 12px;*/
 }
 
 ::-webkit-scrollbar-track {
@@ -192,6 +201,10 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
     font-size: 1.25rem;
     padding: 1rem;
+}
+
+.nav__nav-link:hover {
+    text-decoration: underline;
 }
 
 /*---------Header-Side---------*/
@@ -246,7 +259,6 @@ h1, h2, h3, h4, h5, h6 {
     background: #90DDF0;
     margin-left: -1rem;
     margin-right: -1rem;
-    border-bottom: 3px solid black;
 }
 
 @media only screen and (min-width: 992px) {
@@ -407,7 +419,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     /*    background-color: aquamarine;*/
     background: #90DDF0;
-    border-bottom: 3px solid black;
     /* fallback for old browsers */
     /*    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);*/
     /* Chrome 10-25, Safari 5.1-6 */
@@ -434,8 +445,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-welcome__inner h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin: 1rem 0 1rem 0;
+}
+
+@media only screen and (max-width: 576px) {
+    .container-welcome__inner h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container-welcome__inner h2 {
+        font-size: 1rem;
+    }
 }
 
 .container-welcome__bottom-text {
@@ -452,7 +475,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-welcome__bottom-text h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin: 1rem 0 1rem 0;
 }
 
@@ -555,6 +578,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .skills-list {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
@@ -562,9 +586,34 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+.skills-list__group {
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-list__desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.skills-list__group-item {
+    display: flex;
+}
+
+
 .skills-list__item {
+    font-size: 1.1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 1rem;
 }
 
@@ -672,9 +721,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-project-desc__project-title:hover {
-/*    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .5), rgba(0, 0, 0, .25));*/
+    /*    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .5), rgba(0, 0, 0, .25));*/
     animation: circle 1s ease-in-out;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
 }
 
 @keyframes circle {
@@ -707,20 +756,18 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 4px 10px 8px;
 }
 
-.container-project-link {
-    height: 100%;
+.container-project-background__project-btn {
+    padding: 0.5rem 1rem;
+    background-color: #59CD90;
+    border-color: #59CD90;
 }
 
-.container-project-link .row {
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background-color: white;
-    box-shadow: 4px 10px 8px;
+.container-project-background__project-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
 }
+
 
 .container-project-screenshot {
     height: 100%;
@@ -745,7 +792,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-bottom: 2rem;
     overflow: auto;
-    padding-bottom: 50%;
+    padding-bottom: 56.25%;
     border: 20px solid black;
     border-radius: 30px;
     position: relative;
@@ -800,28 +847,24 @@ h1, h2, h3, h4, h5, h6 {
     border-color: #59CD90;
 }
 
+.contact-required-msg {
+    margin: 0;
+    font-size: 1rem;
+}
+
 /*---------The Bayground---------*/
-
-.container-bayground-header {
-    text-align: center;
-    /*    border: 2px solid black;*/
-    height: 100%;
-}
-
-.container-bayground-header .row {
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background-color: white;
-    box-shadow: 4px 10px 8px;
-}
 
 .container-bayground-projects {
     /*    border: 2px solid black;*/
     height: 100%;
+}
+
+.container-bayground-projects__header {
+    text-align: center;
+}
+
+.container-bayground-projects__info {
+    text-align: center;
 }
 
 .container-bayground-projects .row {
@@ -847,12 +890,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /*---------Footer---------*/
 
-.container-footer {
-    
-}
+.container-footer {}
 
 .container-footer .row {
-    height: 100px;
+    height: 150px;
     flex-direction: row;
     justify-content: center;
     align-content: center;
@@ -861,11 +902,9 @@ h1, h2, h3, h4, h5, h6 {
     background: #90DDF0;
     margin-left: -1rem;
     margin-right: -1rem;
-    border-top: 3px solid black;
 }
 
 .footer-inner {
-    
     display: flex;
     justify-content: center;
     align-content: center;

@@ -14,12 +14,12 @@
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
 </head>
 
-<body>
+<body id="portfolio-bayground">
     <section class="page">
         <section class="container">
             <header class="header header-top header-top-md">
                 <div class="logo">
-                    <p class="logo__text">ZachBayoff</p>
+                    <p class="logo__text"><a href="index.php">ZachBayoff</a></p>
                 </div>
                 <nav>
                     <ul class="nav">
@@ -33,19 +33,12 @@
 
         <main>
 
-            <header class="container container-bayground-header">
-                <div class="row">
-                    <div class="column-md-6">
-                        <h1>The Bayground</h1>
-                        <p>Click on a project to try it out.</p>
-                        <span>Simple</span><input type="range" min="1" max="10"><span>Complex</span>
-                    </div>
-                </div>
-            </header>
-
             <div class="container container-bayground-projects">
                 <div class="row">
                     <div class="column-md-6">
+                        <h1 class="container-bayground-projects__header">The Bayground</h1>
+                        <p class="container-bayground-projects__info">Click on a project to try it out.</p>
+                          <!--                      <span>Simple</span><input type="range" min="1" max="10"><span>Complex</span>-->
                         <div class="container-modules">
                             <div id="modal-btn__project-prime" class="module-item">
                                 <h3 class="module-title">Find Prime Numbers from Range</h3>
@@ -86,13 +79,31 @@
                                 </div>
                             </div>
                             <div class="module-item">
-
+                                <h3 class="module-title">Coming Soon</h3>
                             </div>
                             <div class="module-item">
-
+                                <h3 class="module-title">Coming Soon</h3>
                             </div>
                             <div class="module-item">
-
+                                <h3 class="module-title">Coming Soon</h3>
+                            </div>
+                            <div class="module-item">
+                                <h3 class="module-title">Coming Soon</h3>
+                            </div>
+                            <div class="module-item">
+                                <h3 class="module-title">Coming Soon</h3>
+                            </div>
+                            <div class="module-item">
+                                <h3 class="module-title">Coming Soon</h3>
+                            </div>
+                            <div class="module-item">
+                                <h3 class="module-title">Coming Soon</h3>
+                            </div>
+                            <div class="module-item">
+                                <h3 class="module-title">Coming Soon</h3>
+                            </div>
+                            <div class="module-item">
+                                <h3 class="module-title">Coming Soon</h3>
                             </div>
                         </div>
                     </div>
@@ -106,6 +117,7 @@
     </section>
     <script src="assets/js/modal.js"></script>
     <script src="assets/js/primeNumbers.js"></script>
+    <script src="../../assets/js/scripts.js"></script>
 
 
 </body>

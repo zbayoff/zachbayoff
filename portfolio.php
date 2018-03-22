@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
 </head>
 
-<body>
+<body id="portfolio">
     
     <section class="container container-header">
         <header class="header header-top header-top-md">
@@ -36,7 +36,7 @@
             <div class="row">
                 <div class="column-md-6">
                     <h2 class="container-projects__heading">Projects</h2>
-                    <p>To improve my craft, I continue to build and practice new programming concepts by applying them to real-world projects.</p>
+                    <p>To improve my craft, I continue to learn and practice new programming concepts by applying them to real-world projects.</p>
                     <p>Whether for a client, personal use, or good 'ol fun, each proect gives me more insight and experience into the field of web development.</p>
                     <p>Here is a list of my recent projects with links to a more detailed description.</p>
                 </div>
@@ -50,8 +50,7 @@
                         <a class="container-project-desc__project-link" href="portfolio/roomies.php"><img class="container-project-desc__project-img" src="portfolio/roomies/assets/img/screenshots/dashboard-page.png"><h4 class="container-project-desc__project-title">Roomies: Web Application</h4></a>
                     </div>
                     <div class="container-project-desc__project-item">
-                        <img class="container-project-desc__project-img" src="">
-                        <p class="container-project-desc__project-btn"><a class="container-project-desc__project-link" href="portfolio/thebayground.php">See Project</a></p>
+                        <a class="container-project-desc__project-link" href="portfolio/thebayground.php"><img class="container-project-desc__project-img" src="portfolio/bayground/assets/img/screenshots/thebayground-screenshot.png"><h4 class="container-project-desc__project-title">The Bayground: Web Application</h4></a>
                     </div>
                 </div>
             </div>
@@ -59,6 +58,8 @@
     </main>
     
     <?php include 'assets/partials/footer.php' ?>
+    
+    <script src="assets/js/scripts.js"></script>
     
 </body>
 
