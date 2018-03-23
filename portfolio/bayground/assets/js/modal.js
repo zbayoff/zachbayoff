@@ -1,32 +1,30 @@
-var modal = document.getElementById('modal-container__project-prime');
+const modalItems = document.querySelectorAll(".module-item");
+const closeSpans = document.querySelectorAll(".close");
+const whatILearnedBody = document.querySelectorAll(".what-i-learned__body");
+const whatILearnedLink = document.querySelectorAll(".what-i-learned__link");
+// add click event listener to all modal items, and whichever is clocked will open THAT modal. 
 
-// Get the button that opens the modal
-var btn = document.getElementById("modal-btn__project-prime");
+modalItems.forEach(function (elem) {
+    elem.addEventListener("click", (Event) => {
+        elem.nextElementSibling.style.display = "flex";
+    });
+});
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+closeSpans.forEach(function (elem) {
+    elem.addEventListener("click", (Event) => {
+        elem.parentElement.parentElement.parentElement.parentElement.style.display = "none";
+    });
+});
 
-var whatILearnedBody = document.getElementsByClassName("what-i-learned__body")[0];
-var whatILearnedLink = document.getElementsByClassName("what-i-learned__link")[0];
-
-whatILearnedLink.onclick = function () {
-    if (whatILearnedBody.style.display == "flex"){
-        whatILearnedBody.style.display = "none";
-    } else {
-        whatILearnedBody.style.display = "flex";
-    }
-    
-}
-
-// When the user clicks on the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "flex";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+whatILearnedLink.forEach(function (elem) {
+    elem.addEventListener("click", (Event) => {
+        if (getComputedStyle(elem.nextElementSibling).display == "flex") {
+            elem.nextElementSibling.style.display = "none";
+        } else {
+            elem.nextElementSibling.style.display = "flex";
+        }
+    });
+});
 
 // When the user clicks anywhere outside of the modal, close it
 /*window.onclick = function(event) {

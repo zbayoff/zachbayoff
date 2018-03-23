@@ -47,7 +47,7 @@
                                 <div class="column-lg-6">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <span class="close">&times;</span>
+                                            <span id="project-prime__span-close" class="close">&times;</span>
                                             <h2>Find Prime Numbers Between Two Numbers</h2>
                                         </div>
                                         <div class="modal-body">
@@ -79,7 +79,37 @@
                                 </div>
                             </div>
                             <div class="module-item">
-                                <h3 class="module-title">Coming Soon</h3>
+                                <h3 class="module-title">Speed Typing Test</h3>
+                            </div>
+                            <div id="modal-container__project-speedType" class="modal">
+                                <div class="column-lg-6">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <span id="project-speedTest__span-close" class="close">&times;</span>
+                                            <h2>Speed Typing Test</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Here you are given a prompt and must type it correctly in the text box below. Once typed correctly, your results will display below.</p>
+                                            <p>Prompt:</p>
+                                            <p>"I will not interrupt the teacher during class."</p>
+                                            <div class="form-group">
+                                                <textarea id="project-speedType__textarea" class="form-text-area"></textarea>
+                                            </div>
+                                            <p id="project-speedType__timer">00:00:00</p>
+                                            <div id="project-speedType__results"><p id="project-speedType__result-WPM"></p>
+                                            <p id="project-speedType__result-blurb"></p>
+                                             <p>Try again to improve your speed or get a different prompt!</p></div>
+                                            <button id="project-speedType__tryagain-btn" type="button">Try Again</button>
+                                            <button id="project-speedType__diffprompt-btn" type="button">Different Prompt</button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a class="what-i-learned__link">What I learned from this project</a>
+                                            <ul class="what-i-learned__body">
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="module-item">
                                 <h3 class="module-title">Coming Soon</h3>
@@ -117,6 +147,7 @@
     </section>
     <script src="assets/js/modal.js"></script>
     <script src="assets/js/primeNumbers.js"></script>
+    <script src="assets/js/speedTyping.js"></script>
     <script src="../../assets/js/scripts.js"></script>
 
 

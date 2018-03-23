@@ -65,29 +65,22 @@ function findPrimes(num1, num2) {
     return "<p>" + primes.join(", ") + "</p>";
 }
 
-//console.log(findPrimes(1, 123354));
-
 let primeFirstInput = document.getElementById("prime__input-first-num");
 let primeSecondInput = document.getElementById("prime__input-second-num");
 let primeResult = document.getElementById("prime__result-area");
 let primeCalcBtn = document.getElementById("prime__calc-button");
 
-//console.log(primeFirstInput.value);
-
 // cannot pass a function call with arguments to the event listener method. Must pass either anonymous function or function call with no arguments.
 primeCalcBtn.addEventListener("click", function () {
-    //    primeFirstInput.value = "";
-    //    primeSecondInput.value = "";
-    //    primeResult.innerHTML = "";
-
+    
     // use parseInt to convert string value from input type number into type number
     primeResult.innerHTML = findPrimes(parseInt(primeFirstInput.value), parseInt(primeSecondInput.value));
 }, false);
 
-
-
-
-
-
-
-
+// Reset module on span click close
+let primeSpanClose = document.getElementById("project-prime__span-close");
+primeSpanClose.addEventListener("click", function () {
+    primeFirstInput.value = "";
+    primeSecondInput.value = "";
+    primeResult.innerHTML = "";
+})
