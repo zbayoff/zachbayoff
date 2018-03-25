@@ -55,6 +55,10 @@
                     <div class="container-project-screenshot__project-item">
                         <img src="bayground/assets/img/screenshots/thebayground-prime-number-module.png" class="container-project-screenshot__project-img">
                     </div>
+                    <h3>Speed Typing Test Module</h3>
+                    <div class="container-project-screenshot__project-item">
+                        <img src="bayground/assets/img/screenshots/thebayground-speed-test-module.png" class="container-project-screenshot__project-img">
+                    </div>
                 </div>
             </div>
         </section>

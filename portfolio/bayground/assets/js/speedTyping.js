@@ -11,19 +11,21 @@
     Function checkString is then called on every keypress to check if string matches. 
     Once string matches, the stop timer function will be called. 
 
-
-
-
 */
 
-
-
+let timerInterval;
+let elapsed = 0;
+let timerFired = false;
 let typingArea = document.getElementById("project-speedType__textarea");
 let tryAgainBtn = document.getElementById("project-speedType__tryagain-btn");
 let diffPromptBtn = document.getElementById("project-speedType__diffprompt-btn");
+let speedtestSpanClose = document.getElementById("project-speedTest__span-close");
+let timerPara = document.getElementById("project-speedType__timer");
 
-let timerFired = false;
+// Read in text file of prompts.
+readTextFile("http://localhost/portfolio/bayground/assets/text/speedTestPrompts.txt");
 
+// Event listeners
 typingArea.addEventListener("keyup", function () {
     if (timerFired === false) {
         startTimer();
@@ -39,41 +41,59 @@ tryAgainBtn.addEventListener("click", function () {
 diffPromptBtn.addEventListener("click", function () {
     resetTimer();
     clearFields();
-    loadNewPrompt();
+    readTextFile("http://localhost/portfolio/bayground/assets/text/speedTestPrompts.txt");
+    //    loadNewPrompt();
 
 });
 
-let correctString = "You made my day.";
+speedtestSpanClose.addEventListener("click", function () {
+    clearFields();
+});
+
+// Function definitions
+function readTextFile(file) {
+    let rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function () {
+        if (rawFile.readyState === 4) {
+            if (rawFile.status === 200 || rawFile.status == 0) {
+                var rawText = rawFile.responseText;
+                displayPrompt(rawText);
+            }
+        }
+    };
+    rawFile.send(null);
+}
+
+function displayPrompt(promptText) {
+    let promptArray = promptText.split("\n");
+    let promptPara = document.getElementById("project-speedTest__prompt");
+    let randPrompt = promptArray[Math.floor(Math.random() * promptArray.length)];
+    promptPara.innerHTML = randPrompt;
+}
 
 function checkString() {
+    let promptPara = document.getElementById("project-speedTest__prompt");
 
-    if (typingArea.value === correctString) {
+    if (typingArea.value === promptPara.innerText) {
         stopTimer();
     }
 }
 
-
-let timerInterval;
-let timerPara = document.getElementById("project-speedType__timer");
-let elapsed = 0;
-
-
-
 function startTimer() {
     timerFired = true;
-    console.log("timer started");
     let start = new Date().getTime();
-    console.log("start is: " + start);
     timerInterval = setInterval(function () {
-        
+
         let timer = new Date().getTime() - start;
         let totalSecs = Math.floor((timer / 100) / 10);
         let hundredthsSecs = Math.floor((timer / 10)) % 100;
 
         let secs = totalSecs % 60;
         let mins = Math.floor(totalSecs / 60);
-        
-        function pad (time) {
+
+        // add leading zero
+        function pad(time) {
             let timeString = time + "";
             if (timeString.length < 2) {
                 return "0" + timeString;
@@ -81,42 +101,51 @@ function startTimer() {
                 return timeString;
             }
         }
-       
+
         elapsed = totalSecs;
-//        console.log(mins);
-        /*if (Math.round(elapsed) == elapsed) {
-            elapsed += '.0';
-        }*/
-        
-//        timer += 1;
-        timerPara.innerHTML = pad(mins)+":"+pad(secs) + ":"+pad(hundredthsSecs);
-        
+
+        timerPara.innerHTML = pad(mins) + ":" + pad(secs) + ":" + pad(hundredthsSecs);
 
     }, 10);
+    typingArea.style.border = "5px solid darkorange";
 }
 
 function stopTimer() {
-    console.log("timer stopped");
+    typingArea.style.border = "5px solid lightgreen";
     clearInterval(timerInterval);
     displayResult();
 }
 
 function resetTimer() {
-    console.log("timer reset");
+    clearInterval(timerInterval);
+    timerFired = false;
+    timerPara.innerHTML = "00:00:00";
 }
 
 function clearFields() {
-    console.log("fields cleared");
-}
-
-function displayResult() {
-    let resultsDiv = document.getElementById("project-speedType__results");
     let resultWPM = document.getElementById("project-speedType__result-WPM");
     let resultBlurb = document.getElementById("project-speedType__result-blurb");
 
-    console.log(elapsed);
-    
-    let wordsPerMinute = 4 / (elapsed / 60);
+    resultWPM.innerHTML = "";
+    resultBlurb.innerHTML = "";
+    typingArea.value = "";
+
+    elapsed = 0;
+
+    typingArea.style.border = "1px solid #ced4da";
+
+    resetTimer();
+}
+
+function displayResult() {
+
+    let resultWPM = document.getElementById("project-speedType__result-WPM");
+    let resultBlurb = document.getElementById("project-speedType__result-blurb");
+    let promptPara = document.getElementById("project-speedTest__prompt");
+
+    let numWords = (promptPara.innerText).split(" ").length;
+
+    let wordsPerMinute = Math.floor(numWords / (elapsed / 60));
 
     resultWPM.innerHTML = "Results: " + wordsPerMinute + " Words Per Minute.";
 
@@ -130,19 +159,4 @@ function displayResult() {
         resultBlurb.innerHTML = "That was MOST EXCELLENT.";
     }
 
-
-   
 }
-
-function displayPrompt() {
-
-}
-
-function loadNewPrompt() {
-    console.log("new prompt loaded");
-}
-
-let speedtestSpanClose = document.getElementById("project-speedTest__span-close");
-speedtestSpanClose.addEventListener("click", function () {
-    clearFields();
-})

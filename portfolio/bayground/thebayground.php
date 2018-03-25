@@ -88,10 +88,10 @@
                                             <span id="project-speedTest__span-close" class="close">&times;</span>
                                             <h2>Speed Typing Test</h2>
                                         </div>
-                                        <div class="modal-body">
-                                            <p>Here you are given a prompt and must type it correctly in the text box below. Once typed correctly, your results will display below.</p>
+                                        <div class="modal-body project-speedTest__body">
+                                            <p class="project-speedTest__instruct">Here you are given a prompt and must type it correctly in the text box below. Once typed correctly, your results will display below.</p>
                                             <p>Prompt:</p>
-                                            <p>"I will not interrupt the teacher during class."</p>
+                                            <blockquote id="project-speedTest__prompt"></blockquote>
                                             <div class="form-group">
                                                 <textarea id="project-speedType__textarea" class="form-text-area"></textarea>
                                             </div>
