@@ -23,7 +23,8 @@ let speedtestSpanClose = document.getElementById("project-speedTest__span-close"
 let timerPara = document.getElementById("project-speedType__timer");
 
 // Read in text file of prompts.
-readTextFile("http://localhost/portfolio/bayground/assets/text/speedTestPrompts.txt");
+//readTextFile("http://localhost/portfolio/bayground/assets/text/speedTestPrompts.txt");
+readTextFile("assets/text/speedTestPrompts.txt");
 
 // Event listeners
 typingArea.addEventListener("keyup", function () {
@@ -41,9 +42,8 @@ tryAgainBtn.addEventListener("click", function () {
 diffPromptBtn.addEventListener("click", function () {
     resetTimer();
     clearFields();
-    readTextFile("http://localhost/portfolio/bayground/assets/text/speedTestPrompts.txt");
-    //    loadNewPrompt();
-
+//    readTextFile("http://localhost/portfolio/bayground/assets/text/speedTestPrompts.txt");
+    readTextFile("assets/text/speedTestPrompts.txt");
 });
 
 speedtestSpanClose.addEventListener("click", function () {
@@ -53,7 +53,7 @@ speedtestSpanClose.addEventListener("click", function () {
 // Function definitions
 function readTextFile(file) {
     let rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
+    rawFile.open("GET", file);
     rawFile.onreadystatechange = function () {
         if (rawFile.readyState === 4) {
             if (rawFile.status === 200 || rawFile.status == 0) {

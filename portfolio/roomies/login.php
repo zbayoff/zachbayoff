@@ -97,6 +97,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Roomies-Roommate Management Login</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115178608-1"></script>
     <script>
@@ -110,13 +118,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         gtag('config', 'UA-115178608-1');
 
     </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Roomies-Roomate Management Login</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
 
 <body>
@@ -145,7 +147,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     <?php require_once "assets/partials/footer.php"; ?>
 
-    <script src="assets/js/jquery-3.2.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="assets/js/loginRegisterGroups.js"></script>
 
 </body>

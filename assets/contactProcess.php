@@ -33,9 +33,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         //mail function
         $to = "zrbayoffdev@gmail.com";
         $subject = "zachbayoff.com Message";
+        $headers = "From: " . $name . " " . "<".$email.">";
         
-        
-//        mail($to, $subject, $message);
+        mail($to, $subject, $message, $headers);
         
         echo json_encode($errors);
         

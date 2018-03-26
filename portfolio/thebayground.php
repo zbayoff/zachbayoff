@@ -11,6 +11,21 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115178608-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115178608-1');
+
+    </script>
+    
 </head>
 
 <body id="portfolio-bayground">
@@ -37,7 +52,7 @@
                 <div class="column-md-6">
                     <h1>Project Name: The Bayground</h1>
                     <p>Client: Anybody</p>
-                    <p>Tags: Web Applications/Javascript</p>
+                    <p>Tags: Web Applications / Javascript</p>
                     <h2>Project Background</h2>
                     <p>The Bayground is a collection of small, simple to complex applications. They range from finding a set of prime numbers to finding the winner of a two-hand poker game.</p>
                     <p>This project was created to enhance javascript and programming skills. Namely, creating and using functions in different ways, writing loops, manipulating the DOM, adhering to ECMAScript 6 specifications, and much more.</p>
@@ -51,11 +66,11 @@
         <section class="container container-project-screenshot">
             <div class="row">
                 <div class="column-lg-10">
-                    <h3>Prime Number Module</h3>
+                    <h3 class="container-project-screenshot__page-title">Prime Number Module</h3>
                     <div class="container-project-screenshot__project-item">
                         <img src="bayground/assets/img/screenshots/thebayground-prime-number-module.png" class="container-project-screenshot__project-img">
                     </div>
-                    <h3>Speed Typing Test Module</h3>
+                    <h3 class="container-project-screenshot__page-title">Speed Typing Test Module</h3>
                     <div class="container-project-screenshot__project-item">
                         <img src="bayground/assets/img/screenshots/thebayground-speed-test-module.png" class="container-project-screenshot__project-img">
                     </div>

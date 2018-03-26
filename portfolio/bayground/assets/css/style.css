@@ -10,6 +10,10 @@
     margin: .5rem;
 }
 
+body.modal-open {
+    position: fixed;
+}
+
 .module-item:hover {
     cursor: pointer;
 }

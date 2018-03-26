@@ -11,6 +11,21 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115178608-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115178608-1');
+
+    </script>
+    
 </head>
 
 <body id="portfolio-roomies">
@@ -37,7 +52,7 @@
                 <div class="column-md-6">
                     <h1>Project Name: Roomies: Roommate Management</h1>
                     <p>Client: Anybody</p>
-                    <p>Tags: CRUD Application/PHP/AJAX/MySQL/jQuery/Bootstrap4</p>
+                    <p>Tags: CRUD Application / PHP / AJAX / MySQL / jQuery / Bootstrap4</p>
                     <h2>Project Background</h2>
                     <p>At one point in our lives, most of us have lived with someone else. Maybe a family member, friend, or complete stranger. Living shared spaces can get complicated and sometimes our roommates can get on our nerves. Chores are forgotten, guests overstay their welcome, and household purchases are left unreimbursed.</p>
                     <p><strong>Roomies</strong> is an interactive application that lets people create a group for their household, manage chores, schedule visitors, and create a household items list so that purchases can be tracked and roommates can be reimbursed easily. Roommates may join multiple groups, if say, they are in the process of moving and would like to join their new household, but are still living in their current household. Roomates can add their phone numbers to be automatically notified about chore dates, visitor arrivals, and household item's bills.</p>

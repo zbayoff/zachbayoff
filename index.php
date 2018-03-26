@@ -12,6 +12,21 @@
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115178608-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115178608-1');
+
+    </script>
+
 </head>
 
 <body id="about">
@@ -47,9 +62,9 @@
             <div class="row">
                 <div class="column-md-6">
                     <h2 id="about-me-title" class="container-about-me__heading">Me</h2>
-                    <p>I'm an aspiring web developer based in Brooklyn, NY.</p>
+                    <p>I'm a web developer based in Brooklyn, NY.</p>
                     <p>I like creating interesting and useful websites and web applications for people.</p>
-                    <p>I have a degree in marine engineering from the University of Michigan, Ann Arbor (also my hometown).</p>
+                    <p>I have a degree in Marine Engineering from the University of Michigan, Ann Arbor (also my hometown).</p>
                     <div class="block-mich">
                         <p>Go</p>
                         <img class="mich_logo" src="assets/images/Michigan_Wolverines_Block_M.png">
