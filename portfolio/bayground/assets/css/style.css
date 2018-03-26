@@ -57,12 +57,12 @@ body.modal-open {
 /* Modal Content */
 
 .modal-content {
-    position: absolute;
+    /*position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
-    
+    right: 0;*/
+    max-height: calc(100vh - 20px);
     overflow: auto;
     background-color: #fefefe;
     margin-left: auto;
@@ -150,6 +150,7 @@ body.modal-open {
 .what-i-learned__body {
     display: none;
     flex-direction: column;
+    width: 100%;
     
     font-size: 1rem;
     -webkit-animation-name: animatetop;

@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115178608-1"></script>
     <script>
@@ -26,7 +27,7 @@
         gtag('config', 'UA-115178608-1');
 
     </script>
-    
+
 </head>
 
 <body id="portfolio-bayground">
@@ -50,16 +51,15 @@
 
             <div class="container container-bayground-projects">
                 <div class="row">
-                    <div class="column-md-6">
+                    <div class="column-lg-10">
                         <h1 class="container-bayground-projects__header">The Bayground</h1>
                         <p class="container-bayground-projects__info">Click on a project to try it out.</p>
-                          <!--                      <span>Simple</span><input type="range" min="1" max="10"><span>Complex</span>-->
                         <div class="container-modules">
                             <div id="modal-btn__project-prime" class="module-item">
                                 <h3 class="module-title">Find Prime Numbers from Range</h3>
                             </div>
                             <div id="modal-container__project-prime" class="modal">
-                                <div class="column-lg-6">
+                                <div class="column-lg-10">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <span id="project-prime__span-close" class="close">&times;</span>
@@ -97,7 +97,7 @@
                                 <h3 class="module-title">Speed Typing Test</h3>
                             </div>
                             <div id="modal-container__project-speedType" class="modal">
-                                <div class="column-lg-6">
+                                <div class="column-lg-10">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <span id="project-speedTest__span-close" class="close">&times;</span>
@@ -111,11 +111,48 @@
                                                 <textarea id="project-speedType__textarea" class="form-text-area"></textarea>
                                             </div>
                                             <p id="project-speedType__timer">00:00:00</p>
-                                            <div id="project-speedType__results"><p id="project-speedType__result-WPM"></p>
-                                            <p id="project-speedType__result-blurb"></p>
-                                             <p>Try again to improve your speed or get a different prompt!</p></div>
+                                            <div id="project-speedType__results">
+                                                <p id="project-speedType__result-WPM"></p>
+                                                <p id="project-speedType__result-blurb"></p>
+                                                <p>Try again to improve your speed or get a different prompt!</p>
+                                            </div>
                                             <button id="project-speedType__tryagain-btn" type="button">Try Again</button>
                                             <button id="project-speedType__diffprompt-btn" type="button">Different Prompt</button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a class="what-i-learned__link">What I learned from this project</a>
+                                            <ul class="what-i-learned__body">
+                                                <li>To make an asynchronous call to a text file that stores the list of prompts.</li>
+                                                <li>To randomly select an index of an array using the Math.random function.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="module-item">
+                                <h3 class="module-title">2 Hand Poker Game</h3>
+                            </div>
+                            <div id="modal-container__project-poker" class="modal">
+                                <div class="column-lg-6">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <span id="project-poker__span-close" class="close">&times;</span>
+                                            <h2>2 Hand Poker Game</h2>
+                                        </div>
+                                        <div class="modal-body project-poker__body">
+                                            <p class="project-poker__instruct">This game features two players. Both players are dealt five cards. Find out who the winner is!</p>
+                                            <div class = "project-poker__hand-container">
+                                                <div>
+                                                
+                                                </div>
+                                            
+                                            </div>
+                                            <div id="project-poker__results">
+                                                <p id="project-poker__result-blurb"></p>
+                                                <p>Results</p>
+                                            </div>
+                                            <button id="project-poker__tryagain-btn" type="button">Play Again</button>
+                                            <button id="project-poker__diffprompt-btn" type="button">Start Over</button>
                                         </div>
                                         <div class="modal-footer">
                                             <a class="what-i-learned__link">What I learned from this project</a>
@@ -125,9 +162,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="module-item">
-                                <h3 class="module-title">Coming Soon</h3>
                             </div>
                             <div class="module-item">
                                 <h3 class="module-title">Coming Soon</h3>

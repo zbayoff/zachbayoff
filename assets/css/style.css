@@ -11,7 +11,7 @@ body {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 p,
@@ -27,8 +27,10 @@ label,
 button,
 input,
 textarea, blockquote {
-    font-family: 'Reem Kufi', sans-serif;
-    /*    font-family: 'Alef', sans-serif;*/
+/*    font-family: 'Reem Kufi', sans-serif;*/
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+/*  font-family: 'Helvetica', sans-serif;*/
 }
 
 a {
@@ -60,7 +62,7 @@ h6 {
 }
 
 .column-4 {
-    width: 25%;
+    width: 33.33%;
 }
 
 .column-6 {
@@ -75,7 +77,7 @@ h6 {
 
 @media only screen and (min-width: 576px) {
     .column-sm-4 {
-        width: 25%;
+        width: 33.33%;
     }
 
     .column-sm-6 {
@@ -89,7 +91,7 @@ h6 {
 
 @media only screen and (min-width: 768px) {
     .column-md-4 {
-        width: 25%;
+        width: 33.33%;
     }
 
     .column-md-6 {
@@ -104,7 +106,11 @@ h6 {
 
 @media only screen and (min-width: 992px) {
     .column-lg-4 {
-        width: 25%;
+        width: 33.33%;
+    }
+    
+    .column-lg-5 {
+        width: 41.66%;
     }
 
     .column-lg-6 {
@@ -447,13 +453,13 @@ h6 {
 }
 
 .container-welcome__inner h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 1rem 0 1rem 0;
 }
 
 @media only screen and (max-width: 576px) {
     .container-welcome__inner h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
@@ -464,6 +470,7 @@ h6 {
 }
 
 .container-welcome__bottom-text {
+    font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -915,7 +922,7 @@ h6 {
 
 
 .github-logo {
-    width: 50px;
+    width: 40px;
     margin-right: 2rem;
 }
 
@@ -926,7 +933,7 @@ h6 {
 
 .linkedin-logo {
     margin-left: 2rem;
-    width: 50px;
+    width: 40px;
     padding: 0;
 }
 

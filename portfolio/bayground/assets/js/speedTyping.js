@@ -16,6 +16,7 @@
 let timerInterval;
 let elapsed = 0;
 let timerFired = false;
+let testComplete = false;
 let typingArea = document.getElementById("project-speedType__textarea");
 let tryAgainBtn = document.getElementById("project-speedType__tryagain-btn");
 let diffPromptBtn = document.getElementById("project-speedType__diffprompt-btn");
@@ -28,10 +29,13 @@ readTextFile("assets/text/speedTestPrompts.txt");
 
 // Event listeners
 typingArea.addEventListener("keyup", function () {
+
     if (timerFired === false) {
         startTimer();
     }
-    checkString();
+    if (testComplete === false) {
+        checkString();
+    }
 });
 
 tryAgainBtn.addEventListener("click", function () {
@@ -42,7 +46,7 @@ tryAgainBtn.addEventListener("click", function () {
 diffPromptBtn.addEventListener("click", function () {
     resetTimer();
     clearFields();
-//    readTextFile("http://localhost/portfolio/bayground/assets/text/speedTestPrompts.txt");
+//        readTextFile("http://localhost/portfolio/bayground/assets/text/speedTestPrompts.txt");
     readTextFile("assets/text/speedTestPrompts.txt");
 });
 
@@ -75,7 +79,17 @@ function displayPrompt(promptText) {
 function checkString() {
     let promptPara = document.getElementById("project-speedTest__prompt");
 
+    if (typingArea.value !== promptPara.innerText.slice(0, typingArea.value.length)) {
+        typingArea.style.border = "5px solid red";
+    } else {
+        typingArea.style.border = "5px solid darkorange";
+    }
+
     if (typingArea.value === promptPara.innerText) {
+
+        testComplete = true;
+        typingArea.style.border = "5px solid lightgreen";
+
         stopTimer();
     }
 }
@@ -107,11 +121,11 @@ function startTimer() {
         timerPara.innerHTML = pad(mins) + ":" + pad(secs) + ":" + pad(hundredthsSecs);
 
     }, 10);
-    typingArea.style.border = "5px solid darkorange";
+
 }
 
 function stopTimer() {
-    typingArea.style.border = "5px solid lightgreen";
+
     clearInterval(timerInterval);
     displayResult();
 }
@@ -119,6 +133,7 @@ function stopTimer() {
 function resetTimer() {
     clearInterval(timerInterval);
     timerFired = false;
+    testComplete = false;
     timerPara.innerHTML = "00:00:00";
 }
 

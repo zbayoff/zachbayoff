@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115178608-1"></script>
@@ -52,7 +53,7 @@
         </div>
         <div class="container-welcome__bottom-text">
             <h3>A little about me...</h3>
-            <p><a class="fa fa-angle-down" href="#about-me-title"></a></p>
+            <p><a id="bottm-link-to-about" class="fa fa-angle-down" href="#about-me-title"></a></p>
         </div>
     </section>
 
@@ -60,7 +61,7 @@
 
         <section class="container container-about-me">
             <div class="row">
-                <div class="column-md-6">
+                <div class="column-md-6 column-lg-4">
                     <h2 id="about-me-title" class="container-about-me__heading">Me</h2>
                     <p>I'm a web developer based in Brooklyn, NY.</p>
                     <p>I like creating interesting and useful websites and web applications for people.</p>
@@ -76,7 +77,7 @@
 
         <section class="container container-skills">
             <div class="row">
-                <div class="column-md-6">
+                <div class="column-md-6 column-lg-4">
                     <h2 class="container-skills__heading">Skills</h2>
                     <p>In the world of web development, technologies and tools are constantly changing and updating to keep up with users' ever demanding desire for efficient, no hassle online experiences.</p>
                     <p>I make it a priority to dedicate myself to learning and mastering these tools.</p>
@@ -156,8 +157,10 @@
     </main>
 
     <?php include 'assets/partials/footer.php' ?>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/index.js"></script>
 
 </body>
 

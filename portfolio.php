@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115178608-1"></script>
@@ -49,7 +50,7 @@
     <main>
         <section class="container container-projects">
             <div class="row">
-                <div class="column-md-6">
+                <div class="column-md-6 column-lg-4">
                     <h2 class="container-projects__heading">Projects</h2>
                     <p>To improve my craft, I continue to learn and practice new programming concepts by applying them to real-world projects.</p>
                     <p>Whether for a client, personal use, or good 'ol fun, each proect gives me more insight and experience into the field of web development.</p>
@@ -60,7 +61,7 @@
 
         <section class="container container-project-desc">
             <div class="row">
-                <div class="column-md-6">
+                <div class="column-md-6 column-lg-4">
                     <div class="container-project-desc__project-item">
                         <a class="container-project-desc__project-link" href="portfolio/roomies.php"><img class="container-project-desc__project-img" src="portfolio/roomies/assets/img/screenshots/dashboard-page.png"><h4 class="container-project-desc__project-title">Roomies: Web Application</h4></a>
                     </div>

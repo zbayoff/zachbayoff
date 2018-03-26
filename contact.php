@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115178608-1"></script>
@@ -49,10 +50,10 @@
 
         <section class="container container-contact-form">
             <div class="row">
-                <div class="column-md-6">
+                <div class="column-md-6 column-lg-4">
                     <h2 class="container-contact-form__heading">Contact</h2>
-                    <p>Send me a message with details about your project, </p>
-                    <p>or email me at <a href="#">zrbayoffdev@gmail.com</a></p>
+                    <p>Send me a message with details about your project, or email me at: </p>
+                    <p><a href="#">zrbayoffdev@gmail.com</a></p>
                     <p>I'll get back to you ASAP.</p>
                     <form method="post" class="contact-form" id="contact-form" action="">
                         <div class="form-group">
