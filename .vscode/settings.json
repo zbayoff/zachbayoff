@@ -1,0 +1,19 @@
+{
+    "liveServer.settings.proxy": {
+    "enable": true,
+    "baseUri": "/", 
+    "proxyUri": "http://localhost" 
+    },
+    "liveSassCompile.settings.formats": [
+        {
+            "savePath": "assets/css",
+            "format": "expanded"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**",
+        "**/other/**"
+    ]
+}
+

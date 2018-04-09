@@ -1,0 +1,21 @@
+{
+  "name": "zachbayoff",
+  "version": "1.0.0",
+  "description": "Portfolio Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server \"zachbayoff\" --files \"zachbayoff\"",
+    "sassy": "node-sass --watch \"scss\"  --output \"assets/css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zbayoff/zachbayoff.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zbayoff/zachbayoff/issues"
+  },
+  "homepage": "https://github.com/zbayoff/zachbayoff#readme"
+}
