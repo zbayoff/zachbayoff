@@ -30,43 +30,30 @@
 </head>
 
 <body id="portfolio">
-
-    <section class="container container-header">
-        <header class="header header-top header-top-md">
-            <div class="logo">
-                <p class="logo__text"><a href="index.php">ZachBayoff</a></p>
-            </div>
-            <nav>
-                <ul class="nav">
-                    <li class="nav__nav-item"><a class="nav__nav-link" href="index.php">About</a></li>
-                    <li class="nav__nav-item"><a class="nav__nav-link" href="portfolio.php">Portfolio</a></li>
-                    <li class="nav__nav-item"><a class="nav__nav-link" href="contact.php">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    </section>
-
-    <main>
-        <section class="container container-projects">
-            <div class="row">
-                <div class="column-md-6 column-lg-4">
-                    <h2 class="container-projects__heading">Projects</h2>
-                    <p>To improve my craft, I continue to learn and practice new programming concepts by applying them to real-world projects.</p>
-                    <p>Whether for a client, personal use, or good 'ol fun, each proect gives me more insight and experience into the field of web development.</p>
-                    <p>Here is a list of my recent projects with links to a more detailed description.</p>
+    <header class="header">
+        <div class="logo">
+            <p class="logo__text"><a href="index.php">ZachBayoff</a></p>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav__nav-item"><a class="nav__nav-link" href="index.php">About</a></li>
+                <li class="nav__nav-item"><a class="nav__nav-link" href="portfolio.php">Portfolio</a></li>
+                <li class="nav__nav-item"><a class="nav__nav-link" href="contact.php">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="row">
+            <div>
+                <h2>Projects</h2>
+                <p>To improve my craft, I continue to learn and practice new programming concepts by applying them to real-world projects.</p>
+                <p>Whether for a client, personal use, or good 'ol fun, each proect gives me more insight and experience into the field of web development.</p>
+                <p>Here is a list of my recent projects with links to a more detailed description.</p>
+                <div class="container-project-desc__project-item">
+                    <a class="container-project-desc__project-link" href="portfolio/roomies.php"><img class="container-project-desc__project-img" src="portfolio/roomies/assets/img/screenshots/dashboard-page.png"><h4 class="container-project-desc__project-title">Roomies: Web Application</h4></a>
                 </div>
-            </div>
-        </section>
-
-        <section class="container container-project-desc">
-            <div class="row">
-                <div class="column-md-6 column-lg-4">
-                    <div class="container-project-desc__project-item">
-                        <a class="container-project-desc__project-link" href="portfolio/roomies.php"><img class="container-project-desc__project-img" src="portfolio/roomies/assets/img/screenshots/dashboard-page.png"><h4 class="container-project-desc__project-title">Roomies: Web Application</h4></a>
-                    </div>
-                    <div class="container-project-desc__project-item">
-                        <a class="container-project-desc__project-link" href="portfolio/thebayground.php"><img class="container-project-desc__project-img" src="portfolio/bayground/assets/img/screenshots/thebayground-screenshot.png"><h4 class="container-project-desc__project-title">The Bayground: Web Application</h4></a>
-                    </div>
+                <div class="container-project-desc__project-item">
+                    <a class="container-project-desc__project-link" href="portfolio/thebayground.php"><img class="container-project-desc__project-img" src="portfolio/bayground/assets/img/screenshots/thebayground-screenshot.png"><h4 class="container-project-desc__project-title">The Bayground: Web Application</h4></a>
                 </div>
             </div>
         </section>

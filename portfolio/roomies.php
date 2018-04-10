@@ -29,27 +29,22 @@
 </head>
 
 <body id="portfolio-roomies">
-
-    <section class="container">
-        <header class="header header-top header-top-md">
-            <div class="logo">
-                <p class="logo__text"><a href="../index.php">ZachBayoff</a></p>
-            </div>
-            <nav>
-                <ul class="nav">
-                    <li class="nav__nav-item"><a class="nav__nav-link" href="../index.php">About</a></li>
-                    <li class="nav__nav-item"><a class="nav__nav-link" href="../portfolio.php">Portfolio</a></li>
-                    <li class="nav__nav-item"><a class="nav__nav-link" href="../contact.php">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    </section>
-
-    <main>
-
-        <section class="container container-project-background">
+    <header class="header">
+        <div class="logo">
+            <p class="logo__text"><a href="../index.php">ZachBayoff</a></p>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav__nav-item"><a class="nav__nav-link" href="../index.php">About</a></li>
+                <li class="nav__nav-item"><a class="nav__nav-link" href="../portfolio.php">Portfolio</a></li>
+                <li class="nav__nav-item"><a class="nav__nav-link" href="../contact.php">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="container-project-background">
             <div class="row">
-                <div class="column-md-6">
+                <div class="">
                     <h1>Project Name: Roomies: Roommate Management</h1>
                     <p>Client: Anybody</p>
                     <p>Tags: CRUD Application / PHP / AJAX / MySQL / jQuery / Bootstrap4</p>
@@ -69,7 +64,7 @@
 
         <section class="container container-project-screenshot">
             <div class="row">
-                <div class="column-lg-10">
+                <div class="">
                     <h3 class="container-project-screenshot__page-title">Sign Up</h3>
                     <div class="container-project-screenshot__project-item">
                         <img src="roomies/assets/img/screenshots/signup-page.png" class="container-project-screenshot__project-img">

@@ -30,10 +30,8 @@
 </head>
 
 <body id="about">
-
-    <section class="container container-welcome">
-
-        <header class="welcome-header welcome-header-side-md welcome-header-top-md">
+    <section class="container-welcome">
+        <header class="welcome-header">
             <div class="logo">
                 <p class="logo__text"><a href="index.php">ZachBayoff</a></p>
             </div>
@@ -56,27 +54,34 @@
         </div>
     </section>
 
-    <main>
-
-        <section class="container container-about-me">
-            <div class="row">
-                <div class="column-md-6 column-lg-4">
-                    <h2 id="about-me-title" class="container-about-me__heading">Me</h2>
-                    <p>I'm a web developer based in Brooklyn, NY.</p>
-                    <p>I like creating interesting and useful websites and web applications for people.</p>
-                    <p>I have a degree in Marine Engineering from the University of Michigan, Ann Arbor (also my hometown).</p>
-                    <div class="block-mich">
-                        <p>Go</p>
-                        <img class="mich_logo" src="assets/images/Michigan_Wolverines_Block_M.png">
-                        <p>Blue</p>
-                    </div>
+    <main class="container">
+        <section class="row">
+            <div>
+                <!--<h2 id="about-me-title" class="container-about-me__heading">Me</h2> -->
+                <p class="personal-photo-container"><img id="personal-photo" src=""></p>
+                <p>I am a Naval Architect working in New York City. I have a Master's degree in Naval Architecture &amp; Marine Engineering from the University of Michigan, Ann Arbor (also my hometown).</p>
+                <div class="block-mich">
+                    <p>Go</p>
+                    <img class="mich_logo" src="assets/images/Michigan_Wolverines_Block_M.png">
+                    <p>Blue!</p>
                 </div>
+                <div class="clearfix"></div>
+                <p>In addition to my full-time job, I am also a web developer. I have completed courses in Web Development both at NYU and CUNY College of Technology, and am continuing to learn and practice the latest web dev technologies through online resources.</p>
+
+                <h3>Web Development Process</h3>
+                <p>It is my goal to provide clients with a robust, elegant, and personal solution that suits their needs. Before sketching wireframes, creating mockups, or writing any code, I like to sit down with clients and discuss the requirements and specifications that they are seeking for their site.</p>
+                <p>Some of the things I look for upon the inital discussion:</p>
+                <ul>
+                    <li>What type of site do they want (Single Page Application, eCommerce, Landing Page)?</li>
+                    <li>What is the budget?</li>
+                    <li>What is the time frame?</li>
+                </ul>
+                <p>Once the details have been hashed out, </p>
             </div>
         </section>
-
-        <section class="container container-skills">
-            <div class="row">
-                <div class="column-md-6 column-lg-4">
+    
+        <section class="row">
+                <div>
                     <h2 class="container-skills__heading">Skills</h2>
                     <p>In the world of web development, technologies and tools are constantly changing and updating to keep up with users' ever demanding desire for efficient, no hassle online experiences.</p>
                     <p>I make it a priority to dedicate myself to learning and mastering these tools.</p>
@@ -142,14 +147,11 @@
                         </ul>
                     </div>
                 </div>
-            </div>
         </section>
-
-        <section class="container container-end-about">
-            <div class="row">
-                <div class="">
-                    <p>See some of my <a href="portfolio.php">projects</a> or feel free to <a href="contact.php">contact me</a>.</p>
-                </div>
+    
+        <section class="row">
+            <div class="">
+                <p>See some of my <a href="portfolio.php">projects</a> or feel free to <a href="contact.php">contact me</a>.</p>
             </div>
         </section>
 

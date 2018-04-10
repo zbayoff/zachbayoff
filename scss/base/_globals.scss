@@ -4,12 +4,6 @@ body,
 html {
     height: 100%;
 }
-
-body {
-    background-color: #59CD90;
-    /*    background-color: #d2d2d2;*/
-}
-
 p {
     font-size: 1.1rem;
 }
@@ -27,6 +21,14 @@ h6 {
     font-weight: 600;
     letter-spacing: .5px;
 }
+
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
 
 .form-group {
     margin-bottom: 1rem;
@@ -68,4 +70,12 @@ h6 {
     display: block;
     font-size: 1.25rem;
     margin-bottom: 1rem;
+}
+
+main {
+    margin-top: 10rem;
+}
+
+#about main {
+    margin-top: 0rem;
 }

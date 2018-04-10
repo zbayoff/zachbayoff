@@ -29,28 +29,22 @@
 </head>
 
 <body id="contact">
-
-    <section class="container">
-        <header class="header header-top header-top-md">
-            <div class="logo">
-                <p class="logo__text"><a href="index.php">ZachBayoff</a></p>
-            </div>
-            <nav>
-                <ul class="nav">
-                    <li class="nav__nav-item"><a class="nav__nav-link" href="index.php">About</a></li>
-                    <li class="nav__nav-item"><a class="nav__nav-link" href="portfolio.php">Portfolio</a></li>
-                    <li class="nav__nav-item"><a class="nav__nav-link" href="contact.php">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    </section>
-
-    <main>
-
-        <section class="container container-contact-form">
-            <div class="row">
-                <div class="column-md-6 column-lg-4">
-                    <h2 class="container-contact-form__heading">Contact</h2>
+    <header class="header">
+        <div class="logo">
+            <p class="logo__text"><a href="index.php">ZachBayoff</a></p>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav__nav-item"><a class="nav__nav-link" href="index.php">About</a></li>
+                <li class="nav__nav-item"><a class="nav__nav-link" href="portfolio.php">Portfolio</a></li>
+                <li class="nav__nav-item"><a class="nav__nav-link" href="contact.php">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+            <section class="row">
+                <div>
+                    <h2 class="">Contact</h2>
                     <p>Send me a message with details about your project, or email me at: </p>
                     <p><a href="#">zrbayoffdev@gmail.com</a></p>
                     <p>I'll get back to you ASAP.</p>
@@ -75,9 +69,7 @@
                         </div>
                     </form>
                 </div>
-            </div>
-        </section>
-
+    </section>
     </main>
 
     <?php include 'assets/partials/footer.php' ?>

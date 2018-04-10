@@ -1,0 +1,62 @@
+.welcome-header {
+    background: #90DDF0;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    @include for-tablet-landscape-up {
+        position: static;
+        height: auto;
+    }
+    .logo {
+        @include for-tablet-landscape-up {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            margin: 0;
+        }
+    }
+}
+
+.header {
+    background: #90DDF0;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    @include for-tablet-landscape-up {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*        border: 2px solid black;*/
+        height: 150px;
+    }
+    .logo {
+        @include for-tablet-landscape-up {
+            position: absolute;
+            margin-left: 1rem;
+            left: 0;
+        }
+    }
+}

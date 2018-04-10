@@ -1,6 +1,6 @@
-<footer class="container container-footer">
+<footer class="container-footer">
     <div class="row">
-        <div class="column-md-6">
+        <div class="">
             <div class="footer-inner">
                 <div>
                     <a href="https://github.com/zbayoff" target="_blank"><img class="github-logo" src="../../assets/images/github-logo.png"></a></div>
