@@ -119,11 +119,6 @@
     box-shadow: 4px 10px 8px;
 }
 
-.container-skills__heading {
-    text-align: center;
-    padding-top: 1rem;
-}
-
 .skills-list {
     display: flex;
     justify-content: center;
@@ -132,6 +127,11 @@
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.skills-type {
+    font-weight: 700;
+    font-size: 1.4rem;
 }
 
 .skills-list__group {
@@ -149,7 +149,7 @@
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    text-decoration: underline;
+    font-weight: 600;
 }
 
 .skills-list__group-item {
@@ -184,33 +184,13 @@
     box-shadow: 4px 10px 8px;
 }
 
-/*---------The Bayground---------*/
-
-.container-bayground-projects__header {
-    text-align: center;
-}
-
-.container-bayground-projects__info {
-    text-align: center;
-}
-
-.container-bayground-projects .row {
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background-color: white;
-    box-shadow: 4px 10px 8px;
-}
-
-.container-modules {
+.about-bottom {
+    height: 300px;
+    padding-bottom: $footer-height;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     align-content: center;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    p {
+        font-size: 1.4rem;
+    }
 }

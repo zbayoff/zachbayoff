@@ -29,6 +29,7 @@
 </head>
 
 <body id="contact">
+    
     <header class="header">
         <div class="logo">
             <p class="logo__text"><a href="index.php">ZachBayoff</a></p>
@@ -41,9 +42,10 @@
             </ul>
         </nav>
     </header>
+    <div class="page">
     <main class="container">
             <section class="row">
-                <div>
+                <div class="contact-container">
                     <h2 class="">Contact</h2>
                     <p>Send me a message with details about your project, or email me at: </p>
                     <p><a href="#">zrbayoffdev@gmail.com</a></p>
@@ -73,6 +75,8 @@
     </main>
 
     <?php include 'assets/partials/footer.php' ?>
+
+    </div>
     
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/contact.js"></script>

@@ -1,22 +1,21 @@
 /*---------Footer---------*/
 
-.container-footer .row {
-    height: 150px;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    background: rgb(63, 63, 63);
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    .footer-inner {
+        height: $footer-height;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background: rgb(63, 63, 63);
+    }
 }
-
-.footer-inner {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
 
 .github-logo {
     width: 40px;
@@ -24,7 +23,6 @@
     background-color: white;
     border-radius: 20px;
 }
-
 
 .footer-copyright {
     font-size: 1.2rem;

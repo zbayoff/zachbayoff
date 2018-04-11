@@ -42,12 +42,13 @@
             </ul>
         </nav>
     </header>
+    <div class="page">
     <main class="container">
         <section class="row">
-            <div>
+            <div class="project-container">
                 <h2>Projects</h2>
                 <p>To improve my craft, I continue to learn and practice new programming concepts by applying them to real-world projects.</p>
-                <p>Whether for a client, personal use, or good 'ol fun, each proect gives me more insight and experience into the field of web development.</p>
+                <p>Whether for a client, personal use, or good 'ol fun, each project gives me more insight and experience into the field of web development.</p>
                 <p>Here is a list of my recent projects with links to a more detailed description.</p>
                 <div class="container-project-desc__project-item">
                     <a class="container-project-desc__project-link" href="portfolio/roomies.php"><img class="container-project-desc__project-img" src="portfolio/roomies/assets/img/screenshots/dashboard-page.png"><h4 class="container-project-desc__project-title">Roomies: Web Application</h4></a>
@@ -60,6 +61,8 @@
     </main>
 
     <?php include 'assets/partials/footer.php' ?>
+
+    </div>
 
     <script src="assets/js/scripts.js"></script>
 

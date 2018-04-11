@@ -11,7 +11,7 @@ if (empty($_SESSION['group_name']) || !isset($_SESSION['group_name']) || !isset(
 }
 
 // require config file
-require_once 'config.php';
+require_once '../../../hidden/config.php';
 
 // define and initialize variables
 $groupname = "";

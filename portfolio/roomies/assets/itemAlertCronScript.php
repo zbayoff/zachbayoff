@@ -2,7 +2,7 @@
 
 chdir(dirname(__FILE__));
 
-require_once '../config.php';
+include '../../../../hidden/config.php';
 
 // query each group and store in groups array.
 $sql = "SELECT group_id

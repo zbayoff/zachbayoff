@@ -1,14 +1,11 @@
 .welcome-header {
     background: #90DDF0;
     width: 100%;
-    height: 150px;
+    height: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    padding-left: 1rem;
-    padding-right: 1rem;
     position: fixed;
     top: 0;
     right: 0;
@@ -31,14 +28,11 @@
 .header {
     background: #90DDF0;
     width: 100%;
-    height: 150px;
+    height: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    padding-left: 1rem;
-    padding-right: 1rem;
     position: fixed;
     top: 0;
     right: 0;
@@ -50,7 +44,7 @@
         align-items: center;
         justify-content: center;
         /*        border: 2px solid black;*/
-        height: 150px;
+        height: 180px;
     }
     .logo {
         @include for-tablet-landscape-up {

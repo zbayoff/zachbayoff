@@ -53,7 +53,7 @@
             <p><a id="bottm-link-to-about" class="fa fa-angle-down" href="#about-me-title"></a></p>
         </div>
     </section>
-
+<div class="page">
     <main class="container">
         <section class="row">
             <div>
@@ -69,23 +69,23 @@
                 <p>In addition to my full-time job, I am also a web developer. I have completed courses in Web Development both at NYU and CUNY College of Technology, and am continuing to learn and practice the latest web dev technologies through online resources.</p>
 
                 <h3>Web Development Process</h3>
-                <p>It is my goal to provide clients with a robust, elegant, and personal solution that suits their needs. Before sketching wireframes, creating mockups, or writing any code, I like to sit down with clients and discuss the requirements and specifications that they are seeking for their site.</p>
+                <p>It is my goal to provide clients with a robust, elegant, and unqiue solution that suits their needs. Before sketching wireframes, creating mockups, or writing any code, I like to sit down and discuss the requirements and specifications for their site.</p>
                 <p>Some of the things I look for upon the inital discussion:</p>
                 <ul>
                     <li>What type of site do they want (Single Page Application, eCommerce, Landing Page)?</li>
                     <li>What is the budget?</li>
                     <li>What is the time frame?</li>
                 </ul>
-                <p>Once the details have been hashed out, </p>
+                <p>Once the details have been hashed out, I will get to work on creating a basic wireframe (if it has not already been provided). After clarifications with the client, I can move on to a mockup, seek approval once for, and then begin the build.</p>
             </div>
         </section>
     
         <section class="row">
                 <div>
-                    <h2 class="container-skills__heading">Skills</h2>
+                    <h2>Skills</h2>
                     <p>In the world of web development, technologies and tools are constantly changing and updating to keep up with users' ever demanding desire for efficient, no hassle online experiences.</p>
                     <p>I make it a priority to dedicate myself to learning and mastering these tools.</p>
-                    <p>My web dev skills include:</p>
+                    <p class="skills-type">Web Dev Skills:</p>
                     <div class="container-skills-list">
                         <ul class="skills-list">
                             <div class="skills-list__group">
@@ -128,7 +128,7 @@
                             </div>
                         </ul>
                     </div>
-                    <p>My non-web dev skills include:</p>
+                    <p class="skills-type">Design Skills:</p>
                     <div class="container-skills-list">
                         <ul class="skills-list">
                             <div class="skills-list__group">
@@ -150,7 +150,7 @@
         </section>
     
         <section class="row">
-            <div class="">
+            <div class="about-bottom">
                 <p>See some of my <a href="portfolio.php">projects</a> or feel free to <a href="contact.php">contact me</a>.</p>
             </div>
         </section>
@@ -162,6 +162,8 @@
 
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/index.js"></script>
+
+    </div>
 
 </body>
 

@@ -1,69 +1,39 @@
 /*---------Project Description Page---------*/
 
-.container-project-background {
-    /*    height: 100%;*/
-    }
-    
-    .container-project-background .row {
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding: 1rem;
-        background-color: white;
-        box-shadow: 4px 10px 8px;
-    }
-    
-    .container-project-background__project-btn {
-        padding: 0.5rem 1rem;
-        background-color: #59CD90;
-        border-color: #59CD90;
-    }
-    
-    .container-project-background__project-link {
-        text-decoration: none;
-        color: black;
-        font-size: 1.2rem;
-    }
-    
-    
-    .container-project-screenshot {
-    /*    height: 100%;*/
-    }
-    
-    .container-project-screenshot .row {
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding: 1rem;
-        background-color: white;
-        box-shadow: 4px 10px 8px;
-    }
-    
-    .container-project-screenshot__page-title {
-        font-size: 1.5rem;
-    }
-    
-    .container-project-screenshot .container-project-screenshot__project-item {
-        text-align: center;
-        margin-bottom: 2rem;
-        overflow: auto;
-        padding-bottom: 56.25%;
-        border: 20px solid black;
-        border-radius: 30px;
-        position: relative;
-    
-    }
-    
-    .container-project-screenshot .container-project-screenshot__project-img {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        padding: 1rem;
-    }
+.project-desc-container {
+    padding-bottom: $footer-height;
+}
+
+
+
+.container-project-background__project-btn {
+    padding: 0.5rem 1rem;
+    background-color: #59CD90;
+    border-color: #59CD90;
+}
+
+.container-project-background__project-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.container-project-screenshot__project-item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    overflow: auto;
+    padding-bottom: 56.25%;
+    border: 20px solid black;
+    border-radius: 30px;
+    position: relative;
+}
+ .container-project-screenshot__project-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+}

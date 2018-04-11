@@ -73,11 +73,17 @@ h6 {
 }
 
 main {
-  margin-top: 10rem;
+  margin-top: 12rem;
 }
 
 #about main {
   margin-top: 0rem;
+}
+
+.page {
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -431,7 +437,16 @@ template {
   padding: 0;
 }
 
-.nav__nav-item:after {
+.nav__nav-link {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  padding: 1rem;
+  line-height: 3rem;
+}
+
+.nav__nav-link:after {
   content: '';
   display: flex;
   justify-content: center;
@@ -443,16 +458,12 @@ template {
   transition: width .3s;
 }
 
-.nav__nav-item:hover:after {
+.nav__nav-link:hover:after {
   width: 100%;
 }
 
-.nav__nav-link {
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  font-size: 1.25rem;
-  padding: 1rem;
+.nav__nav-link.active-nav:after {
+  width: 100%;
 }
 
 .welcome-header .nav {
@@ -507,6 +518,24 @@ template {
   -webkit-text-stroke: 2px black;
 }
 
+.breadcrumbs {
+  margin-top: 1rem;
+}
+
+.breadcrumbs ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs ul span {
+  padding: 0 .30rem;
+}
+
+.breadcrumbs ul li {
+  display: inline-block;
+}
+
 .container {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -521,7 +550,6 @@ template {
   align-content: center;
   align-items: center;
   margin-top: 1rem;
-  margin-bottom: 1rem;
   background-color: white;
 }
 
@@ -530,17 +558,18 @@ template {
   padding-right: 1rem;
 }
 
+.column {
+  width: 100%;
+}
+
 .welcome-header {
   background: #90DDF0;
   width: 100%;
-  height: 150px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  padding-left: 1rem;
-  padding-right: 1rem;
   position: fixed;
   top: 0;
   right: 0;
@@ -567,14 +596,11 @@ template {
 .header {
   background: #90DDF0;
   width: 100%;
-  height: 150px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  padding-left: 1rem;
-  padding-right: 1rem;
   position: fixed;
   top: 0;
   right: 0;
@@ -589,7 +615,7 @@ template {
     align-items: center;
     justify-content: center;
     /*        border: 2px solid black;*/
-    height: 150px;
+    height: 180px;
   }
 }
 
@@ -602,21 +628,22 @@ template {
 }
 
 /*---------Footer---------*/
-.container-footer .row {
-  height: 150px;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  background: #3f3f3f;
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.footer-inner {
+footer .footer-inner {
+  height: 150px;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
+  background: #3f3f3f;
 }
 
 .github-logo {
@@ -775,11 +802,6 @@ template {
   box-shadow: 4px 10px 8px;
 }
 
-.container-skills__heading {
-  text-align: center;
-  padding-top: 1rem;
-}
-
 .skills-list {
   display: flex;
   justify-content: center;
@@ -788,6 +810,11 @@ template {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.skills-type {
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 
 .skills-list__group {
@@ -805,7 +832,7 @@ template {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  text-decoration: underline;
+  font-weight: 600;
 }
 
 .skills-list__group-item {
@@ -840,37 +867,23 @@ template {
   box-shadow: 4px 10px 8px;
 }
 
-/*---------The Bayground---------*/
-.container-bayground-projects__header {
-  text-align: center;
-}
-
-.container-bayground-projects__info {
-  text-align: center;
-}
-
-.container-bayground-projects .row {
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  background-color: white;
-  box-shadow: 4px 10px 8px;
-}
-
-.container-modules {
+.about-bottom {
+  height: 300px;
+  padding-bottom: 150px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   align-content: center;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+}
+
+.about-bottom p {
+  font-size: 1.4rem;
 }
 
 /*---------Contact Page---------*/
+.contact-container {
+  padding-bottom: 150px;
+}
+
 .container-contact-form h1 {
   font-size: 1.5rem;
 }
@@ -890,6 +903,10 @@ template {
 .contact-required-msg {
   margin: 0;
   font-size: 1rem;
+}
+
+.project-container {
+  padding-bottom: 150px;
 }
 
 .container-project-desc__project-item {
@@ -949,19 +966,8 @@ template {
 }
 
 /*---------Project Description Page---------*/
-.container-project-background {
-  /*    height: 100%;*/
-}
-
-.container-project-background .row {
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  background-color: white;
-  box-shadow: 4px 10px 8px;
+.project-desc-container {
+  padding-bottom: 150px;
 }
 
 .container-project-background__project-btn {
@@ -976,26 +982,8 @@ template {
   font-size: 1.2rem;
 }
 
-.container-project-screenshot {
-  /*    height: 100%;*/
-}
-
-.container-project-screenshot .row {
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  background-color: white;
-  box-shadow: 4px 10px 8px;
-}
-
-.container-project-screenshot__page-title {
-  font-size: 1.5rem;
-}
-
-.container-project-screenshot .container-project-screenshot__project-item {
+.container-project-screenshot__project-item {
+  width: 100%;
   text-align: center;
   margin-bottom: 2rem;
   overflow: auto;
@@ -1005,7 +993,7 @@ template {
   position: relative;
 }
 
-.container-project-screenshot .container-project-screenshot__project-img {
+.container-project-screenshot__project-img {
   position: absolute;
   top: 0;
   bottom: 0;

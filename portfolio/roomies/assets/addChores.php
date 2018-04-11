@@ -2,7 +2,8 @@
 
 session_start();
 
-include '../config.php';
+include '../../../../hidden/config.php';
+
 
 // define variables and initialze
 

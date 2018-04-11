@@ -10,11 +10,14 @@
         align-content: center;
         align-items: center;
         margin-top: 1rem;
-        margin-bottom: 1rem;
         background-color: white; // box-shadow: 4px 10px 8px;
         column {
             padding-left: 1rem;
             padding-right: 1rem;
         }
     }
+}
+
+.column {
+    width: 100%;
 }

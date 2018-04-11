@@ -6,7 +6,7 @@ if (!isset($_SESSION['email']) || empty($_SESSION['email'])) {
 }
 
 // require config file
-include 'config.php';
+include '../../../hidden/config.php';
 
 // define variables
 $groupID = $_SESSION['group_id'];

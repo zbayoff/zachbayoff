@@ -7,7 +7,7 @@ if (!isset($_SESSION['email']) || empty($_SESSION['email'])) {
 }
 
 // require config file
-require_once 'config.php';
+require_once '../../../hidden/config.php';
 
 // define and initialize variables
 $groupname = "";

@@ -2,7 +2,7 @@
 
 chdir(dirname(__FILE__));
 
-require_once '../config.php';
+include '../../../../hidden/config.php';
 
 // Phone carrier gateway suffixes
 $AllTel = "@text.wireless.alltel.com";

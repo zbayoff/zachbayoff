@@ -30,50 +30,55 @@
 
 <body id="portfolio-bayground">
 
-    <section class="container">
-        <header class="header header-top header-top-md">
-            <div class="logo">
-                <p class="logo__text"><a href="../index.php">ZachBayoff</a></p>
-            </div>
-            <nav>
-                <ul class="nav">
-                    <li class="nav__nav-item"><a class="nav__nav-link" href="../index.php">About</a></li>
-                    <li class="nav__nav-item"><a class="nav__nav-link" href="../portfolio.php">Portfolio</a></li>
-                    <li class="nav__nav-item"><a class="nav__nav-link" href="../contact.php">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    </section>
+    <header class="header">
+        <div class="logo">
+            <p class="logo__text"><a href="../index.php">ZachBayoff</a></p>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav__nav-item"><a class="nav__nav-link" href="../index.php">About</a></li>
+                <li class="nav__nav-item"><a class="nav__nav-link" href="../portfolio.php">Portfolio</a></li>
+                <li class="nav__nav-item"><a class="nav__nav-link" href="../contact.php">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main>
-
-        <section class="container container-project-background">
-            <div class="row">
-                <div class="column-md-6">
-                    <h1>Project Name: The Bayground</h1>
-                    <p>Client: Anybody</p>
-                    <p>Tags: Web Applications / Javascript</p>
-                    <h2>Project Background</h2>
-                    <p>The Bayground is a collection of small, simple to complex applications. They range from finding a set of prime numbers to finding the winner of a two-hand poker game.</p>
-                    <p>This project was created to enhance javascript and programming skills. Namely, creating and using functions in different ways, writing loops, manipulating the DOM, adhering to ECMAScript 6 specifications, and much more.</p>
-                    <p>Drop me a <a href="../contact.php">message</a> to know what you think!</p>
-                    <h2>Link to application</h2>
-                    <button class="container-project-background__project-btn"><a class ="container-project-background__project-link" href="bayground/thebayground.php">Launch Application</a></button>
-                </div>
+<div class="page">
+    <main class="container">
+        <section class="row">
+            <div>
+                <nav class="breadcrumbs">
+                    <ul>
+                        <li>
+                            <a href="../portfolio.php">Portfolio</a>
+                        </li>
+                        <span>/</span>
+                        <li>
+                            <a href="thebayground.php">The Bayground - Description</a>
+                        </li>
+                    </ul>
+                </nav>
+                <h1>Project Name: The Bayground</h1>
+                <p>Client: Anybody</p>
+                <p>Tags: Web Applications / Javascript</p>
+                <h2>Project Background</h2>
+                <p>The Bayground is a collection of small, simple to complex applications. They range from finding a set of prime numbers to finding the winner of a two-hand poker game.</p>
+                <p>This project was created to enhance javascript and programming skills. Namely, creating and using functions in different ways, writing loops, manipulating the DOM, adhering to ECMAScript 6 specifications, and much more.</p>
+                <p>Drop me a <a href="../contact.php">message</a> to know what you think!</p>
+                <h2>Link to application</h2>
+                <button class="container-project-background__project-btn"><a class ="container-project-background__project-link" href="bayground/thebayground.php">Launch Application</a></button>
             </div>
         </section>
 
-        <section class="container container-project-screenshot">
-            <div class="row">
-                <div class="column-lg-10">
-                    <h3 class="container-project-screenshot__page-title">Prime Number Module</h3>
-                    <div class="container-project-screenshot__project-item">
-                        <img src="bayground/assets/img/screenshots/thebayground-prime-number-module.png" class="container-project-screenshot__project-img">
-                    </div>
-                    <h3 class="container-project-screenshot__page-title">Speed Typing Test Module</h3>
-                    <div class="container-project-screenshot__project-item">
-                        <img src="bayground/assets/img/screenshots/thebayground-speed-test-module.png" class="container-project-screenshot__project-img">
-                    </div>
+        <section class="row">
+            <div class="column project-desc-container">
+                <h3 class="container-project-screenshot__page-title">Prime Number Module</h3>
+                <div class="container-project-screenshot__project-item">
+                    <img src="bayground/assets/img/screenshots/thebayground-prime-number-module.png" class="container-project-screenshot__project-img">
+                </div>
+                <h3 class="container-project-screenshot__page-title">Speed Typing Test Module</h3>
+                <div class="container-project-screenshot__project-item">
+                    <img src="bayground/assets/img/screenshots/thebayground-speed-test-module.png" class="container-project-screenshot__project-img">
                 </div>
             </div>
         </section>
@@ -81,6 +86,7 @@
     </main>
 
     <?php include '../assets/partials/footer.php' ?>
+    </div>
     
     <script src="../assets/js/scripts.js"></script>
 
