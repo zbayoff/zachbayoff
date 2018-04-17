@@ -43,7 +43,7 @@
         </nav>
     </header>
     <div class="page">
-    <main class="container">
+        <main class="container">
             <section class="row">
                 <div class="contact-container">
                     <h2 class="">Contact</h2>
@@ -71,10 +71,10 @@
                         </div>
                     </form>
                 </div>
-    </section>
-    </main>
+            </section>
+        </main>
 
-    <?php include 'assets/partials/footer.php' ?>
+        <?php include 'assets/partials/footer.php' ?>
 
     </div>
     

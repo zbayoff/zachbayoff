@@ -22,12 +22,19 @@
             @include for-tablet-portrait-up {
                 font-size: 3rem;
             }
+            @media screen and (orientation:landscape), screen and (max-width: 450px) {
+                padding-top: 3rem;
+                font-size: 2rem;
+            }
         }
         h2 {
             font-size: 1rem;
             margin: 1rem 0 1rem 0;
             @include for-tablet-portrait-up {
                 font-size: 1.3rem;
+            }
+            @media screen and (orientation:landscape), screen and (max-width: 450px) {
+                font-size: 1rem;
             }
         }
     }
@@ -45,20 +52,34 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    
+    @media screen and (orientation:landscape), screen and (max-width: 450px) {
+        bottom: 2%;
+    }
     h3 {
         font-size: 1.5rem;
         margin: 1rem 0 1rem 0;
+        @media screen and (orientation:landscape), screen and (max-width: 450px) {
+            font-size: 1rem;
+        }
     }
     p {
         height: 3rem;
         margin: 0;
+        @media screen and (orientation:landscape), screen and (max-width: 450px) {
+            font-size: 0.75rem;
+        }
     }
     a {
         color: black;
         text-decoration: none;
         font-size: 3rem;
         animation: aboutme-arrow-pulse 2s ease-out infinite;
+        @media screen and (orientation:landscape), screen and (max-width: 450px) {
+            font-size: 2rem;
+        }
     }
+    
 }
 
 @keyframes aboutme-arrow-pulse {

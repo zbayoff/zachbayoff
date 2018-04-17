@@ -1,6 +1,6 @@
 
 .project-container {
-    padding-bottom: 150px;
+    padding-bottom: $footer-height;
 }
 
 .container-project-desc__project-item {
@@ -42,10 +42,6 @@
         }
     }
 }
-
-
-
-
 
 @keyframes fadeOut {
     0% {

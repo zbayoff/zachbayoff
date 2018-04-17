@@ -58,7 +58,7 @@
         <section class="row">
             <div>
                 <!--<h2 id="about-me-title" class="container-about-me__heading">Me</h2> -->
-                <p class="personal-photo-container"><img id="personal-photo" src=""></p>
+                <p class="personal-photo-container"><img id="personal-photo" src="assets/images/photo-me.png"></p>
                 <p>I am a Naval Architect working in New York City. I have a Master's degree in Naval Architecture &amp; Marine Engineering from the University of Michigan, Ann Arbor (also my hometown).</p>
                 <div class="block-mich">
                     <p>Go</p>

@@ -82,6 +82,10 @@
     /* Black w/ opacity */
 }
 
+.modal-column {
+    max-width: 780px;
+}
+
 /* Modal Content */
 
 .modal-content {
@@ -99,7 +103,7 @@
     margin-bottom: 1rem;
     padding: 0;
     border: 1px solid #888;
-    width: 50%;
+    width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -109,7 +113,7 @@
 
 @media only screen and (max-width: 768px) {
     .modal-content {
-        width: 90%;
+        width: 100%;
     }
 }
 
