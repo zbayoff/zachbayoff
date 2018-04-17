@@ -15,36 +15,56 @@
 
         if (gridSize) {
 
+            let imgArray = [];
+            imgArray = getImages(gridSize);
 
-            const gridArray = [{
+            let imgArrayShuffled = shuffle(imgArray);
+            // Loop through shuffled image array and output to browser. 
 
-            }];
-
-            const gridMarkup = `
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            let gridMarkup = `
+            ${
+                imgArrayShuffled.map((item) => {
+                    let tile = `<p><img src="/">${item}</p>`
+                    return tile;
+                }).join('')
+            }
         `;
 
             const gridContainer = document.querySelector('.project-concentrateYo__grid-container');
             gridContainer.innerHTML = gridMarkup;
         }
 
+    }
+
+    function getImages(gridSize) {
+        let imageArray = [];
+
+        for (let i = 0; i < (gridSize * gridSize); i += 1) {
+            imageArray.push(i);
+        }
+
+        return imageArray;
+    }
+
+    function shuffle(array) {
+
+        var currentIndex = array.length,
+            temporaryValue, randomIndex;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+            // Pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            // And swap it with the current element.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+        }
+
+        return array;
     }
 
     function startTimer() {}

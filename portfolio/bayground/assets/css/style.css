@@ -211,20 +211,19 @@
 }
 
 /*-------Concentrate Yo -------*/
-.project-concentrateYo__grid-container ul {
-    /* display: flex;
+.project-concentrateYo__grid-container {
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; */
-    list-style: none;
+    flex-wrap: wrap;
     margin: 1rem;
     padding: 0;
     columns: 4;
 }
 
-.project-concentrateYo__grid-container li {
-    width: 30px;
-    height: 30px;
+.project-concentrateYo__grid-container img {
+    width: 50px;
+    height: 50px;
     border: 1px solid red;
     background-color: #000;
     margin: 0.2rem;
