@@ -210,6 +210,26 @@
     margin: 0 0 1rem 0;
 }
 
+/*-------Concentrate Yo -------*/
+.project-concentrateYo__grid-container ul {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+    list-style: none;
+    margin: 1rem;
+    padding: 0;
+    columns: 4;
+}
+
+.project-concentrateYo__grid-container li {
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    background-color: #000;
+    margin: 0.2rem;
+}
+
 
 
 

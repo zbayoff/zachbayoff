@@ -138,6 +138,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="module-item">
                         <h3 class="module-title">Coming Soon</h3>
                     </div>
@@ -154,7 +155,6 @@
                                         <div>
                                         
                                         </div>
-                                    
                                     </div>
                                     <div id="project-poker__results">
                                         <p id="project-poker__result-blurb"></p>
@@ -172,9 +172,48 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="module-item">
-                        <h3 class="module-title">Coming Soon</h3>
+                        <h3 class="module-title">Concentrate Yo!</h3>
                     </div>
+                    <div id="modal-container__project-concentrateYo" class="modal">
+                        <div class="modal-column">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span id="project-concentrateYo__span-close" class="close">&times;</span>
+                                    <h2>Concentrate Yo!</h2>
+                                </div>
+                                <div class="modal-body project-concentrateYo__body">
+                                    <p class="project-concentrateYo__instruct">We all know this game...Test your memory!</p>
+                                    <div class = "project-concentrateYo__container">
+                                        <div>
+                                           <label value="Create Grid Size">Grid Size</label>
+                                           <input type="number" id="project-concentrateYo__gridSizeInput">
+                                        </div>
+                                        <div>
+                                            <button id="project-concentrateYo__createGrid-btn">Create Grid</button>
+                                        </div>
+                                        <div class="project-concentrateYo__grid-container">
+
+                                        </div>
+                                    </div>
+                                    <div id="project-concentrateYo__results">
+                                        <p id="project-concentrateYo__result-blurb"></p>
+                                        <p>Results</p>
+                                    </div>
+                                    <button id="project-concentrateYo__tryagain-btn" type="button">Play Again</button>
+                                    <button id="project-concentrateYo__diffprompt-btn" type="button">Start Over</button>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="what-i-learned__link">What I learned from this project</a>
+                                    <ul class="what-i-learned__body">
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="module-item">
                         <h3 class="module-title">Coming Soon</h3>
                     </div>
@@ -206,6 +245,7 @@
     <script src="assets/js/modal.js"></script>
     <script src="assets/js/primeNumbers.js"></script>
     <script src="assets/js/speedTyping.js"></script>
+    <script src="assets/js/concentrateYo.js"></script>
     <script src="../../assets/js/scripts.js"></script>
 
 
