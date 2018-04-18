@@ -199,6 +199,7 @@
                                     </div>
                                     <div id="project-concentrateYo__results">
                                         <p id="project-concentrateYo__result-blurb"></p>
+                                        <p id="project-concentrateYo__timer">00:00:00</p>
                                         <p>Results</p>
                                     </div>
                                     <button id="project-concentrateYo__tryagain-btn" type="button">Play Again</button>
