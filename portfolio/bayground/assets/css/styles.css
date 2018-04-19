@@ -29,7 +29,13 @@
 }
 
 .modal-column {
-  max-width: 780px;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .modal-column {
+    max-width: 900px;
+  }
 }
 
 /* Modal Content */
@@ -203,21 +209,33 @@
 /*-------Concentrate Yo -------*/
 .project-concentrateYo__grid-container {
   display: grid;
+  display: -ms-grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-line-pack: center;
   align-content: center;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  margin: 1rem;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  margin: 1rem 0 1rem 0;
 }
 
 .project-concentrateYo__grid-container .imgTile-container {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 100%;
   margin: 0rem;
-  padding: 0;
+  padding-bottom: 100%;
+  min-width: 80px;
+}
+
+@media screen and (max-width: 900px) {
+  .project-concentrateYo__grid-container .imgTile-container {
+    min-width: initial;
+  }
 }
 
 .project-concentrateYo__grid-container p.closed {
@@ -226,9 +244,11 @@
   position: absolute;
   background-color: #888;
   opacity: 1;
-  height: 100px;
-  width: 100px;
+  height: 100%;
+  width: 100%;
   z-index: 1;
+  -webkit-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
 
@@ -237,8 +257,8 @@
   padding: 0;
   margin: 0;
   position: absolute;
-  height: 100px;
-  width: 100px;
+  height: 100%;
+  width: 100%;
   z-index: 1;
 }
 
@@ -246,22 +266,24 @@
   padding: 0;
   margin: 0;
   position: absolute;
-  height: 100px;
-  width: 100px;
+  height: 100%;
+  width: 100%;
   z-index: 1;
 }
 
 .project-concentrateYo__grid-container p.done + img {
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: visibility 1s ease-in-out, opacity 1s;
+  -o-transition: visibility 1s ease-in-out, opacity 1s;
   transition: visibility 1s ease-in-out, opacity 1s;
 }
 
 .project-concentrateYo__grid-container img {
   display: inline-block;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   border: 2px solid black;
 }
 /*# sourceMappingURL=styles.css.map */

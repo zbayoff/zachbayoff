@@ -1,6 +1,8 @@
 (function () {
 
     const createGridBtn = document.getElementById('project-concentrateYo__createGrid-btn');
+    const modalContainer = document.getElementById('modal-container__project-concentrateYo');
+    const modalColumn = document.getElementById('');
     const gridSizeInput = document.getElementById('project-concentrateYo__gridSizeInput');
     const gridContainer = document.querySelector('.project-concentrateYo__grid-container');
     const resultAccuracy = document.getElementById('project-concentrateYo__result-accuracy');
@@ -8,6 +10,8 @@
     const playAgainBtn = document.getElementById("project-concentrateYo__playagain-btn");
     const spanClose = document.getElementById("project-concentrateYo__span-close");
     const timerPara = document.getElementById("project-concentrateYo__timer");
+
+    
 
     let prevTile;
     let clickDisabled = false;
@@ -62,9 +66,20 @@
                 }).join('')
             }`;
 
-            let columnSize = '1fr ';
+            let columnSize = '';
 
-            gridContainer.style.gridTemplateColumns = `repeat(${gridSize},${columnSize})`;
+
+            if (gridSize === 2){
+                columnSize = '14%';
+            } else if (gridSize === 4) {
+                columnSize = '12%';
+            } else if (gridSize === 6) {
+                columnSize = '10%';
+            } else if (gridSize === 8) {
+                columnSize = '5%';
+            } else if (gridSize === 10) {
+                columnSize = '1fr';
+            }
             gridContainer.style.gridTemplateColumns = `repeat(${gridSize},${columnSize})`;
 
             gridContainer.innerHTML = gridMarkup;
@@ -72,6 +87,13 @@
             
         }
     }
+
+    // function setVendor(element, property, value) {
+    //     console.log(element.style);
+    //     element.style["moz-" + property] = value;
+    //     element.style["ms-" + property] = value;
+    //     element.style["o-" + property] = value;
+    //   }
 
     function getImages(gridSize) {
 

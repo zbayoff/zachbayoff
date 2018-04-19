@@ -31,7 +31,11 @@
 }
 
 .modal-column {
-    max-width: 780px;
+    width: 100%;
+    @media screen and (min-width: 800px){
+        max-width: 900px;
+    }
+    
 }
 
 /* Modal Content */
