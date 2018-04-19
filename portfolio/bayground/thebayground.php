@@ -198,12 +198,12 @@
                                         </div>
                                     </div>
                                     <div id="project-concentrateYo__results">
-                                        <p id="project-concentrateYo__result-blurb"></p>
                                         <p id="project-concentrateYo__timer">00:00:00</p>
                                         <p>Results</p>
+                                        <p id="project-concentrateYo__result-accuracy"></p>
+                                        <p id="project-concentrateYo__result-blurb"></p>
                                     </div>
-                                    <button id="project-concentrateYo__tryagain-btn" type="button">Play Again</button>
-                                    <button id="project-concentrateYo__diffprompt-btn" type="button">Start Over</button>
+                                    <button id="project-concentrateYo__playagain-btn" type="button">Play Again</button>
                                 </div>
                                 <div class="modal-footer">
                                     <a class="what-i-learned__link">What I learned from this project</a>

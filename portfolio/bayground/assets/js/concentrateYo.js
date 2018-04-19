@@ -3,6 +3,10 @@
     const createGridBtn = document.getElementById('project-concentrateYo__createGrid-btn');
     const gridSizeInput = document.getElementById('project-concentrateYo__gridSizeInput');
     const gridContainer = document.querySelector('.project-concentrateYo__grid-container');
+    const resultAccuracy = document.getElementById('project-concentrateYo__result-accuracy');
+    const resultBlurb = document.getElementById('project-concentrateYo__result-blurb');
+    const playAgainBtn = document.getElementById("project-concentrateYo__playagain-btn");
+    const spanClose = document.getElementById("project-concentrateYo__span-close");
     const timerPara = document.getElementById("project-concentrateYo__timer");
 
     let prevTile;
@@ -23,7 +27,19 @@
         }
     });
 
+    playAgainBtn.addEventListener("click", function () {
+        resetTimer();
+        clearFields();
+    });
+
+    spanClose.addEventListener("click", function () {
+        clearFields();
+    });
+
     function createGrid(gridSize) {
+
+        clearFields();
+
         firstClick = true;
         numMatched = 0;
         numImages = 0;
@@ -41,19 +57,19 @@
             let gridMarkup = `
             ${
                 imgArrayShuffled.map((item, index) => {
-                    let tile = `<div><p class="imgTile closed" data-tileid="${index}"></p><img src="assets/img/concentrateYo/${item}.png"></div>`
+                    let tile = `<div class="imgTile-container"><p class="imgTile closed" data-tileid="${index}"></p><img src="assets/img/concentrateYo/${item}.png"></div>`
                     return tile;
                 }).join('')
             }`;
 
-            let columnSize = '50px ';
+            let columnSize = '1fr ';
 
             gridContainer.style.gridTemplateColumns = `repeat(${gridSize},${columnSize})`;
             gridContainer.style.gridTemplateColumns = `repeat(${gridSize},${columnSize})`;
 
             gridContainer.innerHTML = gridMarkup;
 
-            resetTimer();
+            
         }
     }
 
@@ -199,26 +215,21 @@
 
     function displayResult() {
 
-        // perfect result
-        console.log(`Num tries is ${numTries}`);
-        console.log(`Num images is ${numImages}`);
-        let accuracy = Math.round((numImages / numTries)*100);
-        console.log(`Your accuracy was: ${accuracy}%`);
-       if (numTries === numImages) {
-
-       }
 
 
+        let accuracy = Math.round((numImages / numTries) * 100);
 
-        // if (wordsPerMinute < 20) {
-        //     resultBlurb.innerHTML = "You didn't even try, did you...";
-        // } else if (wordsPerMinute >= 20 && wordsPerMinute < 30) {
-        //     resultBlurb.innerHTML = "That was OK.";
-        // } else if (wordsPerMinute >= 30 && wordsPerMinute <= 60) {
-        //     resultBlurb.innerHTML = "That was GOOD.";
-        // } else if (wordsPerMinute > 60) {
-        //     resultBlurb.innerHTML = "That was MOST EXCELLENT.";
-        // }
+        resultAccuracy.innerHTML = `<p>Your accuracy was: ${accuracy}%</p>`;
+
+        if (accuracy < 40) {
+            resultBlurb.innerHTML = "<p>M'eh. I think you can do better.</p>";
+        } else if (accuracy >= 40 && accuracy <= 80) {
+            resultBlurb.innerHTML = "<p>Pretty good! Prettayyy, prettayyyy, pretty good!</p>";
+        } else if (accuracy > 80 && accuracy < 100) {
+            resultBlurb.innerHTML = "<p>You remember things well.</p>";
+        } else if (accuracy === 100) {
+            resultBlurb.innerHTML = "<p>Wow. That was unreal. Teach Me.</p>";
+        }
 
     }
 
@@ -231,8 +242,14 @@
 
     function clearFields() {
 
-        firstClick = false;
+        resultAccuracy.innerHTML = "";
+        resultBlurb.innerHTML = "";
+        gridContainer.innerHTML = "";
+        gridSizeInput.value = "";
         
+
+        firstClick = true;
+
         elapsed = 0;
 
         resetTimer();

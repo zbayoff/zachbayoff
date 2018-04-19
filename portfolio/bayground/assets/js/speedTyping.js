@@ -48,7 +48,6 @@
     diffPromptBtn.addEventListener("click", function () {
         resetTimer();
         clearFields();
-        //        readTextFile("http://localhost/portfolio/bayground/assets/text/speedTestPrompts.txt");
         readTextFile("assets/text/speedTestPrompts.txt");
     });
 
