@@ -12,7 +12,7 @@
     ],
     "liveSassCompile.settings.excludeList": [
         "**/node_modules/**",
-        // "/portfolio/bayground/scss_bayground/**",
+        "/portfolio/bayground/scss_bayground/**",
         ".vscode/**",
         "**/other/**"
     ]

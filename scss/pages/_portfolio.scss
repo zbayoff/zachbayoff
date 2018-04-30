@@ -3,9 +3,14 @@
     padding-bottom: $footer-height;
 }
 
+.container-project-desc {
+    display: flex;
+}
+
 .container-project-desc__project-item {
     margin-bottom: 1rem;
     position: relative;
+    max-width: 400px;
     .container-project-desc__project-link {
         background-color: #000;
         display: block;

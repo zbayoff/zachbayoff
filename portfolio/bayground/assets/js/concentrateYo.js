@@ -82,6 +82,7 @@
                     }
                 }
 
+                // gridContainer.style.gridTemplateColumns = `repeat(${gridSize},${columnSize})`;
                 gridContainer.style.gridTemplateColumns = `repeat(${gridSize},${columnSize})`;
 
                 imgArrayShuffled.map((item, index) => {

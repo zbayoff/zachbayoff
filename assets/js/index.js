@@ -1,7 +1,7 @@
 function scrollToAnchor(anchor) {
     if (document.body.clientWidth <= 900) {
         $("html, body").animate({
-            scrollTop: $(anchor).offset().top - 200
+            scrollTop: $(anchor).offset().top - 150
         }, 1000);
     } else if (document.body.clientWidth > 900) {
         $("html, body").animate({
@@ -32,9 +32,9 @@ window.addEventListener('scroll', bulgeLogos);
 function bulgeLogos () {
     // console.log(window.scrollY)
 
-    const topPosFrontEndSection = frontEndSkillsSection.getBoundingClientRect().top - (welcomeHeader.clientHeight + 400);
-    const topPosBackEndSection = backEndSkillsSection.getBoundingClientRect().top - (welcomeHeader.clientHeight + 400);
-    const topPosDesignSection = designSkillsSection.getBoundingClientRect().top - (welcomeHeader.clientHeight + 400);
+    const topPosFrontEndSection = frontEndSkillsSection.getBoundingClientRect().top - (welcomeHeader.clientHeight + 300);
+    const topPosBackEndSection = backEndSkillsSection.getBoundingClientRect().top - (welcomeHeader.clientHeight + 300);
+    const topPosDesignSection = designSkillsSection.getBoundingClientRect().top - (welcomeHeader.clientHeight + 300);
 
     if (topPosFrontEndSection < 0) {
         for (let i = 0; i < frontendItems.length; i+=1) {

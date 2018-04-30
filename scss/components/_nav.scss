@@ -11,7 +11,7 @@
     text-decoration: none;
     color: black;
     font-size: 1.25rem;
-    padding: 1rem;
+    padding: 0 1rem 0 1rem;
     line-height: 3rem;
 }
 
@@ -42,7 +42,7 @@
         justify-content: space-around;
         .nav__nav-link {
             display: inline-block;
-            padding: 1rem;
+            padding: 0 1rem 0 1rem;
         } 
         @include for-tablet-landscape-up {
             position: absolute;
@@ -70,7 +70,7 @@
         justify-content: space-around;
         .nav__nav-link {
             display: inline-block;
-            padding: 1rem;
+            padding: 0 1rem 0 1rem;
         }
         @include for-tablet-landscape-up {
             justify-content: space-around;

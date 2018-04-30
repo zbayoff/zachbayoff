@@ -20,7 +20,6 @@
         width: $tile-size;
         margin: 0rem;
         padding-bottom: 100%;
-        // min-width: 80px;
         @media screen and (max-width: 900px) {
             min-width: initial;
         }
@@ -35,9 +34,13 @@
             height: $tile-size;
             width: $tile-size;
             z-index: 1;
-            -webkit-transition: opacity 1s ease-in-out;
-            -o-transition: opacity 1s ease-in-out;
-            transition: opacity 1s ease-in-out;
+            -webkit-transition: background-color 0.5s;
+            -o-transition: background-color 0.5s;
+            transition: background-color 0.5s;
+            // -webkit-transition: opacity 1s ease-in-out;
+            // -o-transition: opacity 1s ease-in-out;
+            // transition: opacity 1s ease-in-out;
+            // animation: flipCard 2s;
         }
         &.open {
             background-color: transparent;
@@ -47,6 +50,9 @@
             height: $tile-size;
             width: $tile-size;
             z-index: 1;
+            -webkit-transition: background-color 0.5s;
+            -o-transition: background-color 0.5s;
+            transition: background-color 0.5s;
         }
         &.done {
             background-color: transparent;
@@ -58,7 +64,8 @@
             z-index: 1;
         }
         &.done+img {
-            animation: tileDone 0.5s ease-in-out;
+            -webkit-animation: tileDone 0.5s ease-in-out;
+                    animation: tileDone 0.5s ease-in-out;
         }
     }
     img {
@@ -70,9 +77,19 @@
     }
 }
 
+
+@-webkit-keyframes tileDone {
+    50% {
+       -webkit-transform: scale(1.05);
+               transform: scale(1.05);
+    }
+}
+
+
 @keyframes tileDone {
     50% {
-       transform: scale(1.05);
+       -webkit-transform: scale(1.05);
+               transform: scale(1.05);
     }
 }
 
@@ -92,7 +109,11 @@
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
 }
 
 .form-label {
