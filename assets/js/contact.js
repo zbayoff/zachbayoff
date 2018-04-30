@@ -24,7 +24,7 @@ contactForm.addEventListener("submit", function (e) {
                         document.getElementById(element.field).style.border = "2px solid red";
                     } else {
                         clearInputs();
-                        alert("Message Sent!");
+                        successMsg();
                     }
                 }
 
@@ -39,6 +39,17 @@ contactForm.addEventListener("submit", function (e) {
     xhr.send(formData);
 
 });
+
+function successMsg () {
+    const msgHeader = document.querySelector('.success-msg-header');
+    msgHeader.classList.remove('hide');
+    msgHeader.classList.add('show');
+    setTimeout(() => {
+        msgHeader.classList.remove('show');
+        msgHeader.classList.add('hide');
+    }, 3000);
+    
+}
 
 function clearInputs() {
     let inputs = document.querySelectorAll("input");

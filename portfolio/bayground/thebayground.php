@@ -44,21 +44,23 @@
     </header>
     <div class="page">
     <main class="container">
-        <nav class="breadcrumbs">
-            <ul>
-                <li>
-                    <a href="../../portfolio.php">Portfolio</a>
-                </li>
-                <span>/</span>
-                <li>
-                    <a href="../thebayground.php">The Bayground - Description</a>
-                </li>
-                <span>/</span>
-                <li>
-                    <a href="thebayground.php">The Bayground</a>
-                </li>
-            </ul>
-        </nav>
+        <section class="row">
+            <nav class="breadcrumbs">
+                <ul>
+                    <li>
+                        <a href="../../portfolio.php">Portfolio</a>
+                    </li>
+                    <span>/</span>
+                    <li>
+                        <a href="../thebayground.php">The Bayground - Description</a>
+                    </li>
+                    <span>/</span>
+                    <li>
+                        <a href="thebayground.php">The Bayground</a>
+                    </li>
+                </ul>
+            </nav>
+        </section
         <section class="row">
             <div class="bayground-container">
                 <h1 class="container-bayground-projects__header">The Bayground</h1>
@@ -92,13 +94,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="modal-footer">
-                                    <a class="what-i-learned__link">What I learned from this project</a>
-                                    <ul class="what-i-learned__body">
-                                        <li>HTML input elements with a type 'number' pass their values as strings and must still be converted into type number using <em>parseInt</em></li>
-                                        <li>addEventListener can be passed a second argument as an anonymous function or a function call, but not a function call that passes a value.</li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -128,47 +123,6 @@
                                     <button id="project-speedType__tryagain-btn" type="button">Try Again</button>
                                     <button id="project-speedType__diffprompt-btn" type="button">Different Prompt</button>
                                 </div>
-                                <div class="modal-footer">
-                                    <a class="what-i-learned__link">What I learned from this project</a>
-                                    <ul class="what-i-learned__body">
-                                        <li>To make an asynchronous call to a text file that stores the list of prompts.</li>
-                                        <li>To randomly select an index of an array using the Math.random function.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="module-item">
-                        <h3 class="module-title">Coming Soon</h3>
-                    </div>
-                    <div id="modal-container__project-poker" class="modal">
-                        <div class="modal-column">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <span id="project-poker__span-close" class="close">&times;</span>
-                                    <h2>2 Hand Poker Game</h2>
-                                </div>
-                                <div class="modal-body project-poker__body">
-                                    <p class="project-poker__instruct">This game features two players. Both players are dealt five cards. Find out who the winner is!</p>
-                                    <div class = "project-poker__hand-container">
-                                        <div>
-                                        
-                                        </div>
-                                    </div>
-                                    <div id="project-poker__results">
-                                        <p id="project-poker__result-blurb"></p>
-                                        <p>Results</p>
-                                    </div>
-                                    <button id="project-poker__tryagain-btn" type="button">Play Again</button>
-                                    <button id="project-poker__diffprompt-btn" type="button">Start Over</button>
-                                </div>
-                                <div class="modal-footer">
-                                    <a class="what-i-learned__link">What I learned from this project</a>
-                                    <ul class="what-i-learned__body">
-                                        <li></li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -184,32 +138,27 @@
                                     <h2>Concentrate Yo!</h2>
                                 </div>
                                 <div class="modal-body project-concentrateYo__body">
-                                    <p class="project-concentrateYo__instruct">We all know this game...Test your memory!</p>
+                                    <p class="project-concentrateYo__instruct">The game of concentration. Find the matching flags. Test your memory!</p>
                                     <div class = "project-concentrateYo__container">
                                         <div>
-                                           <label value="Create Grid Size">Grid Size</label>
-                                           <input type="number" id="project-concentrateYo__gridSizeInput">
+                                           <label value="Create Grid Size">Grid Size (2, 4, 6, 8, 10)</label>
+                                           <input class="form-input-inline" type="number" id="project-concentrateYo__gridSizeInput">
+                                           <span><button type="button" class="button" id="project-concentrateYo__createGrid-btn">Create Grid</button></span>
                                         </div>
                                         <div>
-                                            <button id="project-concentrateYo__createGrid-btn">Create Grid</button>
+                                            <p class="project-concentrateYo__grid-error"></p>
                                         </div>
+                                        
                                         <div class="project-concentrateYo__grid-container">
 
                                         </div>
                                     </div>
                                     <div id="project-concentrateYo__results">
                                         <p id="project-concentrateYo__timer">00:00:00</p>
-                                        <p>Results</p>
                                         <p id="project-concentrateYo__result-accuracy"></p>
                                         <p id="project-concentrateYo__result-blurb"></p>
                                     </div>
-                                    <button id="project-concentrateYo__playagain-btn" type="button">Play Again</button>
-                                </div>
-                                <div class="modal-footer">
-                                    <a class="what-i-learned__link">What I learned from this project</a>
-                                    <ul class="what-i-learned__body">
-                                        <li></li>
-                                    </ul>
+                                    <button class="button" id="project-concentrateYo__playagain-btn" type="button">Play Again</button>
                                 </div>
                             </div>
                         </div>

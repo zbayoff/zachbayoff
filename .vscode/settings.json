@@ -2,16 +2,17 @@
     "liveServer.settings.proxy": {
         "enable": true,
         "baseUri": "/", 
-        "proxyUri": "http://localhost/" 
+        "proxyUri": "http://localhost:8888/" 
     },
     "liveSassCompile.settings.formats": [
         {
-            "savePath": "portfolio/bayground/assets/css",
-            "format": "expanded"
-        }
+            "format": "expanded",
+            "savePath": "/assets/css"
+        },
     ],
     "liveSassCompile.settings.excludeList": [
         "**/node_modules/**",
+        // "/portfolio/bayground/scss_bayground/**",
         ".vscode/**",
         "**/other/**"
     ]

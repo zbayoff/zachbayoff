@@ -42,7 +42,7 @@
         justify-content: space-around;
         .nav__nav-link {
             display: inline-block;
-            padding: 0 1rem 1rem 1rem;
+            padding: 1rem;
         } 
         @include for-tablet-landscape-up {
             position: absolute;
@@ -66,6 +66,12 @@
     }
     .nav {
         display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .nav__nav-link {
+            display: inline-block;
+            padding: 1rem;
+        }
         @include for-tablet-landscape-up {
             justify-content: space-around;
         }

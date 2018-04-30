@@ -62,8 +62,8 @@
                 <p>Client: Anybody</p>
                 <p>Tags: Web Applications / Javascript</p>
                 <h2>Project Background</h2>
-                <p>The Bayground is a collection of small, simple to complex applications. They range from finding a set of prime numbers to finding the winner of a two-hand poker game.</p>
-                <p>This project was created to enhance javascript and programming skills. Namely, creating and using functions in different ways, writing loops, manipulating the DOM, adhering to ECMAScript 6 specifications, and much more.</p>
+                <p>The Bayground is a collection of small, simple to complex applications. They range from finding a set of prime numbers to playing a game of concentration.</p>
+                <p>This project was created to enhance javascript and programming skills. Namely, creating and using functions in different ways, writing loops, manipulating the DOM (without jQuery), adhering to ECMAScript 6 specifications, and much more.</p>
                 <p>Drop me a <a href="../contact.php">message</a> to know what you think!</p>
                 <h2>Link to application</h2>
                 <button class="container-project-background__project-btn"><a class ="container-project-background__project-link" href="bayground/thebayground.php">Launch Application</a></button>
@@ -79,6 +79,10 @@
                 <h3 class="container-project-screenshot__page-title">Speed Typing Test Module</h3>
                 <div class="container-project-screenshot__project-item">
                     <img src="bayground/assets/img/screenshots/thebayground-speed-test-module.png" class="container-project-screenshot__project-img">
+                </div>
+                <h3 class="container-project-screenshot__page-title">Concentration Game Module</h3>
+                <div class="container-project-screenshot__project-item">
+                    <img src="bayground/assets/img/screenshots/thebayground-concentrate-yo-module.png" class="container-project-screenshot__project-img">
                 </div>
             </div>
         </section>

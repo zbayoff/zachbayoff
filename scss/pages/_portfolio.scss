@@ -18,6 +18,9 @@
         }
         .container-project-desc__project-img:hover {
             animation: fadeOut 0.75s;
+            -webkit-animation: fadeOut 0.75s;
+            -moz-animation: fadeOut 0.75s;
+            -o-animation: fadeOut 0.75s;
         }
         .container-project-desc__project-title {
             background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .75), rgba(0, 0, 0, .5));
@@ -39,11 +42,50 @@
             /*    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .5), rgba(0, 0, 0, .25));*/
             animation: fadeOut 1s ease-in-out;
             animation-fill-mode: forwards;
+            -webkit-animation: fadeOut 1s ease-in-out;
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation: fadeOut 1s ease-in-out;
+            -moz-animation-fill-mode: forwards;
+            -o-animation: fadeOut 1s ease-in-out;
+            -o-animation-fill-mode: forwards;
         }
     }
 }
 
 @keyframes fadeOut {
+    0% {
+        opacity: 1;
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .75), rgba(0, 0, 0, .5));
+    }
+    100% {
+        opacity: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .75), rgba(0, 0, 0, .5));
+    }
+    100% {
+        opacity: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .75), rgba(0, 0, 0, .5));
+    }
+    100% {
+        opacity: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    }
+}
+
+@-o-keyframes fadeOut {
     0% {
         opacity: 1;
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .75), rgba(0, 0, 0, .5));

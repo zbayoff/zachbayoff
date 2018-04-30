@@ -10,8 +10,7 @@
     const playAgainBtn = document.getElementById("project-concentrateYo__playagain-btn");
     const spanClose = document.getElementById("project-concentrateYo__span-close");
     const timerPara = document.getElementById("project-concentrateYo__timer");
-
-    
+    const gridError = document.querySelector('.project-concentrateYo__grid-error');
 
     let prevTile;
     let clickDisabled = false;
@@ -52,39 +51,47 @@
 
         if (gridSize) {
 
-            let imgArray = [];
-            imgArray = getImages(gridSize);
+            // validate number is ONLY 2, 4, 6, 8 or 10. 
+            if (gridSize === 2 || gridSize === 4 || gridSize === 6 || gridSize === 8 || gridSize === 10) {
 
-            let imgArrayShuffled = shuffle(imgArray);
-            // Loop through shuffled image array and output to browser. 
+                gridError.innerHTML = "";
 
-            let gridMarkup = `
-            ${
+                let imgArray = [];
+                imgArray = getImages(gridSize);
+
+                let imgArrayShuffled = shuffle(imgArray);
+                // Loop through shuffled image array and output to browser. 
+
+                let columnSize = '';
+
+                const imgTileContainer = document.querySelectorAll('.imgTile-container');
+
+                if (gridSize === 2) {
+                    columnSize = '14%';
+                } else if (gridSize === 4) {
+                    columnSize = '12%';
+                } else if (gridSize === 6) {
+                    columnSize = '10%';
+                } else if (gridSize === 8) {
+                    columnSize = '10%';
+                } else if (gridSize === 10) {
+                    columnSize = '7%';
+                    // gridContainer.style.maxWidth = `80%`;
+                    for (let i = 0; i < imgTileContainer.length; i += 1) {
+                        // imgTileContainer[i].style.minWidth = `50px`;
+                    }
+                }
+
+                gridContainer.style.gridTemplateColumns = `repeat(${gridSize},${columnSize})`;
+
                 imgArrayShuffled.map((item, index) => {
-                    let tile = `<div class="imgTile-container"><p class="imgTile closed" data-tileid="${index}"></p><img src="assets/img/concentrateYo/${item}.png"></div>`
-                    return tile;
+                    setTimeout(() => {
+                        gridContainer.innerHTML += `<div class="imgTile-container"><p class="imgTile closed" data-tileid="${index}"></p><img src="assets/img/concentrateYo/${item}.png"></div>`
+                    }, index * 50);
                 }).join('')
-            }`;
-
-            let columnSize = '';
-
-
-            if (gridSize === 2){
-                columnSize = '14%';
-            } else if (gridSize === 4) {
-                columnSize = '12%';
-            } else if (gridSize === 6) {
-                columnSize = '10%';
-            } else if (gridSize === 8) {
-                columnSize = '5%';
-            } else if (gridSize === 10) {
-                columnSize = '1fr';
+            } else {
+                gridError.innerHTML = "Grid size can only be 2, 4, 6, 8 or 10."
             }
-            gridContainer.style.gridTemplateColumns = `repeat(${gridSize},${columnSize})`;
-
-            gridContainer.innerHTML = gridMarkup;
-
-            
         }
     }
 
@@ -177,6 +184,9 @@
                             return;
                         }
 
+                        // if exact same tile is clicked, do nothing.
+                    } else if (currentTile.getAttribute('data-tileid') === prevTile.getAttribute('data-tileid')) {
+                        return;
                     } else {
                         // tiles are unmatched, make both tiles classes 'closed'
                         clickDisabled = true;
@@ -230,18 +240,16 @@
     }
 
     function stopTimer() {
-        alert('Game Finished!');
+        // alert('Game Finished!');
         clearInterval(timerInterval);
         displayResult();
     }
 
     function displayResult() {
 
-
-
         let accuracy = Math.round((numImages / numTries) * 100);
 
-        resultAccuracy.innerHTML = `<p>Your accuracy was: ${accuracy}%</p>`;
+        resultAccuracy.innerHTML = `<p>Results</p><p>Your accuracy was: ${accuracy}%</p>`;
 
         if (accuracy < 40) {
             resultBlurb.innerHTML = "<p>M'eh. I think you can do better.</p>";
@@ -264,11 +272,12 @@
 
     function clearFields() {
 
+        gridError.innerHTML = "";
         resultAccuracy.innerHTML = "";
         resultBlurb.innerHTML = "";
         gridContainer.innerHTML = "";
         gridSizeInput.value = "";
-        
+
 
         firstClick = true;
 

@@ -42,6 +42,9 @@
             </ul>
         </nav>
     </header>
+    <div class="success-msg-header">
+        <p class="success-msg">Message sent. Thanks!</p>
+    </div>
     <div class="page">
         <main class="container">
             <section class="row">

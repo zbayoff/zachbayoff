@@ -25,3 +25,36 @@
     margin: 0;
     font-size: 1rem;
 }
+
+.success-msg-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    background-color: lightgray;
+    .success-msg {
+        opacity: 0;
+        text-align: center;
+        font-size: 1.2rem;
+        z-index: 5;
+
+    }
+    &.show {
+        height: 120px;
+        .success-msg {
+            opacity: 1;
+        }
+        transition: all 0.5s ease-in;
+    }
+    &.hide {
+        height: 0px;
+        .success-msg {
+            opacity: 0;
+        }
+        transition: all 0.5s ease-in;
+    }
+}

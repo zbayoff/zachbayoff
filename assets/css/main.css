@@ -73,7 +73,7 @@ h6 {
 }
 
 main {
-  margin-top: 9rem;
+  margin-top: 10rem;
 }
 
 #about main {
@@ -468,7 +468,7 @@ template {
 
 .welcome-header .nav .nav__nav-link {
   display: inline-block;
-  padding: 0 1rem 1rem 1rem;
+  padding: 1rem;
 }
 
 @media (min-width: 900px) {
@@ -493,6 +493,13 @@ template {
 
 .header .nav {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.header .nav .nav__nav-link {
+  display: inline-block;
+  padding: 1rem;
 }
 
 @media (min-width: 900px) {
@@ -512,14 +519,8 @@ template {
   -webkit-text-stroke: 2px black;
 }
 
-@media screen and (orientation: landscape) {
-  .logo__text a {
-    font-size: 2rem;
-  }
-}
-
 .breadcrumbs {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .breadcrumbs ul {
@@ -575,7 +576,7 @@ body#contact {
 .welcome-header {
   background: #90DDF0;
   width: 100%;
-  height: 120px;
+  height: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -606,7 +607,7 @@ body#contact {
 .header {
   background: #90DDF0;
   width: 100%;
-  height: 120px;
+  height: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -678,7 +679,7 @@ footer .footer-inner {
   position: relative;
   height: 100%;
   width: 100%;
-  background: #90DDF0;
+  background-image: linear-gradient(to bottom, #696969, #7e828d, #8b9eb1, #8fbdd4, #90ddf0);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -705,13 +706,6 @@ footer .footer-inner {
   }
 }
 
-@media screen and (orientation: landscape), screen and (max-width: 450px) {
-  .container-welcome .container-welcome__inner h1 {
-    padding-top: 3rem;
-    font-size: 2rem;
-  }
-}
-
 .container-welcome .container-welcome__inner h2 {
   font-size: 1rem;
   margin: 1rem 0 1rem 0;
@@ -720,12 +714,6 @@ footer .footer-inner {
 @media (min-width: 600px) {
   .container-welcome .container-welcome__inner h2 {
     font-size: 1.3rem;
-  }
-}
-
-@media screen and (orientation: landscape), screen and (max-width: 450px) {
-  .container-welcome .container-welcome__inner h2 {
-    font-size: 1rem;
   }
 }
 
@@ -743,21 +731,9 @@ footer .footer-inner {
   margin-right: auto;
 }
 
-@media screen and (orientation: landscape), screen and (max-width: 450px) {
-  .container-welcome__bottom-text {
-    bottom: 2%;
-  }
-}
-
 .container-welcome__bottom-text h3 {
   font-size: 1.5rem;
   margin: 1rem 0 1rem 0;
-}
-
-@media screen and (orientation: landscape), screen and (max-width: 450px) {
-  .container-welcome__bottom-text h3 {
-    font-size: 1rem;
-  }
 }
 
 .container-welcome__bottom-text p {
@@ -765,23 +741,11 @@ footer .footer-inner {
   margin: 0;
 }
 
-@media screen and (orientation: landscape), screen and (max-width: 450px) {
-  .container-welcome__bottom-text p {
-    font-size: 0.75rem;
-  }
-}
-
 .container-welcome__bottom-text a {
   color: black;
   text-decoration: none;
   font-size: 3rem;
   animation: aboutme-arrow-pulse 2s ease-out infinite;
-}
-
-@media screen and (orientation: landscape), screen and (max-width: 450px) {
-  .container-welcome__bottom-text a {
-    font-size: 2rem;
-  }
 }
 
 @keyframes aboutme-arrow-pulse {
@@ -837,21 +801,8 @@ footer .footer-inner {
   margin-left: 1rem;
 }
 
-.container-skills .row {
-  /*    height: 100vh;*/
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  background-color: white;
-  box-shadow: 4px 10px 8px;
-}
-
-.skills-list {
+.skills-list-frontend, .skills-list-backend, .skills-list-design {
   display: flex;
-  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
@@ -861,7 +812,12 @@ footer .footer-inner {
 
 .skills-type {
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+}
+
+.skills-container h4 {
+  font-size: 1.2rem;
+  margin-left: 1rem;
 }
 
 .skills-list__group {
@@ -886,7 +842,7 @@ footer .footer-inner {
   display: flex;
 }
 
-.skills-list__item {
+.skills-list__item-front, .skills-list__item-back, .skills-list__item-design {
   font-size: 1.1rem;
   display: flex;
   flex-direction: column;
@@ -894,9 +850,19 @@ footer .footer-inner {
   padding: 1rem;
 }
 
+.skills-list__item-front.bulge, .skills-list__item-back.bulge, .skills-list__item-design.bulge {
+  animation: bulgeIcon 1s forwards;
+}
+
 .skills-list__img {
   margin-top: 1rem;
   width: 50px;
+}
+
+@keyframes bulgeIcon {
+  50% {
+    transform: scale(1.4);
+  }
 }
 
 .container-end-about .row {
@@ -953,6 +919,43 @@ footer .footer-inner {
   font-size: 1rem;
 }
 
+.success-msg-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  background-color: lightgray;
+}
+
+.success-msg-header .success-msg {
+  opacity: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  z-index: 5;
+}
+
+.success-msg-header.show {
+  height: 120px;
+  transition: all 0.5s ease-in;
+}
+
+.success-msg-header.show .success-msg {
+  opacity: 1;
+}
+
+.success-msg-header.hide {
+  height: 0px;
+  transition: all 0.5s ease-in;
+}
+
+.success-msg-header.hide .success-msg {
+  opacity: 0;
+}
+
 .project-container {
   padding-bottom: 120px;
 }
@@ -977,6 +980,9 @@ footer .footer-inner {
 
 .container-project-desc__project-item .container-project-desc__project-link .container-project-desc__project-img:hover {
   animation: fadeOut 0.75s;
+  -webkit-animation: fadeOut 0.75s;
+  -moz-animation: fadeOut 0.75s;
+  -o-animation: fadeOut 0.75s;
 }
 
 .container-project-desc__project-item .container-project-desc__project-link .container-project-desc__project-title {
@@ -1000,9 +1006,48 @@ footer .footer-inner {
   /*    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .5), rgba(0, 0, 0, .25));*/
   animation: fadeOut 1s ease-in-out;
   animation-fill-mode: forwards;
+  -webkit-animation: fadeOut 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: fadeOut 1s ease-in-out;
+  -moz-animation-fill-mode: forwards;
+  -o-animation: fadeOut 1s ease-in-out;
+  -o-animation-fill-mode: forwards;
 }
 
 @keyframes fadeOut {
+  0% {
+    opacity: 1;
+    background: linear-gradient(black, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
+  }
+  100% {
+    opacity: 0;
+    background: linear-gradient(transparent, transparent, transparent);
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    background: linear-gradient(black, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
+  }
+  100% {
+    opacity: 0;
+    background: linear-gradient(transparent, transparent, transparent);
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    background: linear-gradient(black, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
+  }
+  100% {
+    opacity: 0;
+    background: linear-gradient(transparent, transparent, transparent);
+  }
+}
+
+@-o-keyframes fadeOut {
   0% {
     opacity: 1;
     background: linear-gradient(black, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
