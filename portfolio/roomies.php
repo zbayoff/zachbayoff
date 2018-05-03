@@ -81,6 +81,7 @@
                 <div class="container-project-screenshot__project-item">
                     <img src="roomies/assets/img/screenshots/login-page.png" class="container-project-screenshot__project-img">
                 </div>
+
                 <h3>Groups</h3>
                 <div class="container-project-screenshot__project-item">
                     <img src="roomies/assets/img/screenshots/groups-page.png" class="container-project-screenshot__project-img">

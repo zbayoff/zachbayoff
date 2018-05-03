@@ -29,7 +29,7 @@
 
 </head>
 
-<body id="portfolio">
+<body id="portfolio" class="js-loading">
     <header class="header">
         <div class="logo">
             <p class="logo__text"><a href="index.php">ZachBayoff</a></p>
@@ -52,13 +52,22 @@
                     <p>Here is a list of my recent projects with links to a more detailed description.</p>
                     <div class="container-project-desc">
                         <div class="container-project-desc__project-item">
-                            <a class="container-project-desc__project-link" href="portfolio/roomies.php"><img class="container-project-desc__project-img" src="portfolio/roomies/assets/img/screenshots/dashboard-page.png"><h4 class="container-project-desc__project-title">Roomies: Web Application</h4></a>
+                            <a class="container-project-desc__project-link" href="portfolio/roomies.php"><img class="container-project-desc__project-img" src="portfolio/roomies/assets/img/screenshots/dashboard-page.png"><h4 class="container-project-desc__project-title">Roomies: A Roommate Management App</h4></a>
                         </div>
                         <div class="container-project-desc__project-item">
-                            <a class="container-project-desc__project-link" href="portfolio/thebayground.php"><img class="container-project-desc__project-img" src="portfolio/bayground/assets/img/screenshots/thebayground-screenshot.png"><h4 class="container-project-desc__project-title">The Bayground: Web Application</h4></a>
+                            <a class="container-project-desc__project-link" href="portfolio/thebayground.php"><img class="container-project-desc__project-img" src="portfolio/bayground/assets/img/screenshots/thebayground-screenshot.png"><h4 class="container-project-desc__project-title">The Bayground: A Collection of Mini Apps</h4></a>
                         </div>
                         <div class="container-project-desc__project-item">
                             <a class="container-project-desc__project-link" href="/"><img class="container-project-desc__project-img" src="portfolio/bayground/assets/img/screenshots/thebayground-screenshot.png"><h4 class="container-project-desc__project-title">zachbayoff.com</h4></a>
+                        </div>
+                        <div class="container-project-desc__project-item">
+                            <a class="container-project-desc__project-link" href="/"><img class="container-project-desc__project-img" src="portfolio/bayground/assets/img/screenshots/thebayground-screenshot.png"><h4 class="container-project-desc__project-title">Weather App</h4></a>
+                        </div>
+                        <div class="container-project-desc__project-item">
+                            <a class="container-project-desc__project-link" href="/"><img class="container-project-desc__project-img" src="portfolio/bayground/assets/img/screenshots/thebayground-screenshot.png"><h4 class="container-project-desc__project-title">NYJTL Mockup</h4></a>
+                        </div>
+                        <div class="container-project-desc__project-item">
+                            <a class="container-project-desc__project-link" href="/"><img class="container-project-desc__project-img" src="portfolio/bayground/assets/img/screenshots/thebayground-screenshot.png"><h4 class="container-project-desc__project-title">The Commentor</h4></a>
                         </div>
                     </div
                 </div>
@@ -70,6 +79,7 @@
     </div>
 
     <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/portfolio.js"></script>
 
 </body>
 
