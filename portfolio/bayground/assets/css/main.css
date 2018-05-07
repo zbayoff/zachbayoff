@@ -73,7 +73,7 @@ h6 {
 }
 
 main {
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 #about main {
@@ -436,7 +436,7 @@ template {
   text-decoration: none;
   color: black;
   font-size: 1.25rem;
-  padding: 1rem;
+  padding: 0 1rem 0 1rem;
   line-height: 3rem;
 }
 
@@ -468,7 +468,7 @@ template {
 
 .welcome-header .nav .nav__nav-link {
   display: inline-block;
-  padding: 1rem;
+  padding: 0 1rem 0 1rem;
 }
 
 @media (min-width: 900px) {
@@ -499,7 +499,7 @@ template {
 
 .header .nav .nav__nav-link {
   display: inline-block;
-  padding: 1rem;
+  padding: 0 1rem 0 1rem;
 }
 
 @media (min-width: 900px) {
@@ -509,14 +509,19 @@ template {
 }
 
 /*---------Site Logo---------*/
+.logo__text {
+  margin: 0;
+}
+
 .logo__text a {
   font-family: 'Sedgwick Ave Display', cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-decoration-color: black;
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #59CD90;
   -webkit-text-stroke: 2px black;
+  -webkit-font-smoothing: antialiased;
 }
 
 .breadcrumbs {
@@ -567,6 +572,7 @@ body#contact {
   position: relative;
   margin: 0;
   padding: 0;
+  min-height: 100%;
 }
 
 .column {
@@ -576,7 +582,7 @@ body#contact {
 .welcome-header {
   background: #90DDF0;
   width: 100%;
-  height: 160px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -606,8 +612,8 @@ body#contact {
 
 .header {
   background: #90DDF0;
-  width: 100%;
-  height: 160px;
+  width: 100vw;
+  height: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -621,6 +627,7 @@ body#contact {
 
 @media (min-width: 900px) {
   .header {
+    width: 100vw;
     position: fixed;
     display: flex;
     align-items: center;
@@ -894,7 +901,7 @@ footer .footer-inner {
 
 /*---------Contact Page---------*/
 .contact-container {
-  padding-bottom: 120px;
+  padding-bottom: 180px;
   height: 100%;
 }
 
@@ -956,12 +963,53 @@ footer .footer-inner {
   opacity: 0;
 }
 
+.js-loading,
+.js-loading:before,
+.js-loading:after {
+  animation-play-state: paused !important;
+}
+
 .project-container {
   padding-bottom: 120px;
 }
 
+.container-project-desc {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-project-desc__project-item:nth-of-type(even) {
+  animation: lightSpeedOutLeft 1s;
+}
+
+.container-project-desc__project-item:nth-of-type(odd) {
+  animation: lightSpeedOutRight 1s;
+}
+
+@keyframes lightSpeedOutRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes lightSpeedOutLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) skewX(-30deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .container-project-desc__project-item {
-  margin-bottom: 1rem;
+  max-width: 300px;
+  margin: 0.5rem;
   position: relative;
 }
 

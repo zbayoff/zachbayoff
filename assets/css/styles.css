@@ -209,7 +209,6 @@
 /*-------Concentrate Yo -------*/
 .project-concentrateYo__grid-container {
   display: grid;
-  display: -ms-grid;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -281,7 +280,6 @@
 
 .project-concentrateYo__grid-container img {
   display: inline-block;
-  position: absolute;
   width: 100%;
   height: 100%;
   border: 2px solid black;

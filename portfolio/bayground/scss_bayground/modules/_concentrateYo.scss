@@ -2,7 +2,6 @@
 
 .project-concentrateYo__grid-container {
     display: grid;
-    display: -ms-grid;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -17,30 +16,33 @@
     margin: 1rem auto 1rem auto;
     .imgTile-container {
         position: relative;
+        height: 100%;
         width: $tile-size;
         margin: 0rem;
         padding-bottom: 100%;
         @media screen and (max-width: 900px) {
             min-width: initial;
         }
+        div {
+            height: 100%;
+        }
     }
     p {
+        height: 100%;
+
+
         &.closed {
             padding: 0;
             margin: 0;
             position: absolute;
             background-color: #888;
             opacity: 1;
-            height: $tile-size;
+            height: 100%;
             width: $tile-size;
             z-index: 1;
             -webkit-transition: background-color 0.5s;
             -o-transition: background-color 0.5s;
             transition: background-color 0.5s;
-            // -webkit-transition: opacity 1s ease-in-out;
-            // -o-transition: opacity 1s ease-in-out;
-            // transition: opacity 1s ease-in-out;
-            // animation: flipCard 2s;
         }
         &.open {
             background-color: transparent;
@@ -65,31 +67,40 @@
         }
         &.done+img {
             -webkit-animation: tileDone 0.5s ease-in-out;
-                    animation: tileDone 0.5s ease-in-out;
+            animation: tileDone 0.5s ease-in-out;
         }
     }
     img {
-        display: inline-block;
+        display: block;
         position: absolute;
         width: $tile-size;
-        height: $tile-size;
+        height: auto;
         border: 2px solid black;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px; // display: inline-block;
+        //     width: 100%;
+        //     top: 0px;
+        //     bottom: 0px;
+        //     right: 0px;
+        //     left: 0px;
+        //     height: 100%;
+        //     border: 2px solid black;
     }
 }
-
 
 @-webkit-keyframes tileDone {
     50% {
-       -webkit-transform: scale(1.05);
-               transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
     }
 }
 
-
 @keyframes tileDone {
     50% {
-       -webkit-transform: scale(1.05);
-               transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
     }
 }
 

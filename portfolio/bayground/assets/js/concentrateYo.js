@@ -67,7 +67,7 @@
                 const imgTileContainer = document.querySelectorAll('.imgTile-container');
 
                 if (gridSize === 2) {
-                    columnSize = '14%';
+                    columnSize = '0.25fr';
                 } else if (gridSize === 4) {
                     columnSize = '12%';
                 } else if (gridSize === 6) {
@@ -85,9 +85,10 @@
                 // gridContainer.style.gridTemplateColumns = `repeat(${gridSize},${columnSize})`;
                 gridContainer.style.gridTemplateColumns = `repeat(${gridSize},${columnSize})`;
 
+
                 imgArrayShuffled.map((item, index) => {
                     setTimeout(() => {
-                        gridContainer.innerHTML += `<div class="imgTile-container"><p class="imgTile closed" data-tileid="${index}"></p><img src="assets/img/concentrateYo/${item}.png"></div>`
+                        gridContainer.innerHTML += `<div class="imgTile-container"><div><p class="imgTile closed" data-tileid="${index}"></p><img src="assets/img/concentrateYo/${item}.png"></div></div>`
                     }, index * 50);
                 }).join('')
             } else {
