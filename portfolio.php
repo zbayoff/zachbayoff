@@ -67,7 +67,7 @@
                             <a class="container-project-desc__project-link" href="/"><img class="container-project-desc__project-img" src="portfolio/bayground/assets/img/screenshots/thebayground-screenshot.png"><h4 class="container-project-desc__project-title">NYJTL Mockup</h4></a>
                         </div>
                         <div class="container-project-desc__project-item">
-                            <a class="container-project-desc__project-link" href="/"><img class="container-project-desc__project-img" src="portfolio/bayground/assets/img/screenshots/thebayground-screenshot.png"><h4 class="container-project-desc__project-title">The Commentor</h4></a>
+                            <a class="container-project-desc__project-link" href="/"><img class="container-project-desc__project-img" src="portfolio/bayground/assets/img/screenshots/thebayground-screenshot.png"><h4 class="container-project-desc__project-title">Travel App</h4></a>
                         </div>
                     </div
                 </div>

@@ -20,82 +20,38 @@
 
     // When user scrolls to skills section, logos will successively "bulge"
     const welcomeHeader = document.querySelector('.welcome-header');
-    const welcomeContainer = document.querySelector('.container-welcome');
-    const frontEndSkillsSection = document.querySelector('.skills-list-frontend');
-    const frontendItems = document.querySelectorAll('.skills-list__item-front');
+    // const welcomeContainer = document.querySelector('.container-welcome');
+    // const frontEndSkillsSection = document.querySelector('.skills-list-frontend');
+    // const frontendItems = document.querySelectorAll('.skills-list__item-front');
 
-    const backEndSkillsSection = document.querySelector('.skills-list-backend');
-    const backendItems = document.querySelectorAll('.skills-list__item-back');
+    // const backEndSkillsSection = document.querySelector('.skills-list-backend');
+    // const backendItems = document.querySelectorAll('.skills-list__item-back');
 
-    const designSkillsSection = document.querySelector('.skills-list-design');
-    const designItems = document.querySelectorAll('.skills-list__item-design');
-
-    window.addEventListener('scroll', bulgeLogos);
-
-    function bulgeLogos() {
-        // console.log(window.scrollY)
-
-        let topPosFrontEndSection = 0;
-        let topPosBackEndSection = 0;
-        let topPosDesignSection = 0;
-
-        console.log(welcomeHeader.clientHeight);
-
-        console.log(document.body.clientWidth);
-
-        if (document.body.clientWidth < 900) {
-            topPosFrontEndSection = frontEndSkillsSection.getBoundingClientRect().top - (welcomeHeader.clientHeight + 300);
-            topPosBackEndSection = backEndSkillsSection.getBoundingClientRect().top - (welcomeHeader.clientHeight + 300);
-            topPosDesignSection = designSkillsSection.getBoundingClientRect().top - (welcomeHeader.clientHeight + 300);
-        } else {
-            topPosFrontEndSection = frontEndSkillsSection.getBoundingClientRect().top - (welcomeContainer.clientHeight - 200);
-            topPosBackEndSection = backEndSkillsSection.getBoundingClientRect().top - (welcomeContainer.clientHeight - 200);
-            topPosDesignSection = designSkillsSection.getBoundingClientRect().top - (welcomeContainer.clientHeight - 200);
-        }
+    // const designSkillsSection = document.querySelector('.skills-list-design');
+    // const designItems = document.querySelectorAll('.skills-list__item-design');
 
 
+    const skillListGroup = document.querySelectorAll('.skills-list__group');
+    const skillListItems = document.querySelectorAll('.skills-list__list-item');
 
-        console.log("The distance from the bottom of the browser to the top of the front end section is: " + topPosFrontEndSection);
+    window.addEventListener('scroll', slideIn);
 
+    function slideIn(e) {
 
+        // When skillsListGroup reaches a certain distance from the top, 
+        // animate a slide-in to the corresponding list item elements.
+        
+        for (let i = 0; i < skillListGroup.length; i += 1) {
 
+            const skillListGroupPos = skillListGroup[i].getBoundingClientRect().top - (welcomeHeader.clientHeight + document.documentElement.clientHeight - 100);
 
-
-        if (topPosFrontEndSection < 0) {
-            for (let i = 0; i < frontendItems.length; i += 1) {
-                doSetTimeout(i);
-            }
-
-            function doSetTimeout(i) {
-                setTimeout(() => {
-                    frontendItems[i].classList.add('bulge');
-                }, i * 100);
+            if (skillListGroupPos < 0) {
+                for (let j = 0; j < skillListGroup[i].children.length; j += 1) {
+                    skillListGroup[i].children[j].classList.remove('hidden');
+                    skillListGroup[i].children[j].classList.add('slide');
+                }
             }
         }
-
-        if (topPosBackEndSection < 0) {
-            for (let i = 0; i < backendItems.length; i += 1) {
-                doSetTimeout(i);
-            }
-
-            function doSetTimeout(i) {
-                setTimeout(() => {
-                    backendItems[i].classList.add('bulge');
-                }, i * 100);
-            }
-        }
-
-        if (topPosDesignSection < 0) {
-            for (let i = 0; i < designItems.length; i += 1) {
-                doSetTimeout(i);
-            }
-
-            function doSetTimeout(i) {
-                setTimeout(() => {
-                    designItems[i].classList.add('bulge');
-                }, i * 100);
-            }
-        }
-    }
+     }
 
 })();

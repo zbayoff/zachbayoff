@@ -1,8 +1,7 @@
 .container-welcome {
     position: relative;
     height: 100%;
-    width: 100%;
-    // margin-left: auto;
+    width: 100%; // margin-left: auto;
     // margin-right: auto;
     // background: #90DDF0;
     background-image: linear-gradient(to bottom, #696969, #7e828d, #8b9eb1, #8fbdd4, #90ddf0);
@@ -46,7 +45,6 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    
     h3 {
         font-size: 1.5rem;
         margin: 1rem 0 1rem 0;
@@ -61,7 +59,6 @@
         font-size: 3rem;
         animation: aboutme-arrow-pulse 2s ease-out infinite;
     }
-    
 }
 
 @keyframes aboutme-arrow-pulse {
@@ -110,7 +107,9 @@
     margin-left: 1rem;
 }
 
-.skills-list-frontend, .skills-list-backend, .skills-list-design {
+.skills-list-frontend,
+.skills-list-backend,
+.skills-list-design {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -118,7 +117,6 @@
     margin: 0;
     padding: 0;
 }
-
 
 .skills-type {
     font-weight: 700;
@@ -150,36 +148,42 @@
     font-weight: 600;
 }
 
-.skills-list__group-item {
+.skills-list__group {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
 
-.skills-list__item-front, .skills-list__item-back, .skills-list__item-design, {
+.skills-list__list-item {
     font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    &.bulge {
-        animation: bulgeIcon 1s forwards;
+    &.hidden {
+        visibility: hidden;
+    }
+    &.slide {
+        animation: slideIcon 1s forwards;
     }
 }
 
 .skills-list__img {
     margin-top: 1rem;
     width: 50px;
-    
 }
 
-@keyframes bulgeIcon {
-   50% {
-       transform: scale(1.4);
-   }
+@keyframes slideIcon {
+    0% {
+        opacity: 0;
+        transform: translate3d(-200px, 0, 0); 
+    }
+    100% {
+        opacity: 1;
+    }
 }
-
-
-
-
 
 .container-end-about .row {
     justify-content: center;

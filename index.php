@@ -97,58 +97,79 @@
             <section class="row">
                 <div>
                     <h2>Skills</h2>
-                    <p>In the world of web development, technologies and tools are constantly changing and updating to keep
-                        up with users' ever demanding desire for efficient, no hassle online experiences.</p>
+                    <p>In the field of web development, technologies and tools are constantly changing and updating to keep up with users' ever demanding desire for efficient, no hassle online experiences.</p>
                     <p>I make it a priority to dedicate myself to learning and mastering these tools.</p>
-                    <h3 class="skills-type">Web Dev Skills:</h3>
+                    <h3 class="skills-type">Tech:</h3>
                     <div class="skills-container">
                         <h4>Front End</h4>
-                        <ul class="skills-list-frontend">
-                            <li class="skills-list__item-front">HTML5
+                        <ul class="skills-list__group">
+                            <li class="hidden skills-list__list-item">HTML5
                                 <img class="skills-list__img" src="assets/images/html-logo.png">
                             </li>
-                            <li class="skills-list__item-front">CSS3
+                            <li class="hidden skills-list__list-item">CSS3
                                 <img class="skills-list__img" src="assets/images/css3-logo.png">
                             </li>
-                            <li class="skills-list__item-front">Javascript
+                            <li class="hidden skills-list__list-item">Javascript
                                 <img class="skills-list__img" src="assets/images/js-logo.png">
-                            </li>
-                            <li class="skills-list__item-front">Angular
-                                <img class="skills-list__img" src="assets/images/angular-logo.png">
-                            </li>
-                            <li class="skills-list__item-front">jQuery
-                                <img class="skills-list__img" src="assets/images/jquery-logo.png">
-                            </li>
-                            <li class="skills-list__item-front">Bootstrap4
-                                <img class="skills-list__img" src="assets/images/bootstrap-logo.png">
                             </li>
                         </ul>
                         <h4>Back End</h4>
-                        <ul class="skills-list-backend">
-                            <li class="skills-list__item-back">PHP
+                        <ul class="skills-list__group">
+                            <li class="hidden skills-list__list-item">PHP
                                 <img class="skills-list__img" src="assets/images/php-logo.png">
                             </li>
-                            <li class="skills-list__item-back">NodeJS
+                            <li class="hidden skills-list__list-item">NodeJS
                                 <img class="skills-list__img" src="assets/images/nodejs-logo.png">
                             </li>
-                            <li class="skills-list__item-back">MySQL
+                            <li class="hidden skills-list__list-item">MySQL
                                 <img class="skills-list__img" src="assets/images/mysql-logo.png">
                             </li>
-                            <li class="skills-list__item-back">WordPress
+                            <li class="hidden skills-list__list-item">MongoDB
+                                <img class="skills-list__img" src="assets/images/mongo-logo.png">
+                            </li>
+                            
+                        </ul>
+                        <h4>Libraries &amp; Frameworks</h4>
+                        <ul class="skills-list__group">
+                            <li class="hidden skills-list__list-item">Angular 6
+                                <img class="skills-list__img" src="assets/images/angular-logo.png">
+                            </li>
+                            <li class="hidden skills-list__list-item">jQuery
+                                <img class="skills-list__img" src="assets/images/jquery-logo.png">
+                            </li>
+                            <li class="hidden skills-list__list-item">Bootstrap4
+                                <img class="skills-list__img" src="assets/images/bootstrap-logo.png">
+                            </li>
+                            <li class="hidden skills-list__list-item">ExpressJS
+                                <img class="skills-list__img" src="assets/images/express-logo.png">
+                            </li>
+                        </ul>
+                        <h4>Other</h4>
+                        <ul class="skills-list__group">
+                            <li class="hidden skills-list__list-item">Git
+                                <img class="skills-list__img" src="assets/images/git-logo.png">
+                            </li>
+                            <li class="hidden skills-list__list-item">NPM
+                                <img class="skills-list__img" src="assets/images/npm-logo.png">
+                            </li>
+                            <li class="hidden skills-list__list-item">SASS
+                                <img class="skills-list__img" src="assets/images/sass-logo.png">
+                            </li>
+                            <li class="hidden skills-list__list-item">WordPress
                                 <img class="skills-list__img" src="assets/images/wordpress-logo.png">
                             </li>
                         </ul>
                     </div>
-                    <h3 class="skills-type">Design Skills:</h3>
+                    <h3 class="skills-type">Design:</h3>
                     <div class="skills-container">
-                        <ul class="skills-list-design">
-                            <li class="skills-list__item-design">AutoCAD
+                        <ul class="skills-list__group">
+                            <li class="hidden skills-list__list-item">AutoCAD
                                 <img class="skills-list__img" src="assets/images/autocad-logo.png">
                             </li>
-                            <li class="skills-list__item-design">Rhino3D
+                            <li class="hidden skills-list__list-item">Rhino3D
                                 <img class="skills-list__img" src="assets/images/rhino3d-logo.png">
                             </li>
-                            <li class="skills-list__item-design">Solidworks
+                            <li class="hidden skills-list__list-item">Solidworks
                                 <img class="skills-list__img" src="assets/images/solidworks-logo.png">
                             </li>
                         </ul>
