@@ -1023,6 +1023,7 @@ footer .footer-inner {
 
 .container-project-desc__project-item {
   max-width: 300px;
+  height: 174px;
   margin: 0.5rem;
   position: relative;
 }

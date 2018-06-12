@@ -2,7 +2,7 @@
     "liveServer.settings.proxy": {
         "enable": true,
         "baseUri": "/", 
-        "proxyUri": "http://localhost:8888/" 
+        "proxyUri": "http://localhost:80/" 
     },
     "liveSassCompile.settings.formats": [
         {
