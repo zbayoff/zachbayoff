@@ -1,7 +1,7 @@
 .welcome-header {
     background: #90DDF0;
     width: 100%;
-    height: $header-height-portrait;
+    height: $header-height;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,7 @@
 .header {
     background: #90DDF0;
     width: 100vw;
-    height: $header-height-portrait;
+    height: $header-height;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,7 +45,7 @@
         align-items: center;
         justify-content: center;
         /*        border: 2px solid black;*/
-        height: $header-height-landscape;
+        height: $header-height;
     }
     .logo {
         @include for-tablet-landscape-up {

@@ -9,7 +9,7 @@
         justify-content: center;
         align-content: center;
         align-items: center;
-        margin-top: 1rem;
+        // margin-top: 1rem;
         background-color: white; // box-shadow: 4px 10px 8px;
         column {
             padding-left: 1rem;
@@ -19,7 +19,11 @@
 }
 
 body#contact {
-    height: auto;
+    height: calc(100% - 120px);
+}
+
+body#portfolio-zachbayoff {
+    height: calc(100% - 120px);
 }
 
 .page {

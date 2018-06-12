@@ -21,7 +21,7 @@
     text-align: center;
     margin-bottom: 2rem;
     overflow: auto;
-    padding-bottom: 56.25%;
+    padding-bottom: 50%;
     border: 20px solid black;
     border-radius: 30px;
     position: relative;
@@ -34,4 +34,9 @@
     right: 0;
     width: 100%;
     padding: 1rem;
+}
+
+.zachbayoff-container {
+    padding-bottom: $footer-height + 60px;
+    height: 100%;
 }

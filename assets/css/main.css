@@ -73,7 +73,7 @@ h6 {
 }
 
 main {
-  margin-top: 8rem;
+  margin-top: 120px;
 }
 
 #about main {
@@ -555,7 +555,6 @@ template {
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin-top: 1rem;
   background-color: white;
 }
 
@@ -565,7 +564,11 @@ template {
 }
 
 body#contact {
-  height: auto;
+  height: calc(100% - 120px);
+}
+
+body#portfolio-zachbayoff {
+  height: calc(100% - 120px);
 }
 
 .page {
@@ -662,11 +665,12 @@ footer .footer-inner {
   align-content: center;
   align-items: center;
   background: #3f3f3f;
+  padding: 0 1rem;
 }
 
 .github-logo {
   width: 40px;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   background-color: white;
   border-radius: 20px;
 }
@@ -677,7 +681,7 @@ footer .footer-inner {
 }
 
 .linkedin-logo {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   width: 40px;
   padding: 0;
 }
@@ -1143,7 +1147,7 @@ footer .footer-inner {
   text-align: center;
   margin-bottom: 2rem;
   overflow: auto;
-  padding-bottom: 56.25%;
+  padding-bottom: 50%;
   border: 20px solid black;
   border-radius: 30px;
   position: relative;
@@ -1157,5 +1161,10 @@ footer .footer-inner {
   right: 0;
   width: 100%;
   padding: 1rem;
+}
+
+.zachbayoff-container {
+  padding-bottom: 180px;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */

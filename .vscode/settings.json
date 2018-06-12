@@ -2,7 +2,7 @@
     "liveServer.settings.proxy": {
         "enable": true,
         "baseUri": "/", 
-        "proxyUri": "http://localhost:80/" 
+        "proxyUri": "http://localhost:8888/" 
     },
     "liveSassCompile.settings.formats": [
         {
@@ -12,7 +12,7 @@
     ],
     "liveSassCompile.settings.excludeList": [
         "**/node_modules/**",
-        "/portfolio/bayground/scss_bayground/**",
+        "**/portfolio/bayground/scss_bayground/**",
         ".vscode/**",
         "**/other/**"
     ]

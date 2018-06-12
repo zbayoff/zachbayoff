@@ -14,12 +14,13 @@ footer {
         align-content: center;
         align-items: center;
         background: rgb(63, 63, 63);
+        padding: 0 1rem;
     }
 }
 
 .github-logo {
     width: 40px;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     background-color: white;
     border-radius: 20px;
 }
@@ -30,7 +31,7 @@ footer {
 }
 
 .linkedin-logo {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     width: 40px;
     padding: 0;
 }

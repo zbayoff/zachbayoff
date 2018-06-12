@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zach Bayoff | Web Developer | Project Description: Travel App</title>
+    <title>Zach Bayoff | Web Developer | Project Description: Weather App</title>
     <link rel="stylesheet" href="../assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
@@ -28,7 +28,7 @@
     
 </head>
 
-<body id="portfolio-travelapp">
+<body id="portfolio-weatherapp">
     <header class="header">
         <div class="logo">
             <p class="logo__text"><a href="../index.php">ZachBayoff</a></p>
@@ -52,35 +52,33 @@
                         </li>
                         <span>/</span>
                         <li>
-                            <a href="travel-app.php">Travel App - Description</a>
+                            <a href="travel-app.php">Weather App - Description</a>
                         </li>
                     </ul>
                 </nav>
-                <h1>Project Name: Travel App</h1>
+                <h1>Project Name: Weather App</h1>
                 <p>Client: Anybody</p>
-                <p>Tags: Angular 6 (CLI) Single Page Application / Heroku App / Material.io / REST API / CRUD Application / MondoDB</p>
+                <p>Tags: AngularJS Single Page Application / Heroku App / Consuming REST API</p>
                 <h2>Project Background</h2>
-                <p>This web application was created for those who like to travel, but may not have an easy way to keep track of all of their desired destinations and associated expenses. With Travel App (pardon the lack of inticing app name), a user can create, update, and delete a 'trip', filling in details such as the trip destination, travel dates, and list of costs one might incur while traveling.</p>
-                <p>This app also calls the Unsplash API that allows the user to find high resolution, beautiful photographs of just about anything, and could maybe help remind them of the beauties that their destinations hold.</p>
-                <p>A MongoDB database was set up to store the users trips, meaning that anyone can access anyone's trips. This was implemented more on a proof-of-concept basis than an actual user authentication app. I may add this implementation in the future. </p>
+                <p>This application was my first exposure to building an application using the AngularJS framework. A simple, single page application that makes call to the OpenWeatherMap API via a city/zip code and country combination. The weather data is retrieved via JSON and displayed with a high resolution background image to indicate the type of weather at the current time and place. The user can switch between Farenheit and Celcius. A Google Map is also embedded to indicate the latitude and longitude of the location the user has requested.</p>
                 <h2>Link to application</h2>
-                <button class="container-project-background__project-btn"><a class ="container-project-background__project-link" href="https://zb-travel-app.herokuapp.com/" target="_blank">Launch Application</a></button>
+                <button class="container-project-background__project-btn"><a class ="container-project-background__project-link" href="https://zb-weather-app.herokuapp.com/" target="_blank">Launch Application</a></button>
             </div>
          </section>
  
         <section class="row">
             <div class="column project-desc-container">
-                <h3>Trips Page</h3>
+                <h3>Example 1</h3>
                 <div class="container-project-screenshot__project-item">
-                    <img src="../assets/images/travel-app-screenshot.png" class="container-project-screenshot__project-img">
+                    <img src="../assets/images/weather-app-screenshot.png" class="container-project-screenshot__project-img">
                 </div>
-                <h3>Unsplash Image Gallery Modal</h3>
+                <h3>Example 2</h3>
                 <div class="container-project-screenshot__project-item">
-                    <img src="../assets/images/travel-app-screenshot2.png" class="container-project-screenshot__project-img">
+                    <img src="../assets/images/weather-app-screenshot2.png" class="container-project-screenshot__project-img">
                 </div>
-                <h3>Trip Detail Page</h3>
+                <h3>Example 3</h3>
                 <div class="container-project-screenshot__project-item">
-                    <img src="../assets/images/travel-app-screenshot3.png" class="container-project-screenshot__project-img">
+                    <img src="../assets/images/weather-app-screenshot3.png" class="container-project-screenshot__project-img">
                 </div>
             </div>
         </section>

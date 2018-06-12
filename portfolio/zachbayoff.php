@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zach Bayoff | Web Developer | Project Description: Roomies</title>
+    <title>Zach Bayoff | Web Developer | Project Description: zachbayoff.com</title>
     <link rel="stylesheet" href="../assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
@@ -28,7 +28,7 @@
     
 </head>
 
-<body id="portfolio-roomies">
+<body id="portfolio-zachbayoff">
     <header class="header">
         <div class="logo">
             <p class="logo__text"><a href="../index.php">ZachBayoff</a></p>
@@ -44,7 +44,7 @@
     <div class="page">
     <main class="container">
         <section class="row">
-            <div>
+            <div class="zachbayoff-container">
             <nav class="breadcrumbs">
                     <ul>
                         <li>
@@ -52,22 +52,18 @@
                         </li>
                         <span>/</span>
                         <li>
-                            <a href="roomies.php">Roomies - Description</a>
+                            <a href="travel-app.php">zachbayoff.com - Description</a>
                         </li>
                     </ul>
                 </nav>
-                <h1>Project Name: Roomies: Roommate Management</h1>
-                <p>Client: Anybody</p>
-                <p>Tags: CRUD Application / PHP / MySQL / jQuery / Bootstrap4</p>
+                <h1>Project Name: zachbayoff.com Portfolio Site</h1>
+                <p>Client: Moi</p>
+                <p>Tags: HTML5 / CSS3 / Javascript / SASS / PHP</p>
                 <h2>Project Background</h2>
-                <p>At one point in our lives, most of us have lived with someone else. Maybe a family member, friend, or complete stranger. Living shared spaces can get complicated and sometimes our roommates can get on our nerves. Chores are forgotten, guests overstay their welcome, and household purchases are left unreimbursed.</p>
-                <p><strong>Roomies</strong> is an interactive application that lets people create a group for their household, manage chores, schedule visitors, and create a household items list so that purchases can be tracked and roommates can be reimbursed easily. Roommates may join multiple groups, if say, they are in the process of moving and would like to join their new household, but are still living in their current household. Roomates can add their phone numbers to be automatically notified about chore dates, visitor arrivals, and household item's bills.</p>
-                <p>Below are screenshots of sample pages for a household called 'home'.</p>
-                <p>Feel free to launch the application and create a new group or join a group that your roommate has already created.</p>
+                <p>My portfolio site. I wanted it to be clean and simple and to outline the skills I have learned and used in my projects. I chose not to use any frameworks/libraries such as Angular and Bootstrap because I wanted to practice writing and implementing a standard web page with basic, yet distinctive features.</p>
                 <h2>Link to application</h2>
-                <p>This application will ask you to sign/log in.</p>
-                <button class="container-project-background__project-btn"><a class ="container-project-background__project-link" href="roomies/index.php">Launch Application</a></button>
-            </div>
+                <button class="container-project-background__project-btn"><a class ="container-project-background__project-link" href="/" target="_blank">Home Page</a></button>
+            <!-- </div>
          </section>
  
         <section class="row">
@@ -104,9 +100,9 @@
                 <h3>Preferences</h3>
                 <div class="container-project-screenshot__project-item">
                     <img src="roomies/assets/img/screenshots/preferences-page.png" class="container-project-screenshot__project-img">
-                </div>
+                </div>-->
             </div>
-        </section>
+        </section> 
   
     </main>
 
