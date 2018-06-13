@@ -126,7 +126,6 @@
     }
 
     function stopTimer() {
-
         clearInterval(timerInterval);
         displayResult();
     }
@@ -174,7 +173,5 @@
         } else if (wordsPerMinute > 60) {
             resultBlurb.innerHTML = "That was MOST EXCELLENT.";
         }
-
     }
-
 })();

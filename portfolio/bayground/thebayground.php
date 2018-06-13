@@ -32,7 +32,7 @@
 <body id="portfolio-bayground">
     <header class="header">
         <div class="logo">
-            <p class="logo__text"><a href="../index.php">ZachBayoff</a></p>
+            <p class="logo__text"><a href="../../index.php">ZachBayoff</a></p>
         </div>
         <nav>
             <ul class="nav">

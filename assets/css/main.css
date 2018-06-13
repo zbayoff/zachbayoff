@@ -595,6 +595,7 @@ body#portfolio-zachbayoff {
   right: 0;
   left: 0;
   z-index: 2;
+  box-shadow: 3px 2px 5px black;
 }
 
 @media (min-width: 900px) {
@@ -615,6 +616,7 @@ body#portfolio-zachbayoff {
 
 .header {
   background: #90DDF0;
+  box-shadow: 3px 2px 5px black;
   width: 100vw;
   height: 120px;
   display: flex;

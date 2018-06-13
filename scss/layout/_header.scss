@@ -11,6 +11,8 @@
     right: 0;
     left: 0;
     z-index: 2;
+    box-shadow: 3px 2px 5px black;
+    
     @include for-tablet-landscape-up {
         position: static;
         height: auto;
@@ -27,6 +29,7 @@
 
 .header {
     background: #90DDF0;
+    box-shadow: 3px 2px 5px black;
     width: 100vw;
     height: $header-height;
     display: flex;

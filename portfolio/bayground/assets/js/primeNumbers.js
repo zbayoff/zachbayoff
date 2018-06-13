@@ -52,14 +52,12 @@ function findPrimes(num1, num2) {
             if (isPrime(i)) {
                 primes.push(i);
             }
-            //            console.log(i);
         }
     } else {
         for (let i = num1; i >= num2; i--) {
             if (isPrime(i)) {
                 primes.push(i);
             }
-            //            console.log(i);
         }
     }
     return "<p>" + primes.join(", ") + "</p>";
@@ -70,7 +68,6 @@ let primeSecondInput = document.getElementById("prime__input-second-num");
 let primeResult = document.getElementById("prime__result-area");
 let primeCalcBtn = document.getElementById("prime__calc-button");
 
-// cannot pass a function call with arguments to the event listener method. Must pass either anonymous function or function call with no arguments.
 primeCalcBtn.addEventListener("click", function () {
     
     // use parseInt to convert string value from input type number into type number
