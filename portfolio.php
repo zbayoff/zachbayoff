@@ -52,7 +52,7 @@
                     <p>Here is a list of my recent projects with links to a more detailed description.</p>
                     <div class="container-project-desc">
                         <div class="container-project-desc__project-item">
-                            <a class="container-project-desc__project-link" href="portfolio/roomies.php"><img class="container-project-desc__project-img" src="portfolio/roomies/assets/img/screenshots/dashboard-page.png"><h4 class="container-project-desc__project-title">Roomies: A Roommate Management App</h4></a>
+                            <a class="container-project-desc__project-link" href="portfolio/roomies.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-roomies.png"><h4 class="container-project-desc__project-title">Roomies: A Roommate Management App</h4></a>
                         </div>
                         <div class="container-project-desc__project-item">
                             <a class="container-project-desc__project-link" href="portfolio/thebayground.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-bayground.png"><h4 class="container-project-desc__project-title">The Bayground: A Collection of Mini Apps</h4></a>

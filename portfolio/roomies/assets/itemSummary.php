@@ -11,8 +11,7 @@ if (isset($_SESSION['group_id'])) {
 include '../../../../hidden/config.php';
 
 $items = [];
-//$itemDate = $_GET['itemDate'];
-$itemDate = '2018-03';
+$itemDate = $_GET['itemDate'];
 $itemMonth = "";
 $itemYear = "";
 

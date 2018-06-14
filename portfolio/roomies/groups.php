@@ -39,6 +39,7 @@ function displayGroups() {
     $joinedgroupsmsg = "";
 
     include '../../../hidden/config.php';
+
     $userID = $_SESSION['user_id'];
     if (isset($_SESSION['group_name'])){
         

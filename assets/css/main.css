@@ -997,6 +997,7 @@ footer .footer-inner {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .container-project-desc__project-item:nth-of-type(even) {
