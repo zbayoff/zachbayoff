@@ -5,12 +5,14 @@
 }
 
 .container-project-background__project-btn {
-    padding: 0.5rem 1rem;
+    padding: 0;
     background-color: #59CD90;
     border-color: #59CD90;
 }
 
 .container-project-background__project-link {
+    display: block;
+    padding: 0.5rem;
     text-decoration: none;
     color: black;
     font-size: 1.2rem;

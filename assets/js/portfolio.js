@@ -1,10 +1,11 @@
 (function (){
     // document.body.classList.add('js-loading');
 
-    window.addEventListener('load', showPage, false);
+    window.addEventListener('load', loadImages, false);
 
-    function showPage (){
+    function loadImages (){
         document.body.classList.remove('js-loading');
+        console.log(document.images);
     }
 
 })();

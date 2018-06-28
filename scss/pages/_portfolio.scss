@@ -1,10 +1,11 @@
-.js-loading,
-.js-loading:before,
-.js-loading:after {
-    animation-play-state: paused !important;
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
 }
 
 .project-container {
+    padding-top: 1rem;
     padding-bottom: $footer-height;
 }
 
@@ -54,8 +55,8 @@
 }
 
 .container-project-desc__project-item {
-    max-width: 300px;
-    height: 174px;
+    max-width: 350px;
+    height: 202px;
     margin: 0.5rem;
     position: relative; // width: 100%;
     // max-width: 600px;

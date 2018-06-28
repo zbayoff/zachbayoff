@@ -30,7 +30,7 @@
 .header {
     background: #90DDF0;
     box-shadow: 3px 2px 5px black;
-    width: 100vw;
+    width: 100%;
     height: $header-height;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@
     left: 0;
     z-index: 3;
     @include for-tablet-landscape-up {
-        width: 100vw;
+        width: 100%;
         position: fixed;
         display: flex;
         align-items: center;

@@ -52,22 +52,22 @@
                     <p>Here is a list of my recent projects with links to a more detailed description.</p>
                     <div class="container-project-desc">
                         <div class="container-project-desc__project-item">
-                            <a class="container-project-desc__project-link" href="portfolio/roomies.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-roomies.png"><h4 class="container-project-desc__project-title">Roomies: A Roommate Management App</h4></a>
+                            <a class="container-project-desc__project-link" href="portfolio/roomies.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-roomies-small.png"><h4 class="container-project-desc__project-title">Roomies: A Roommate Management App</h4></a>
                         </div>
                         <div class="container-project-desc__project-item">
-                            <a class="container-project-desc__project-link" href="portfolio/thebayground.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-bayground.png"><h4 class="container-project-desc__project-title">The Bayground: A Collection of Mini Apps</h4></a>
+                            <a class="container-project-desc__project-link" href="portfolio/travel-app.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-travelapp-small.png"><h4 class="container-project-desc__project-title">Travel App</h4></a>
                         </div>
                         <div class="container-project-desc__project-item">
-                            <a class="container-project-desc__project-link" href="portfolio/zachbayoff.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-zachbayoff.png"><h4 class="container-project-desc__project-title">zachbayoff.com</h4></a>
+                            <a class="container-project-desc__project-link" href="portfolio/weather-app.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-weatherapp-small.png"><h4 class="container-project-desc__project-title">Weather App</h4></a>
                         </div>
                         <div class="container-project-desc__project-item">
-                            <a class="container-project-desc__project-link" href="portfolio/weather-app.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-weatherapp.png"><h4 class="container-project-desc__project-title">Weather App</h4></a>
+                            <a class="container-project-desc__project-link" href="portfolio/thebayground.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-bayground-small.png"><h4 class="container-project-desc__project-title">The Bayground: A Collection of Mini Apps</h4></a>
                         </div>
                         <div class="container-project-desc__project-item">
-                            <a class="container-project-desc__project-link" href="portfolio/travel-app.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-travelapp.png"><h4 class="container-project-desc__project-title">Travel App</h4></a>
+                            <a class="container-project-desc__project-link" href="portfolio/zachbayoff.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-zachbayoff-small.png"><h4 class="container-project-desc__project-title">zachbayoff.com</h4></a>
                         </div>
                         <div class="container-project-desc__project-item">
-                            <a class="container-project-desc__project-link" href="portfolio/nyjtl.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-nyjtl.png"><h4 class="container-project-desc__project-title">NYJTL Concept</h4></a>
+                            <a class="container-project-desc__project-link" href="portfolio/nyjtl.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-nyjtl-small.png"><h4 class="container-project-desc__project-title">NYJTL Concept</h4></a>
                         </div>
                     </div
                 </div>
