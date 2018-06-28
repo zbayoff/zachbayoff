@@ -674,7 +674,7 @@ body#portfolio-zachbayoff {
   background: #90DDF0;
   -webkit-box-shadow: 3px 2px 5px black;
           box-shadow: 3px 2px 5px black;
-  width: 100%;
+  width: 100vw;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -698,7 +698,7 @@ body#portfolio-zachbayoff {
 
 @media (min-width: 900px) {
   .header {
-    width: 100%;
+    width: 100vw;
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1157,7 +1157,7 @@ footer .footer-inner {
       -ms-flex-align: center;
           align-items: center;
   z-index: 4;
-  background-color: lightgray;
+  background-color: #59CD90;
 }
 
 .success-msg-header .success-msg {
@@ -1315,6 +1315,7 @@ footer .footer-inner {
   padding: 1rem;
   right: 0;
   left: 0;
+  text-align: center;
 }
 
 .container-project-desc__project-item .container-project-desc__project-link .container-project-desc__project-title:hover {

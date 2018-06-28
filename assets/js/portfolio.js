@@ -5,7 +5,6 @@
 
     function loadImages (){
         document.body.classList.remove('js-loading');
-        console.log(document.images);
     }
 
 })();

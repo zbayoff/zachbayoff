@@ -9,6 +9,7 @@
     <title>Zach Bayoff | Web Developer | Portfolio</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/images/logo.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
@@ -52,7 +53,7 @@
                     <p>Here is a list of my recent projects with links to a more detailed description.</p>
                     <div class="container-project-desc">
                         <div class="container-project-desc__project-item">
-                            <a class="container-project-desc__project-link" href="portfolio/roomies.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-roomies-small.png"><h4 class="container-project-desc__project-title">Roomies: A Roommate Management App</h4></a>
+                            <a class="container-project-desc__project-link" href="portfolio/roomies.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-roomies-small.png"><h4 class="container-project-desc__project-title">Roomies:<br> A Roommate Management App</h4></a>
                         </div>
                         <div class="container-project-desc__project-item">
                             <a class="container-project-desc__project-link" href="portfolio/travel-app.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-travelapp-small.png"><h4 class="container-project-desc__project-title">Travel App</h4></a>
@@ -61,7 +62,7 @@
                             <a class="container-project-desc__project-link" href="portfolio/weather-app.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-weatherapp-small.png"><h4 class="container-project-desc__project-title">Weather App</h4></a>
                         </div>
                         <div class="container-project-desc__project-item">
-                            <a class="container-project-desc__project-link" href="portfolio/thebayground.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-bayground-small.png"><h4 class="container-project-desc__project-title">The Bayground: A Collection of Mini Apps</h4></a>
+                            <a class="container-project-desc__project-link" href="portfolio/thebayground.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-bayground-small.png"><h4 class="container-project-desc__project-title">The Bayground:<br> A Collection of Mini Apps</h4></a>
                         </div>
                         <div class="container-project-desc__project-item">
                             <a class="container-project-desc__project-link" href="portfolio/zachbayoff.php"><img class="container-project-desc__project-img" src="assets/images/project-desc-zachbayoff-small.png"><h4 class="container-project-desc__project-title">zachbayoff.com</h4></a>

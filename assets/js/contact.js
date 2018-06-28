@@ -19,7 +19,6 @@ contactForm.addEventListener("submit", function (e) {
                 let errors = JSON.parse(xhr.responseText);
 
                 for (element of errors) {
-                    console.log(element);
                     if (element.status === "error") {
                         document.getElementById(element.field).style.border = "2px solid red";
                     } else {

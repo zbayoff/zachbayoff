@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zach Bayoff | Web Developer | Contact</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" type="image/png" href="assets/images/logo.png"/>
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">

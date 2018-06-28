@@ -9,6 +9,7 @@
     <title>Zach Bayoff | Web Developer | The Bayground</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="shortcut icon" type="image/png" href="../../assets/images/logo.png"/>
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alef|Reem+Kufi" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
